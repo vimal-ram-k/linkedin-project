@@ -1,0 +1,14 @@
+input::placeholder{
+    font-size: 0.9rem;
+}
+
+input:focus{
+    outline: none;
+}
+
+input:focus .searchbar-outer{
+    outline: 1px solid blue;
+}
+.nav-item-name{
+    font-size: 0.8rem;
+}

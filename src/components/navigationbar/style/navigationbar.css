@@ -1,0 +1,29 @@
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+}
+
+.bi {
+  font-size: 1.2rem;
+  color: #495057;
+}
+
+.nav-item-name {
+  font-size: 0.7rem;
+  color: #495057;
+  font-weight: light;
+  text-wrap: nowrap;
+}
+
+.bi:hover, .nav-item-name:hover {
+  color: #000;
+}/*# sourceMappingURL=navigationbar.css.map */
