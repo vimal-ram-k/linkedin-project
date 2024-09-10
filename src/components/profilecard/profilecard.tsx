@@ -14,8 +14,8 @@ export const ProfileCard = () => {
     }
     
     return(
-        <>
-        <div className=" card mt-3 rounded-top-4">
+        <div className=' col-md-5 col-lg-4 col-xl-2'>
+        <div className=" card mt-3 rounded-top-4 ">
             <div className=" card-img  position-relative">
                 <img src={banner} alt="" className=' rounded-top-4 w-100'  height={ 60}/>
             </div>
@@ -49,11 +49,21 @@ export const ProfileCard = () => {
     )
        }
 
-<button className='border-0 w-100 m-auto my-3 btn' onClick={showMoreToggle}>
+<button className='border-0 w-100 m-auto my-3 btn d-md-none' onClick={showMoreToggle}>
                     <h1 className=' fs-6 fw-light'>Show less <i className=' bi bi-arrow-bar-up' style={{ fontSize : "0.8rem"}}></i></h1>
                 </button>
+
+
+                <div className=' d-none d-md-block'>
+        <SubcriptionCard />
+        <ProfileViwerCard />
+        <ExtraOptionsCard />
+        </div>
+
        
-        </>
+        </div>
+
+
 
     )
 }

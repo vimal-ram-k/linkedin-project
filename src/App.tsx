@@ -23,8 +23,8 @@ function App() {
   } , [])
 
   return (
-    <div className="main m-auto bg-white row"  style={{ width : "90dvw"}}>
-      <div className=" col-md-5 col-lg-2">
+    <div className="main m-auto bg-white row"  style={{ width : "95dvw"}}>
+      <div className="row">
       <ProfileCard />
 
       </div>
