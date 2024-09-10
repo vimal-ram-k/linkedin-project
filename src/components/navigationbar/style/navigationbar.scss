@@ -20,7 +20,7 @@ li{
 .nav-item-name{
   font-size: 0.7rem;
   color :#495057;
-  font-weight:light;
+  font-weight:normal;
   text-wrap: nowrap;
 }
 
@@ -28,4 +28,10 @@ li{
     color: #000;
   }
 
+.dark {
+  .bi , .nav-item-name{
+    color: #fff;
+  }
+
+}
 

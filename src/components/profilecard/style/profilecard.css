@@ -1,0 +1,24 @@
+.card-profile {
+  transform: translateY(-50px);
+  color: #000;
+  background-color: #fff;
+}
+
+.about {
+  font-size: 0.8rem;
+  padding: 10px 0px;
+}
+
+.username {
+  font-size: 1.3rem;
+  padding: 10px 0px;
+}
+
+.location {
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.company-logo {
+  width: 30px;
+}/*# sourceMappingURL=profilecard.css.map */

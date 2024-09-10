@@ -54,7 +54,7 @@ export const NavigationBar = () => {
 
             <li className=' btn d-flex flex-column d-none d-sm-flex p-0 m-0' >
             <i className="bi bi-three-dots"></i>
-            <p className=' nav-item-name m-0 p-0 d-md-flex d-none'> For Business <i className=' bi bi-caret-down-fill' style={{ fontSize : "0.7rem"}}></i></p>
+            <p className=' position-relative nav-item-name m-0 p-0 d-md-flex d-none'> For Business <i className=' bi bi-caret-down-fill position-absolute top-0 start-100' style={{ fontSize : "0.7rem"}}></i></p>
 
             </li>
 

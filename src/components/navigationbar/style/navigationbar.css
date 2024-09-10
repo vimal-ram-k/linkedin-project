@@ -20,10 +20,14 @@ li {
 .nav-item-name {
   font-size: 0.7rem;
   color: #495057;
-  font-weight: light;
+  font-weight: normal;
   text-wrap: nowrap;
 }
 
 .bi:hover, .nav-item-name:hover {
   color: #000;
+}
+
+.dark .bi, .dark .nav-item-name {
+  color: #fff;
 }/*# sourceMappingURL=navigationbar.css.map */

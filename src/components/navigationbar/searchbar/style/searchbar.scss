@@ -12,3 +12,13 @@ input:focus .searchbar-outer{
 .nav-item-name{
     font-size: 0.8rem;
 }
+
+.search-icon{
+    color: #000;
+}
+
+.dark{
+    .search-icon{
+        color: #000;
+    }
+}
