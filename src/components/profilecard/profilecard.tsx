@@ -14,8 +14,8 @@ export const ProfileCard = () => {
     }
     
     return(
-        <div className=' col-md-5 col-lg-4 col-xl-2'>
-        <div className=" card mt-3 rounded-top-4 ">
+        <div className=' col-12 col-sm-9 col-lg-3 col-xl-2'>
+        <div className=" card mt-3 rounded-top-4  ">
             <div className=" card-img  position-relative">
                 <img src={banner} alt="" className=' rounded-top-4 w-100'  height={ 60}/>
             </div>

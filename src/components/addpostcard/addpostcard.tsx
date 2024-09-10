@@ -4,7 +4,7 @@ export const AddPostCard = () => {
 
     return(
 
-        <div className=" py-3 border col-md-5 col-lg-4 col-xl-4 h-25  mt-3 rounded-2">
+        <div className=" py-3 border h-25 col-12 col-sm-9  col-lg-6 col-xl-4  mt-3 rounded-2">
         <section className=" d-flex align-items-center justify-content-center">
             <i className=" bi bi-person" style={{ fontSize : "2rem"}}></i>
             <div className=" border rounded-5 position-relative" style={{ width : "80dvw" , height : "50px"}}>
