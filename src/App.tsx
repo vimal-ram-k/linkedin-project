@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { ProfileCard } from "./components/profilecard/profilecard"
+import { AddPostCard } from "./components/addpostcard/addpostcard"
 
 
 function App() {
@@ -23,9 +24,10 @@ function App() {
   } , [])
 
   return (
-    <div className="main m-auto bg-white row"  style={{ width : "95dvw"}}>
-      <div className="row">
+    <div className="main m-auto bg-white ">
+      <div className="row d-flex justify-content-center">
       <ProfileCard />
+      <AddPostCard />
 
       </div>
 
