@@ -1,0 +1,9 @@
+.post-placeholder {
+  transform: translateY(5px);
+  font-size: 0.9rem;
+  font-weight: light;
+}
+
+li:hover {
+  background-color: rgba(128, 128, 128, 0.128);
+}/*# sourceMappingURL=addpostcard.css.map */
