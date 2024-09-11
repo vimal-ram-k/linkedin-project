@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import { ProfileCard } from "./components/profilecard/profilecard"
 import { AddPostCard } from "./components/addpostcard/addpostcard"
+import { NewsCard } from "./components/newscard/newscard"
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <div className="row d-flex justify-content-center gap-sm-3">
       <ProfileCard />
       <AddPostCard />
+      <NewsCard />
 
       </div>
 
