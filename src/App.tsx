@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="main m-auto bg-white ">
-      <div className="row d-flex justify-content-center">
+      <div className="row d-flex justify-content-center gap-3">
       <ProfileCard />
       <AddPostCard />
 

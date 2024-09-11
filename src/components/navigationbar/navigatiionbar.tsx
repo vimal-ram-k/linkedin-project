@@ -3,8 +3,8 @@ import './style/navigationbar.css'
 export const NavigationBar = () => {
 
     return(
-       <nav className=' container-fluid navbar border'>
-        <ul className=' d-flex justify-content-between m-auto column-gap-4 justify-content-lg-center '>
+       <nav className=' container-fluid navbar border p-0'>
+        <ul className=' d-flex justify-content-center m-auto column-gap-4 justify-content-lg-center '>
             <div className=' d-flex align-items-center column-gap-4 mx-lg-5'>
 
             <li className=' btn navbar-brand p-0 m-0'>
