@@ -4,8 +4,8 @@ import './style/navigationbar.css'
 export const NavigationBar = () => {
 
     return(
-       <nav className=' navbar' id='navbarDropdown'>
-        <ul className=' container-fluid d-flex justify-content-around align-content-center'>
+       <nav className=' navbar border-bottom p-0' id='navbarDropdown'>
+        <ul className=' container-fluid d-flex justify-content-around align-content-center justify-content-md-center'>
             <li className=' btn navbar-brand m-0 nav-item '>
                 <Link to="/feed" className=' nav-link active '>
                 <img src="/linkedin-svgrepo-com.svg" className='logo' aria-describedby='logo' alt="" />

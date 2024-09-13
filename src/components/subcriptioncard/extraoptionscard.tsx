@@ -1,7 +1,7 @@
 
 export const ExtraOptionsCard = () => {
     return(
-        <div className=" card px-3 p-2 mt-2">
+        <div className=" card px-2 p-2 mt-2">
             <ul>
                 <li className=" btn d-flex align-items-center column-gap-2">
                     <i className=" bi bi-save-fill" style={{ fontSize : "0.8rem"}}></i>

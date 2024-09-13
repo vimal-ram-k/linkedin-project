@@ -15,16 +15,16 @@ export const AddPostCard = () => {
 
         <ul className=" d-flex justify-content-around mt-2">
             <li className=" px-2 py-1 rounded-2 d-flex align-items-center column-gap-2">
-                <img src={imagelogo} width={30} alt="image-logo-file-upload" />
-                <span className='' style={{ fontSize : "0.8rem"}}>Media</span>
+                <img src={imagelogo} width={25} alt="image-logo-file-upload" />
+                <span className=' fw-medium opacity-75' style={{ fontSize : "0.8rem"}}>Media</span>
             </li>
             <li className=" px-2 py-1 rounded-2  d-flex align-items-center column-gap-2">
-                <i className=" bi bi-calendar" style={{ color : "orange" , fontSize : "1.5rem"}}></i>
-                <span  style={{ fontSize : "0.8rem"}}>Event</span>
+                <i className=" bi bi-calendar" style={{ color : "orange" , fontSize : "1.3rem"}}></i>
+                <span className=' fw-medium opacity-75'  style={{ fontSize : "0.8rem"}}>Event</span>
             </li>
             <li className="px-2 py-1 rounded-2  d-flex align-items-center column-gap-2">
-                <i className=" bi bi-music-note" style={{ color : "red" , fontSize : "1.5rem"}}></i>
-                <span  style={{ fontSize : "0.8rem"}}>Write article</span>
+                <i className=" bi bi-music-note" style={{ color : "red" , fontSize : "1.3rem"}}></i>
+                <span className=' fw-medium opacity-75'  style={{ fontSize : "0.8rem"}}>Write article</span>
             </li>
         </ul>
     </div>
