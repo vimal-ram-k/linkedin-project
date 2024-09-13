@@ -4,7 +4,11 @@ ul {
 }
 
 li {
+  padding: 0px;
+  margin: 0px;
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -22,10 +26,6 @@ li {
   color: #495057;
   font-weight: normal;
   text-wrap: nowrap;
-}
-
-.bi:hover, .nav-item-name:hover {
-  color: #000;
 }
 
 .dark .bi, .dark .nav-item-name {

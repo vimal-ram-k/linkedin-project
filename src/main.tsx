@@ -12,6 +12,7 @@ createRoot(document.getElementById('root')!).render(
       <NavigationBar />
       <Routes>
         <Route path='/' element= {<App />} />
+        <Route path='/feed' element= {<App />} />
       </Routes>
     </Router>
   </StrictMode>,
