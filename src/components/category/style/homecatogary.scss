@@ -1,0 +1,15 @@
+i {
+  font-size: '0.7rem';
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-direction: column;
+}
+
+.link:hover > i,
+span {
+  color: #000;
+}

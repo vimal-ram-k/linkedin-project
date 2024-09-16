@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './style/homecatogary.css';
 
 export const HomeCatagory = () => {
   return (
@@ -7,50 +8,50 @@ export const HomeCatagory = () => {
         <li className=" list-unstyled">
           <Link
             to="/"
-            className=" text-decoration-none d-flex flex-column align-items-center "
+            className=" link "
           >
-            <i className=" bi bi-newspaper text-black fs-3 opacity-75"></i>
-            <span className=" text-black opacity-75 fw-normal">Articles</span>
+            <i className=" bi bi-newspaper"></i>
+            <span className="fw-normal">Articles</span>
           </Link>
         </li>
 
         <li className=" list-unstyled">
           <Link
             to="/"
-            className=" text-decoration-none d-flex flex-column align-items-center "
+            className=" link "
           >
-            <i className=" bi bi-people-fill text-black fs-3 opacity-75"></i>
-            <span className=" text-black opacity-75 fw-normal">People</span>
+            <i className=" bi bi-people-fill"></i>
+            <span className="  fw-normal">People</span>
           </Link>
         </li>
 
         <li className=" list-unstyled">
           <Link
             to="/"
-            className=" text-decoration-none d-flex flex-column align-items-center "
+            className=" link "
           >
-            <i className=" bi bi-play-btn text-black fs-3 opacity-75"></i>
-            <span className=" text-black opacity-75 fw-normal">Learning</span>
+            <i className=" bi bi-play-btn"></i>
+            <span className="  fw-normal">Learning</span>
           </Link>
         </li>
 
         <li className=" list-unstyled">
           <Link
             to="/"
-            className=" text-decoration-none d-flex flex-column align-items-center "
+            className=" link "
           >
-            <i className=" bi bi-bag-fill text-black fs-3 opacity-75"></i>
-            <span className=" text-black opacity-75 fw-normal">Jobs</span>
+            <i className=" bi bi-bag-fill"></i>
+            <span className="  fw-normal">Jobs</span>
           </Link>
         </li>
 
         <li className=" list-unstyled">
           <Link
             to="/"
-            className=" text-decoration-none d-flex flex-column align-items-center "
+            className=" link "
           >
-            <i className=" bi bi-puzzle-fill text-black fs-3 opacity-75"></i>
-            <span className=" text-black opacity-75 fw-normal">Games</span>
+            <i className=" bi bi-puzzle-fill"></i>
+            <span className="  fw-normal">Games</span>
           </Link>
         </li>
       </ul>
