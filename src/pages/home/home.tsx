@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom';
 import { HomeCatagory } from '../../components/category/homecatogary';
 import { HomeNavigationBar } from '../../components/navigationbar/homenavigationbar';
-import './style/home.css';
 import { HomeFeatures } from '../../components/home/features/homefeatures';
-import searchjob from '../../assets/1dhh8rr3wohexkaya6jhn2y8j.svg';
-import connectpeople from '../../assets/43h6n82li4xu0q23s8jqizk6j.svg';
+import searchjob from '../../assets/images/1dhh8rr3wohexkaya6jhn2y8j.svg';
+import connectpeople from '../../assets/images/43h6n82li4xu0q23s8jqizk6j.svg';
 
 export const Home = () => {
   return (

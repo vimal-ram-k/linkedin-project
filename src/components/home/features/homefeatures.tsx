@@ -1,6 +1,6 @@
-import image1 from '../../../assets/dbvmk0tsk0o0hd59fi64z3own.png';
-import image2 from '../../../assets/2r8kd5zqpi905lkzsshdlvvn5.png';
-import image3 from '../../../assets/ann24vsq7r0ux3vipqa1n90gg.png';
+import image1 from '../../../assets/images/dbvmk0tsk0o0hd59fi64z3own.png';
+import image2 from '../../../assets/images/2r8kd5zqpi905lkzsshdlvvn5.png';
+import image3 from '../../../assets/images/ann24vsq7r0ux3vipqa1n90gg.png';
 import { useState } from 'react';
 
 export const HomeFeatures = () => {

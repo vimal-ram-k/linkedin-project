@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { SearchBar } from './searchbar/searchbar';
-import './style/navigationbar.css';
 export const NavigationBar = () => {
   return (
     <nav

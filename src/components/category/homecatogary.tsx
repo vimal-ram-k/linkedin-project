@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './style/homecatogary.css';
+import '../../assets/styles/components/category/homecatogary.css';
 
 export const HomeCatagory = () => {
   return (
