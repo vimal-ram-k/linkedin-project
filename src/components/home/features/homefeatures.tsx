@@ -1,15 +1,51 @@
 import image1 from '../../../assets/dbvmk0tsk0o0hd59fi64z3own.png';
 import image2 from '../../../assets/2r8kd5zqpi905lkzsshdlvvn5.png';
 import image3 from '../../../assets/ann24vsq7r0ux3vipqa1n90gg.png';
+import { useState } from 'react';
 
 export const HomeFeatures = () => {
+  const [currentSection, setCurrentSection] = useState(1);
+
+  // Function to handle scrolling based on button click
+  const flexScroller = (event: React.MouseEvent<HTMLButtonElement>) => {
+    const btnId = event.currentTarget.id;
+    let newSection = currentSection;
+
+    if (btnId === 'prev-btn' && currentSection > 1) {
+      newSection = currentSection - 1;
+    } else if (btnId === 'next-btn' && currentSection < 3) {
+      newSection = currentSection + 1;
+    }
+
+    // Scroll to the new section
+    const flexSection = document.getElementById(`section${newSection}`);
+    flexSection?.scrollIntoView({ behavior: 'smooth' });
+
+    // Update the current section
+    setCurrentSection(newSection);
+  };
   return (
-    <div style={{ height: '60dvh', backgroundColor: '#f2f2f0' }}>
+    <div
+      className=" d-flex position-relative container"
+      style={{ height: '60dvh', backgroundColor: '#f2f2f0' }}
+    >
+      <button
+        onClick={flexScroller}
+        id="prev-btn"
+        className=" position-absolute top-50 border-0 bg-black bg-opacity-75 rounded-circle z-3"
+        style={{ width: '40px', height: '40px' }}
+      >
+        <i className=" bi bi-arrow-left-circle-fill text-white"></i>
+      </button>
       <ul
+        id="flex-scroller"
         className=" d-flex align-items-center column-gap-4 overflow-scroll"
         style={{ scrollbarWidth: 'none' }}
       >
-        <li className=" d-flex flex-column gap-2">
+        <li
+          className=" d-flex flex-column gap-2"
+          id="section1"
+        >
           <img
             src={image1}
             alt=""
@@ -24,7 +60,10 @@ export const HomeFeatures = () => {
             new job opportunities.
           </p>
         </li>
-        <li className=" d-flex flex-column gap-2">
+        <li
+          className=" d-flex flex-column gap-2"
+          id="section2"
+        >
           <img
             src={image2}
             alt=""
@@ -38,13 +77,18 @@ export const HomeFeatures = () => {
             relationships as you take the next step in your career.
           </p>
         </li>
-        <li className=" d-flex flex-column gap-2">
+        <li
+          className=" d-flex flex-column gap-2"
+          id="section3"
+        >
           <img
             src={image3}
             alt=""
             width={300}
           />
-          <h1 style={{ color: '#b14020', fontSize: '1.3rem' }}></h1>
+          <h1 style={{ color: '#b14020', fontSize: '1.3rem' }}>
+            Stay up to date on your industry
+          </h1>
           <p>
             From live videos, to stories, to newsletters and more, LinkedIn is
             full of ways to stay up to date on the latest discussions in your
@@ -52,6 +96,18 @@ export const HomeFeatures = () => {
           </p>
         </li>
       </ul>
+      {currentSection < 4 ? (
+        <button
+          id="next-btn"
+          onClick={flexScroller}
+          className=" position-absolute border-0 bg-black bg-opacity-75 rounded-circle z-3"
+          style={{ width: '40px', height: '40px', right: '0', top: '50%' }}
+        >
+          <i className=" bi bi-arrow-right-circle-fill text-white"></i>
+        </button>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
