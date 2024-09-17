@@ -21,6 +21,7 @@ export const SigninForm = () => {
         <input
           className=" ps-3 my-3 d-block rounded-2 border border-1 border-opacity-75 border-black"
           type="text"
+          name="username"
           placeholder="Email or phone"
           style={{ width: '80dvw', height: '50px' }}
         />
@@ -51,7 +52,7 @@ export const SigninForm = () => {
           <Link
             to="/feed"
             className=" text-white"
-            data-testid="sign-in-test"
+            data-testid="test-submit"
           >
             Sign in
           </Link>
