@@ -7,7 +7,7 @@ export const HomeNavigationBar = () => {
         src="/linkedin-svgrepo-com.svg"
         className="logo"
         aria-describedby="logo"
-        alt=""
+        alt="Linkedin Logo"
         style={{ width: '30px' }}
       />
       <nav className=" d-flex column-gap-2">

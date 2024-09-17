@@ -51,6 +51,7 @@ export const SigninForm = () => {
           <Link
             to="/feed"
             className=" text-white"
+            data-testid="sign-in-test"
           >
             Sign in
           </Link>
