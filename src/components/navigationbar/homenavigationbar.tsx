@@ -21,7 +21,7 @@ export const HomeNavigationBar = () => {
             fontWeight: 'bold',
           }}
         >
-          <Link to="/login/signin">Sign in</Link>
+          <Link to="/login/signin" data-testid="signin-btn">Sign in</Link>
         </button>
         <button
           className=" btn border text-white rounded-5"

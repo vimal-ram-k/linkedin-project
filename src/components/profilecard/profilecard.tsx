@@ -69,8 +69,9 @@ export const ProfileCard = () => {
         <h1
           className="fw-normal m-0"
           style={{ fontSize: '0.9rem' }}
+          data-testid="show-less"
         >
-          Show less{' '}
+          Show less
           <i
             className=" bi bi-caret-down-fill"
             style={{ fontSize: '0.8rem' }}
