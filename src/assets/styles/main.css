@@ -25,3 +25,7 @@
 root {
   --primary-blue: #0965c2;
 }
+
+a {
+  text-decoration: none;
+}

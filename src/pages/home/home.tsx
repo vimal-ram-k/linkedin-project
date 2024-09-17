@@ -4,6 +4,10 @@ import { HomeNavigationBar } from '../../components/navigationbar/homenavigation
 import { HomeFeatures } from '../../components/home/features/homefeatures';
 import searchjob from '../../assets/images/1dhh8rr3wohexkaya6jhn2y8j.svg';
 import connectpeople from '../../assets/images/43h6n82li4xu0q23s8jqizk6j.svg';
+import { TermsAndConditions } from '../../components/termsandcondition/termsandconditions';
+import { GoogleSignButton } from '../../components/buttons/googlesignbtn';
+import { AppleSignInBtn } from '../../components/buttons/applesigninbtn';
+import { JoinNow } from '../../components/buttons/joinnowbtn';
 
 export const Home = () => {
   return (
@@ -22,55 +26,12 @@ export const Home = () => {
           Welcome to your professional community
         </h1>
 
-        <button className=" mt-4 btn border border-black rounded-5 w-100">
-          <div className=" d-flex align-items-center  column-gap-2 justify-content-center">
-            <i className=" bi bi-google"></i>
-            <span className=" opacity-75 fw-medium">Sign in with Google</span>
-          </div>
-        </button>
+        <GoogleSignButton />
+        <AppleSignInBtn />
 
-        <button className="mt-2 btn border border-black py-2 rounded-5 w-100">
-          <div className=" d-flex align-items-center column-gap-2 justify-content-center">
-            <span className=" opacity-75 fw-medium">Sign in with email</span>
-          </div>
-        </button>
+        <TermsAndConditions />
 
-        <p
-          className=" text-center opacity-75 text-wrap  mt-3 "
-          style={{ fontSize: '0.8rem' }}
-        >
-          By clicking Continue to join or sign in, you agree to LinkedIn’s
-          <Link
-            to="/"
-            className=" support-link ps-1 "
-          >
-            User
-          </Link>
-          <Link
-            to="/"
-            className="support-link"
-          >
-            Agreement, Privacy Policy
-          </Link>
-          , and
-          <Link
-            to="/"
-            className="support-link ps-1"
-          >
-            Cookie Policy
-          </Link>
-          .
-        </p>
-
-        <span className=" fs-6 text-center fw-normal">
-          New to LinkedIn?
-          <button
-            className=" px-2 bg-transparent border-0 fw-normal"
-            style={{ color: '#0965c2' }}
-          >
-            Join now
-          </button>
-        </span>
+        <JoinNow />
       </div>
 
       <div

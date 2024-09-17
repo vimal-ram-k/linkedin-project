@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export const HomeNavigationBar = () => {
   return (
     <header className=" container py-2 d-flex justify-content-between align-items-center">
@@ -19,7 +21,7 @@ export const HomeNavigationBar = () => {
             fontWeight: 'bold',
           }}
         >
-          Sign in
+          <Link to="/login/signin">Sign in</Link>
         </button>
         <button
           className=" btn border text-white rounded-5"

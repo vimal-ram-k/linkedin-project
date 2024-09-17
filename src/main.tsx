@@ -4,11 +4,16 @@ import App from './App.tsx';
 import '../src/assets/styles/main.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/home/home.tsx';
+import { SigninForm } from './components/forms/signinform.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Router>
       <Routes>
+        <Route
+          path="/login/signin"
+          element={<SigninForm />}
+        />
         <Route
           path="/home"
           element={<Home />}
