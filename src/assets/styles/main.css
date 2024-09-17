@@ -5,27 +5,8 @@
 @import url(../styles//components/newscard/newscard.css);
 @import url(../styles//components/profilecard/profilecard.css);
 @import url(../styles//components/searchbar/searchbar.css);
+@import url(../styles/base/base.css);
 
 @import url('../../../node_modules/bootstrap/dist/css/bootstrap.css');
 @import url('../../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-* {
-  padding: 0;
-  margin: 0%;
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.dark {
-  color: #fff;
-  background-color: #000;
-}
-
-root {
-  --primary-blue: #0965c2;
-}
-
-a {
-  text-decoration: none;
-}

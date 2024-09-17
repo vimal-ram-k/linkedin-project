@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.dark {
+  color: #fff;
+  background-color: #000;
+}
+
+root {
+  color: #0965c2;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=base.css.map */

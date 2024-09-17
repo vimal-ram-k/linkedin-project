@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { HomeCatagory } from '../../components/category/homecatogary';
 import { HomeNavigationBar } from '../../components/navigationbar/homenavigationbar';
 import { HomeFeatures } from '../../components/home/features/homefeatures';
@@ -8,6 +7,7 @@ import { TermsAndConditions } from '../../components/termsandcondition/termsandc
 import { GoogleSignButton } from '../../components/buttons/googlesignbtn';
 import { AppleSignInBtn } from '../../components/buttons/applesigninbtn';
 import { JoinNow } from '../../components/buttons/joinnowbtn';
+import { Suspense, useState } from 'react';
 
 export const Home = () => {
   return (

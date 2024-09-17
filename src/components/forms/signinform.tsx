@@ -15,11 +15,7 @@ export const SigninForm = () => {
           height={150}
         />
       </Link>
-      <form
-        action=""
-        method="post"
-        className=" container ps-3"
-      >
+      <form className=" container ps-3">
         <h1>Sign in</h1>
         <span>Stay updated on your professional word</span>
         <input
@@ -49,11 +45,15 @@ export const SigninForm = () => {
           </Link>
         </button>
         <button
-          type="submit"
           className=" text-white rounded-5 border border-0 my-3"
           style={{ backgroundColor: '#0965c2', width: '80dvw', height: '50px' }}
         >
-          Sign in
+          <Link
+            to="/feed"
+            className=" text-white"
+          >
+            Sign in
+          </Link>
         </button>
 
         <div className="mt-2 d-flex align-items-center justify-content-around">
