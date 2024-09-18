@@ -5,28 +5,31 @@ import '../src/assets/styles/main.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/home/home.tsx';
 import { SigninForm } from './components/forms/signinform.tsx';
-
+import { store } from '../src/store.ts';
+import { Provider } from 'react-redux';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Router>
-      <Routes>
-        <Route
-          path="/login/signin"
-          element={<SigninForm />}
-        />
-        <Route
-          path="/home"
-          element={<Home />}
-        ></Route>
-        <Route
-          path="/"
-          element={<Home />}
-        />
-        <Route
-          path="/feed"
-          element={<App />}
-        />
-      </Routes>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Routes>
+          <Route
+            path="/login/signin"
+            element={<SigninForm />}
+          />
+          <Route
+            path="/home"
+            element={<Home />}
+          ></Route>
+          <Route
+            path="/"
+            element={<Home />}
+          />
+          <Route
+            path="/feed"
+            element={<App />}
+          />
+        </Routes>
+      </Router>
+    </Provider>
   </StrictMode>
 );
