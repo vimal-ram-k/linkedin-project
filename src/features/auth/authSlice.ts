@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
+=======
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+>>>>>>> fc141dd (Add redux toolkit state management feature)
 
 let user: UserType = {
   username: '',
@@ -17,6 +21,7 @@ const authSlice = createSlice({
       state.username = action.payload;
     },
   },
+<<<<<<< HEAD
   extraReducers: (builder) => {
     builder
       .addCase(createAsync.pending, (state) => {
@@ -38,5 +43,9 @@ export const createAsync = createAsyncThunk('user/loginAsync', async () => {
     return res;
   });
 });
+=======
+});
+
+>>>>>>> fc141dd (Add redux toolkit state management feature)
 export default authSlice.reducer;
 export const { login, logout, updateName } = authSlice.actions;

@@ -4,9 +4,16 @@ import { TermsAndConditions } from '../termsandcondition/termsandconditions';
 import { GoogleSignButton } from '../buttons/googlesignbtn';
 import { AppleSignInBtn } from '../buttons/applesigninbtn';
 import { JoinNow } from '../buttons/joinnowbtn';
+<<<<<<< HEAD
 import { AppDispatch } from '../../store';
 import { useDispatch } from 'react-redux';
 import { createAsync } from '../../features/auth/authSlice';
+=======
+import { login } from '../../features/auth/authSlice';
+import { AppDispatch } from '../../store';
+import { useDispatch } from 'react-redux';
+
+>>>>>>> fc141dd (Add redux toolkit state management feature)
 export const SigninForm = () => {
   const appDispatch: AppDispatch = useDispatch();
   return (
@@ -51,7 +58,11 @@ export const SigninForm = () => {
         </button>
         <button
           className=" text-white rounded-5 border border-0 my-3"
+<<<<<<< HEAD
           onClick={() => appDispatch(createAsync())}
+=======
+          onClick={() => appDispatch(login())}
+>>>>>>> fc141dd (Add redux toolkit state management feature)
           style={{ backgroundColor: '#0965c2', width: '80dvw', height: '50px' }}
         >
           <Link

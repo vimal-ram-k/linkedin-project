@@ -7,7 +7,11 @@ import { SubcriptionCard } from '../subcriptioncard/subcriptioncard';
 import { ProfileViwerCard } from '../subcriptioncard/profileviwercard';
 import { ExtraOptionsCard } from '../subcriptioncard/extraoptionscard';
 import { RootState } from '../../store';
+<<<<<<< HEAD
 import { useSelector } from 'react-redux';
+=======
+import { UseSelector, useDispatch, useSelector } from 'react-redux';
+>>>>>>> fc141dd (Add redux toolkit state management feature)
 
 export const ProfileCard = () => {
   const [showMore, setShowMore] = useState<boolean>(false);
