@@ -6,8 +6,14 @@ import profile from '../../assets/images/1722056500481.jpg';
 import { SubcriptionCard } from '../subcriptioncard/subcriptioncard';
 import { ProfileViwerCard } from '../subcriptioncard/profileviwercard';
 import { ExtraOptionsCard } from '../subcriptioncard/extraoptionscard';
+import { RootState } from '../../store';
+import { UseSelector, useDispatch, useSelector } from 'react-redux';
+
 export const ProfileCard = () => {
   const [showMore, setShowMore] = useState<boolean>(false);
+  const username = useSelector((state: RootState) => {
+    return state.authSlice.username;
+  });
 
   const showMoreToggle = () => {
     setShowMore((prev) => !prev);
@@ -34,7 +40,7 @@ export const ProfileCard = () => {
             />
           </button>
           <div className=" mt-4">
-            <h1 className=" username pt-3 m-0">Vimal Ram K</h1>
+            <h1 className=" username pt-3 m-0">{username}</h1>
             <p className=" about p-0 m-0">
               Experienced React Developer | Full-Stack Expertise | CI/CD &
               DevOps Specialist

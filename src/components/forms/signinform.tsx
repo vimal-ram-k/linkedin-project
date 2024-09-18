@@ -4,7 +4,12 @@ import { TermsAndConditions } from '../termsandcondition/termsandconditions';
 import { GoogleSignButton } from '../buttons/googlesignbtn';
 import { AppleSignInBtn } from '../buttons/applesigninbtn';
 import { JoinNow } from '../buttons/joinnowbtn';
+import { login } from '../../features/auth/authSlice';
+import { AppDispatch } from '../../store';
+import { useDispatch } from 'react-redux';
+
 export const SigninForm = () => {
+  const appDispatch: AppDispatch = useDispatch();
   return (
     <div className=" container ">
       <Link to="/home">
@@ -47,6 +52,7 @@ export const SigninForm = () => {
         </button>
         <button
           className=" text-white rounded-5 border border-0 my-3"
+          onClick={() => appDispatch(login())}
           style={{ backgroundColor: '#0965c2', width: '80dvw', height: '50px' }}
         >
           <Link
