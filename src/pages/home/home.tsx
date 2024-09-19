@@ -9,6 +9,7 @@ import { AppleSignInBtn } from '../../components/buttons/applesigninbtn';
 import { JoinNow } from '../../components/buttons/joinnowbtn';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
 =======
 >>>>>>> 7898957 (Add .gitlab-ci.yml)
@@ -16,6 +17,12 @@ import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVik
 =======
 import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
 >>>>>>> 431878d (Design responsive main banner in landing page)
+=======
+import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
+=======
+
+>>>>>>> 7898957 (Add .gitlab-ci.yml)
+>>>>>>> 2a641a1 (Add .gitlab-ci.yml)
 export const Home = () => {
   return (
     <div className="">
