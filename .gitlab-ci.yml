@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 image : node:22
 stages:
   - install
   - build
 =======
+=======
+>>>>>>> 0b8fcaf (Add .gitlab-ci.yml image node version 22)
 <<<<<<< HEAD
 image: node:18 # Base image with Node.js installed
 
@@ -13,7 +16,14 @@ stages:
 stages:
   - build
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+<<<<<<< HEAD
 >>>>>>> 65e263e (Add .gitlab-ci.yml)
+=======
+=======
+image : node:22
+stages:
+>>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
+>>>>>>> 0b8fcaf (Add .gitlab-ci.yml image node version 22)
   - test
 
 # Caching node_modules to avoid re-installing dependencies in every stage
@@ -73,6 +83,7 @@ test-job:
   only:
     - main
 
+<<<<<<< HEAD
 build:
   stage: build
   script:
@@ -81,6 +92,8 @@ build:
   only:
     - main
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+=======
+>>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
 
 deploy:
   stage: deploy
