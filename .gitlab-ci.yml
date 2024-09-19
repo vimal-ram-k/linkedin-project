@@ -19,6 +19,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 image: node:18 # Base image with Node.js installed
 
@@ -26,6 +27,8 @@ stages:
   - install
 =======
 =======
+=======
+>>>>>>> 4296c1e (Add .gitlab-ci.yml image node version 22)
 image: node:22
 =======
 <<<<<<< HEAD
@@ -40,11 +43,51 @@ stages:
   - build
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 858cf21 (Add .gitlab-ci.yml)
+=======
+>>>>>>> b37803a (Add .gitlab-ci.yml image node version 22)
+image : node:22
+stages:
+  - install
+  - build
+=======
+=======
+>>>>>>> 0b8fcaf (Add .gitlab-ci.yml image node version 22)
+<<<<<<< HEAD
+image: node:18 # Base image with Node.js installed
+
+stages:
+  - install
+=======
+stages:
+  - build
+>>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+<<<<<<< HEAD
+>>>>>>> 65e263e (Add .gitlab-ci.yml)
+=======
+>>>>>>> 4296c1e (Add .gitlab-ci.yml image node version 22)
 =======
 image : node:22
 stages:
 >>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
+<<<<<<< HEAD
 =======
 =======
 
@@ -88,6 +131,10 @@ image: node:22
 =======
 >>>>>>> 8014825 (Add .gitlab-ci.yml)
 =======
+=======
+>>>>>>> 0b8fcaf (Add .gitlab-ci.yml image node version 22)
+>>>>>>> 15db498 (Add .gitlab-ci.yml image node version 22)
+>>>>>>> 4296c1e (Add .gitlab-ci.yml image node version 22)
   - test
 
 # Caching node_modules to avoid re-installing dependencies in every stage
@@ -401,6 +448,7 @@ build:
     expire_in: 1 day
 >>>>>>> 9ca94b1 (Add feature caching in .gitlab-ci.yml)
 
+<<<<<<< HEAD
 build-job:
   stage: build
   image: node:22
@@ -418,6 +466,9 @@ build-job:
 =======
 
 >>>>>>> 858cf21 (Add .gitlab-ci.yml)
+=======
+<<<<<<< HEAD
+>>>>>>> b37803a (Add .gitlab-ci.yml image node version 22)
 build:
   stage: build
   script:
@@ -431,10 +482,19 @@ build:
 =======
 >>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> dcfbd1b (Add .gitlab-ci.yml image node version 22)
 >>>>>>> 4c8093e (Add .gitlab-ci.yml image node version 22)
 =======
 >>>>>>> e18bcfe (Add .gitlab-ci.yml)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 8397db2 (Add .gitlab-ci.yml)
+>>>>>>> 8e0480a (Add .gitlab-ci.yml)
+>>>>>>> 15db498 (Add .gitlab-ci.yml image node version 22)
+>>>>>>> 4296c1e (Add .gitlab-ci.yml image node version 22)
 
 deploy:
   stage: deploy
@@ -944,6 +1004,8 @@ build:
 >>>>>>> fe8149c (Add .gitlab-ci.yml)
 
 >>>>>>> 4c3a3df (Add .gitlab-ci.yml image node version 22)
+=======
+>>>>>>> b37803a (Add .gitlab-ci.yml image node version 22)
 
 deploy:
   stage: deploy
