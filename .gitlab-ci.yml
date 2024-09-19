@@ -13,13 +13,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 image: node:22
 =======
+=======
+>>>>>>> 8014825 (Add .gitlab-ci.yml)
 image : node:22
 >>>>>>> b37803a (Add .gitlab-ci.yml image node version 22)
 stages:
-  - install
   - build
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 0b8fcaf (Add .gitlab-ci.yml image node version 22)
@@ -84,6 +87,8 @@ stages:
 >>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
 >>>>>>> 0b8fcaf (Add .gitlab-ci.yml image node version 22)
 >>>>>>> b37803a (Add .gitlab-ci.yml image node version 22)
+=======
+>>>>>>> 8014825 (Add .gitlab-ci.yml)
   - test
 
 # Caching node_modules to avoid re-installing dependencies in every stage
@@ -92,30 +97,17 @@ cache:
   paths:
     - node_modules/
 
-<<<<<<< HEAD
 install-dependencies:
-=======
 before_script:
   - echo "Installing dependencies..."
-<<<<<<< HEAD
   - npm ci
 
 install:
->>>>>>> 65e263e (Add .gitlab-ci.yml)
-  stage: install
-  image: node:22
-  script:
-    - npm install
-<<<<<<< HEAD
   artifacts:
     paths:
       - node_modules/
     expire_in: 1 day
-=======
-=======
-  - npm install
->>>>>>> 4ee7531 (Add .gitlab-ci.yml)
->>>>>>> 65e263e (Add .gitlab-ci.yml)
+
 
 <<<<<<< HEAD
 build-job:
@@ -292,11 +284,12 @@ test-job:
   image: node:22
   script:
     - npm run test
-<<<<<<< HEAD
+
   cache:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
       - node_modules/
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9ca94b1 (Add feature caching in .gitlab-ci.yml)
@@ -415,6 +408,12 @@ build-job:
 =======
 <<<<<<< HEAD
 >>>>>>> b37803a (Add .gitlab-ci.yml image node version 22)
+=======
+    only:
+      - main
+
+
+>>>>>>> 8014825 (Add .gitlab-ci.yml)
 build:
   stage: build
   script:
@@ -422,6 +421,7 @@ build:
     - npm run build
   only:
     - main
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 8397db2 (Add .gitlab-ci.yml)
 >>>>>>> 0d2e058 (Add .gitlab-ci.yml)
@@ -432,12 +432,16 @@ build:
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
 =======
 >>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
+=======
+
+>>>>>>> 8014825 (Add .gitlab-ci.yml)
 
 >>>>>>> 858cf21 (Add .gitlab-ci.yml)
 deploy:
   stage: deploy
   script:
     - echo "Deploying the project..."
+<<<<<<< HEAD
 <<<<<<< HEAD
     # Add your deployment commands here
 <<<<<<< HEAD
@@ -478,3 +482,7 @@ test-job:
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
 >>>>>>> 65e263e (Add .gitlab-ci.yml)
 >>>>>>> 858cf21 (Add .gitlab-ci.yml)
+=======
+  only:
+    - main
+>>>>>>> 8014825 (Add .gitlab-ci.yml)
