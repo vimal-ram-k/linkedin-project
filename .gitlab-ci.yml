@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 image: node:22
 =======
 =======
@@ -32,6 +33,9 @@ stages:
 >>>>>>> 2a641a1 (Add .gitlab-ci.yml)
 image : node:22
 >>>>>>> b37803a (Add .gitlab-ci.yml image node version 22)
+=======
+image: node:22
+>>>>>>> d9420ce (Add feature caching in .gitlab-ci.yml)
 stages:
   - install
   - build
@@ -115,10 +119,12 @@ install-dependencies:
   image: node:22
   script:
     - npm install
-=======
-  - npm install
->>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 day
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -271,6 +277,9 @@ test:
 >>>>>>> 8e0480a (Add .gitlab-ci.yml)
 build:
 >>>>>>> 2a641a1 (Add .gitlab-ci.yml)
+=======
+build-job:
+>>>>>>> d9420ce (Add feature caching in .gitlab-ci.yml)
   stage: build
   image: node:22
   script:
@@ -331,6 +340,7 @@ test-job:
   stage: test
   image: node:22
   script:
+<<<<<<< HEAD
 <<<<<<< HEAD
     - npm run test
   cache:
@@ -517,11 +527,14 @@ test-job:
   stage: test
   image: node:22
   script:
+=======
+>>>>>>> d9420ce (Add feature caching in .gitlab-ci.yml)
     - npm run test
   cache:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
       - node_modules/
+<<<<<<< HEAD
 >>>>>>> f8d76df (Add feature caching in .gitlab-ci.yml)
 =======
 =======
@@ -546,3 +559,5 @@ test-job:
 >>>>>>> a392ea5 (Add .gitlab-ci.yml)
 =======
 >>>>>>> 2a641a1 (Add .gitlab-ci.yml)
+=======
+>>>>>>> d9420ce (Add feature caching in .gitlab-ci.yml)
