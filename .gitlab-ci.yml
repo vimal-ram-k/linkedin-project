@@ -97,6 +97,11 @@ test-job:
   stage: test
   image: node:22
   script:
+<<<<<<< HEAD
+=======
+    - echo "Running tests..."
+    - npm install
+>>>>>>> e3fe733 (Add .gitlab-ci.yml)
     - npm run test
 <<<<<<< HEAD
   cache:
