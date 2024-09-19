@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 image: node:22
 stages:
   - install
@@ -254,6 +255,10 @@ image: node:18 # Base image with Node.js installed
 
 stages:
   - install
+=======
+image : node:22
+stages:
+>>>>>>> 4c3a3df (Add .gitlab-ci.yml image node version 22)
   - test
   - deploy
 
@@ -262,6 +267,7 @@ variables:
 
 before_script:
   - echo "Installing dependencies..."
+<<<<<<< HEAD
   - npm ci
 
 install:
@@ -269,20 +275,35 @@ install:
   script:
     - echo "Installing dependencies..."
     - npm install
+=======
+  - npm install
+>>>>>>> 4c3a3df (Add .gitlab-ci.yml image node version 22)
 
 test:
   stage: test
   script:
     - echo "Running tests..."
     - npm run test
+<<<<<<< HEAD
+=======
+  only:
+    - main
+
+>>>>>>> 4c3a3df (Add .gitlab-ci.yml image node version 22)
 
 deploy:
   stage: deploy
   script:
     - echo "Deploying the project..."
+<<<<<<< HEAD
     # Add your deployment commands here
 >>>>>>> 401f503 (Add .gitlab-ci.yml)
 >>>>>>> b3529be (Add .gitlab-ci.yml)
 >>>>>>> b86e844 (Add .gitlab-ci.yml)
 =======
 >>>>>>> 9b9e95f (Add .gitlab-ci.yml)
+=======
+    # Add your deploy commands here, e.g., AWS, Docker
+  only:
+    - main
+>>>>>>> 4c3a3df (Add .gitlab-ci.yml image node version 22)
