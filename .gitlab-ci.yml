@@ -1,7 +1,19 @@
+<<<<<<< HEAD
 image : node:22
 stages:
   - install
   - build
+=======
+<<<<<<< HEAD
+image: node:18 # Base image with Node.js installed
+
+stages:
+  - install
+=======
+stages:
+  - build
+>>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+>>>>>>> 65e263e (Add .gitlab-ci.yml)
   - test
 
 # Caching node_modules to avoid re-installing dependencies in every stage
@@ -10,15 +22,30 @@ cache:
   paths:
     - node_modules/
 
+<<<<<<< HEAD
 install-dependencies:
+=======
+before_script:
+  - echo "Installing dependencies..."
+<<<<<<< HEAD
+  - npm ci
+
+install:
+>>>>>>> 65e263e (Add .gitlab-ci.yml)
   stage: install
   image: node:22
   script:
     - npm install
+<<<<<<< HEAD
   artifacts:
     paths:
       - node_modules/
     expire_in: 1 day
+=======
+=======
+  - npm install
+>>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+>>>>>>> 65e263e (Add .gitlab-ci.yml)
 
 build-job:
   stage: build
@@ -35,7 +62,35 @@ test-job:
   image: node:22
   script:
     - npm run test
+<<<<<<< HEAD
   cache:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
       - node_modules/
+=======
+<<<<<<< HEAD
+=======
+  only:
+    - main
+
+build:
+  stage: build
+  script:
+    - echo "Building the project..."
+    - npm run build
+  only:
+    - main
+>>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying the project..."
+<<<<<<< HEAD
+    # Add your deployment commands here
+=======
+    # Add your deploy commands here, e.g., AWS, Docker
+  only:
+    - main
+>>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+>>>>>>> 65e263e (Add .gitlab-ci.yml)
