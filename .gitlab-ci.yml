@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 image: node:22
 stages:
   - install
@@ -261,13 +262,19 @@ image : node:22
 stages:
 >>>>>>> 4c3a3df (Add .gitlab-ci.yml image node version 22)
 =======
-image : node:22
-stages:
 =======
+
+>>>>>>> d86ace1 (Add .gitlab-ci.yml)
+image : node:22
+
 stages:
   - build
+<<<<<<< HEAD
 >>>>>>> 8397db2 (Add .gitlab-ci.yml)
 >>>>>>> 0d2e058 (Add .gitlab-ci.yml)
+=======
+
+>>>>>>> d86ace1 (Add .gitlab-ci.yml)
   - test
   - deploy
 
@@ -299,6 +306,7 @@ test:
     - main
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 4c3a3df (Add .gitlab-ci.yml image node version 22)
 =======
 <<<<<<< HEAD
@@ -313,6 +321,8 @@ build:
 >>>>>>> 8397db2 (Add .gitlab-ci.yml)
 >>>>>>> 0d2e058 (Add .gitlab-ci.yml)
 
+=======
+>>>>>>> d86ace1 (Add .gitlab-ci.yml)
 deploy:
   stage: deploy
   script:
