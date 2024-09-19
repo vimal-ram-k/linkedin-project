@@ -25,28 +25,44 @@ install-dependencies:
       - node_modules/
     expire_in: 1 day
 
+<<<<<<< HEAD
 build-job:
+=======
+test:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - npm install
+    - npm run test
+<<<<<<< HEAD
+=======
+  only:
+    - main
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8e0480a (Add .gitlab-ci.yml)
+build:
+>>>>>>> e3fe733 (Add .gitlab-ci.yml)
   stage: build
   image: node:22
   script:
     - npm run build
-  cache:
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - node_modules/
-
-test-job:
-  stage: test
-  image: node:22
-  script:
-    - npm run test
-
+  only:
+    - main
+<<<<<<< HEAD
+>>>>>>> 4ee7531 (Add .gitlab-ci.yml)
 =======
 >>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
 =======
 >>>>>>> 8397db2 (Add .gitlab-ci.yml)
 >>>>>>> 8e0480a (Add .gitlab-ci.yml)
 
+=======
+>>>>>>> 0d9bf5a (Add .gitlab-ci.yml)
 deploy:
   stage: deploy
   script:
