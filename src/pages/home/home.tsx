@@ -12,6 +12,7 @@ import { JoinNow } from '../../components/buttons/joinnowbtn';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
 =======
 >>>>>>> 7898957 (Add .gitlab-ci.yml)
@@ -24,7 +25,10 @@ import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVik
 >>>>>>> 947122d (Fixed home merge issue)
 =======
 >>>>>>> 876aa17 (Add .gitlab-ci.yml)
+=======
+>>>>>>> 3a7cba4 (Fixed home merge issue)
 import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -40,6 +44,8 @@ import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVik
 =======
 =======
 >>>>>>> 57b121b (Add .gitlab-ci.yml)
+=======
+>>>>>>> 0a0aae1 (Fixed home merge issue)
 import { Footer } from '../../components/footer/footer';
 <<<<<<< HEAD
 >>>>>>> 62136b6 (Add footer with responsive laypout)
@@ -50,10 +56,18 @@ import { Footer } from '../../components/footer/footer';
 =======
 >>>>>>> 2a641a1 (Add .gitlab-ci.yml)
 =======
+=======
+>>>>>>> 947122d (Fixed home merge issue)
 
+<<<<<<< HEAD
 >>>>>>> 7898957 (Add .gitlab-ci.yml)
 >>>>>>> 6ff3dba (Add .gitlab-ci.yml)
+<<<<<<< HEAD
 >>>>>>> fd9be2b (Add .gitlab-ci.yml)
+=======
+=======
+>>>>>>> 0a0aae1 (Fixed home merge issue)
+>>>>>>> 3a7cba4 (Fixed home merge issue)
 export const Home = () => {
   return (
     <div className="">
