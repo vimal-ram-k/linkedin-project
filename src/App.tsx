@@ -23,7 +23,10 @@ function App() {
   }, []);
 
   return (
-    <div className="main m-auto bg-white ">
+    <div
+      className="main m-auto bg-white "
+      aria-labelledby="main"
+    >
       <NavigationBar />
       <div className="row d-flex justify-content-center gap-sm-3">
         <ProfileCard />
