@@ -86,6 +86,8 @@ install:
 
 >>>>>>> 2e5b7fd (Add .gitlab-ci.yml)
 =======
+=======
+>>>>>>> a177d46 (Add .gitlab-ci.yml)
 image: node:22
 >>>>>>> d9420ce (Add feature caching in .gitlab-ci.yml)
 stages:
@@ -356,6 +358,7 @@ test-job:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9ca94b1 (Add feature caching in .gitlab-ci.yml)
 <<<<<<< HEAD
 >>>>>>> 07b5e32 (Add feature caching in .gitlab-ci.yml)
@@ -455,3 +458,17 @@ deploy:
 <<<<<<< HEAD
 >>>>>>> 65e263e (Add .gitlab-ci.yml)
 >>>>>>> 858cf21 (Add .gitlab-ci.yml)
+=======
+  only:
+    - main
+>>>>>>> 8014825 (Add .gitlab-ci.yml)
+=======
+      - node_modules/
+>>>>>>> a392ea5 (Add .gitlab-ci.yml)
+=======
+>>>>>>> 2a641a1 (Add .gitlab-ci.yml)
+=======
+>>>>>>> d9420ce (Add feature caching in .gitlab-ci.yml)
+=======
+>>>>>>> 9ca94b1 (Add feature caching in .gitlab-ci.yml)
+>>>>>>> 2e5b7fd (Add .gitlab-ci.yml)
