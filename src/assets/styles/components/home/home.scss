@@ -4,3 +4,19 @@
   font-weight: bold;
   color: #0965c2;
 }
+
+@media screen and (min-width: 960px) {
+  .header-banner {
+    font-size: 2rem;
+  }
+}
+
+.home-banner {
+  width: 80dvw;
+}
+
+@media screen and (min-width: 960px) {
+  .home-banner {
+    width: 20dvw;
+  }
+}
