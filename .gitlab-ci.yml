@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 image: node:22
 stages:
   - install
@@ -16,6 +17,8 @@ stages:
 >>>>>>> 8ab746c (Add .gitlab-ci.yml)
 =======
 >>>>>>> 7898957 (Add .gitlab-ci.yml)
+=======
+>>>>>>> 07b5e32 (Add feature caching in .gitlab-ci.yml)
 <<<<<<< HEAD
 image: node:18 # Base image with Node.js installed
 
@@ -94,14 +97,19 @@ build-job:
 =======
 image: node:22
 
+=======
+image : node:22
+>>>>>>> 9ca94b1 (Add feature caching in .gitlab-ci.yml)
 stages:
-  - test
+  - install
   - build
-  - deploy
+  - test
 
+<<<<<<< HEAD
 >>>>>>> ef103fc (Add .gitlab-ci.yml)
 test:
   stage: test
+<<<<<<< HEAD
 >>>>>>> 7898957 (Add .gitlab-ci.yml)
   script:
     - npm run build
@@ -124,6 +132,22 @@ test-job:
 =======
     - npm install
 >>>>>>> 5e7a653 (Fixed install issue)
+=======
+=======
+# Caching node_modules to avoid re-installing dependencies in every stage
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+install-dependencies:
+  stage: install
+  image: node:22
+>>>>>>> 9ca94b1 (Add feature caching in .gitlab-ci.yml)
+  script:
+    - npm install
+<<<<<<< HEAD
+>>>>>>> 07b5e32 (Add feature caching in .gitlab-ci.yml)
     - npm run test
 <<<<<<< HEAD
   cache:
@@ -140,11 +164,19 @@ test-job:
   only:
     - main
 =======
+=======
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 day
+>>>>>>> 9ca94b1 (Add feature caching in .gitlab-ci.yml)
 
-build:
+build-job:
   stage: build
+  image: node:22
   script:
     - npm run build
+<<<<<<< HEAD
 >>>>>>> ef103fc (Add .gitlab-ci.yml)
 
 <<<<<<< HEAD
@@ -187,4 +219,23 @@ deploy:
 =======
 =======
 >>>>>>> ef103fc (Add .gitlab-ci.yml)
+<<<<<<< HEAD
 >>>>>>> 7898957 (Add .gitlab-ci.yml)
+=======
+=======
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+
+test-job:
+  stage: test
+  image: node:22
+  script:
+    - npm run test
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+>>>>>>> 9ca94b1 (Add feature caching in .gitlab-ci.yml)
+>>>>>>> 07b5e32 (Add feature caching in .gitlab-ci.yml)
