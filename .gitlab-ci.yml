@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -56,6 +57,8 @@ install:
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
 
 =======
+=======
+>>>>>>> a177d46 (Add .gitlab-ci.yml)
 image: node:22
 >>>>>>> 2e5b7fd (Add .gitlab-ci.yml)
 stages:
@@ -129,5 +132,8 @@ test-job:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
       - node_modules/
+<<<<<<< HEAD
 >>>>>>> 9ca94b1 (Add feature caching in .gitlab-ci.yml)
 >>>>>>> 2e5b7fd (Add .gitlab-ci.yml)
+=======
+>>>>>>> a177d46 (Add .gitlab-ci.yml)
