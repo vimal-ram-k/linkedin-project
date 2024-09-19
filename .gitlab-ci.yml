@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-image: node:18 # Base image with Node.js installed
-
-stages:
-  - install
-=======
-stages:
-  - build
->>>>>>> 4ee7531 (Add .gitlab-ci.yml)
-=======
-image : node:22
+image: node:22
 stages:
   - install
   - build
@@ -28,40 +15,12 @@ install-dependencies:
   image: node:22
   script:
     - npm install
-=======
-  - npm install
->>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 day
 
-<<<<<<< HEAD
-=======
-=======
-image: node:22
-
-stages:
-  - test
-  - build
-  - deploy
-
->>>>>>> ef103fc (Add .gitlab-ci.yml)
->>>>>>> 4370c60 (add build .gitlab-ci.yml)
-test:
-  stage: test
-  script:
-    - echo "Running tests..."
-    - npm install
-    - npm run test
-<<<<<<< HEAD
-=======
-  only:
-    - main
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 8e0480a (Add .gitlab-ci.yml)
-build:
+build-job:
   stage: build
   image: node:22
   script:
@@ -75,11 +34,8 @@ test-job:
   stage: test
   image: node:22
   script:
-    - echo "Deploying the project..."
-<<<<<<< HEAD
-    # Add your deployment commands here
-=======
-    # Add your deploy commands here, e.g., AWS, Docker
-  only:
-    - main
->>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+    - npm run test
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
