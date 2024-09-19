@@ -7,7 +7,7 @@ import { JoinNow } from '../buttons/joinnowbtn';
 import { login } from '../../features/auth/authSlice';
 import { AppDispatch } from '../../store';
 import { useDispatch } from 'react-redux';
-
+import { createAsync } from '../../features/auth/authSlice';
 export const SigninForm = () => {
   const appDispatch: AppDispatch = useDispatch();
   return (
@@ -52,7 +52,7 @@ export const SigninForm = () => {
         </button>
         <button
           className=" text-white rounded-5 border border-0 my-3"
-          onClick={() => appDispatch(login())}
+          onClick={() => appDispatch(createAsync())}
           style={{ backgroundColor: '#0965c2', width: '80dvw', height: '50px' }}
         >
           <Link
