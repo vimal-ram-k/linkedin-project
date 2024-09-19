@@ -1,6 +1,5 @@
 image: node:22
 stages:
-  - install
   - build
   - test
 
@@ -20,19 +19,16 @@ install-dependencies:
       - node_modules/
     expire_in: 1 day
 
-build-job:
+build:
   stage: build
-  image: node:22
   script:
+    - echo "Building the project..."
     - npm run build
-  cache:
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - node_modules/
+  only:
+    - main
 
-test-job:
-  stage: test
-  image: node:22
+deploy:
+  stage: deploy
   script:
     - npm run test
   cache:
