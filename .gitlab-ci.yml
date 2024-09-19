@@ -1,4 +1,14 @@
+<<<<<<< HEAD
 image : node:22
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+image: node:18 # Base image with Node.js installed
+
+>>>>>>> 7898957 (Add .gitlab-ci.yml)
 stages:
   - install
   - build
@@ -26,18 +36,36 @@ install-dependencies:
     expire_in: 1 day
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 build-job:
 =======
+=======
+=======
+image: node:22
+
+stages:
+  - test
+  - deploy
+
+>>>>>>> ef103fc (Add .gitlab-ci.yml)
+>>>>>>> 7898957 (Add .gitlab-ci.yml)
 test:
   stage: test
   script:
     - echo "Running tests..."
-    - npm install
     - npm run test
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   only:
     - main
+=======
+
+build:
+  stage: build
+  script:
+    - npm run build
+>>>>>>> ef103fc (Add .gitlab-ci.yml)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -68,3 +96,14 @@ deploy:
   script:
     - echo "Deploying the project..."
     # Add your deployment commands here
+<<<<<<< HEAD
+=======
+=======
+    # Add your deploy commands here, e.g., AWS, Docker
+<<<<<<< HEAD
+  only:
+    - main
+>>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+=======
+>>>>>>> ef103fc (Add .gitlab-ci.yml)
+>>>>>>> 7898957 (Add .gitlab-ci.yml)
