@@ -41,6 +41,12 @@ test-job:
   script:
     - npm run test
 
+=======
+>>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
+=======
+>>>>>>> 8397db2 (Add .gitlab-ci.yml)
+>>>>>>> 8e0480a (Add .gitlab-ci.yml)
+
 deploy:
   stage: deploy
   script:
