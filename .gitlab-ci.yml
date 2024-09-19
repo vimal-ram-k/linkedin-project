@@ -301,6 +301,7 @@ image: node:22
 
 stages:
   - test
+  - build
   - deploy
 
 >>>>>>> fe8149c (Add .gitlab-ci.yml)
