@@ -67,7 +67,6 @@ stages:
 image : node:22
 stages:
 >>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
->>>>>>> dcfbd1b (Add .gitlab-ci.yml image node version 22)
   - test
   - deploy
 
@@ -98,6 +97,10 @@ test:
     - main
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8e0480a (Add .gitlab-ci.yml)
 build:
   stage: build
   script:
@@ -105,10 +108,10 @@ build:
     - npm run build
   only:
     - main
+<<<<<<< HEAD
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
 =======
 >>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
->>>>>>> dcfbd1b (Add .gitlab-ci.yml image node version 22)
 
 deploy:
   stage: deploy
