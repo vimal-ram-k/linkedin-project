@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 image: node:22
 =======
 <<<<<<< HEAD
@@ -88,8 +89,9 @@ install:
 =======
 =======
 >>>>>>> a177d46 (Add .gitlab-ci.yml)
+=======
+>>>>>>> 10bba30 (Add footer with responsive layout)
 image: node:22
->>>>>>> d9420ce (Add feature caching in .gitlab-ci.yml)
 stages:
   - install
   - build
@@ -150,6 +152,7 @@ test-job:
   stage: test
   image: node:22
   script:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     - npm run test
@@ -350,11 +353,14 @@ test-job:
   script:
 =======
 >>>>>>> d9420ce (Add feature caching in .gitlab-ci.yml)
+=======
+>>>>>>> 10bba30 (Add footer with responsive layout)
     - npm run test
   cache:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
       - node_modules/
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -472,3 +478,5 @@ deploy:
 =======
 >>>>>>> 9ca94b1 (Add feature caching in .gitlab-ci.yml)
 >>>>>>> 2e5b7fd (Add .gitlab-ci.yml)
+=======
+>>>>>>> 10bba30 (Add footer with responsive layout)
