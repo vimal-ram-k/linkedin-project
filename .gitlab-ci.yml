@@ -1,0 +1,31 @@
+image: node:18 # Base image with Node.js installed
+
+stages:
+  - install
+  - test
+  - deploy
+
+variables:
+  NODE_ENV: production
+
+before_script:
+  - echo "Installing dependencies..."
+  - npm ci
+
+install:
+  stage: install
+  script:
+    - echo "Installing dependencies..."
+    - npm install
+
+test:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - npm run test
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying the project..."
+    # Add your deployment commands here
