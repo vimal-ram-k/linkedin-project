@@ -12,7 +12,7 @@ export const Home = () => {
   return (
     <div>
       <HomeNavigationBar />
-      <HomeCatagory />
+      <HomeCatagory display="d-block d-lg-none" />
 
       <div
         className=" container d-flex flex-column row-gap-2"

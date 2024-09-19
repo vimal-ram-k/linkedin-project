@@ -1,4 +1,3 @@
-import '../../../assets/styles/components/searchbar/searchbar.css';
 export const SearchBar = () => {
   return (
     <div>
