@@ -4,22 +4,30 @@ import { HomeCatagory } from '../category/homecatogary';
 
 export const HomeNavigationBar = () => {
   return (
-    <header className=" container py-2 d-flex justify-content-lg-around justify-content-between align-items-center">
+    <header
+      className=" container py-2 d-flex justify-content-lg-around justify-content-between align-items-center"
+      style={{ height: '80px' }}
+    >
       <div>
-        <img
-          src="/linkedin-svgrepo-com.svg"
-          className="logo d-lg-none"
-          aria-describedby="logo"
-          alt="Linkedin Logo"
-          style={{ width: '35px' }}
-        />
-        <img
-          src="/linkedin-logo-3801732491.png"
-          className="logo d-none d-lg-block"
-          aria-describedby="logo"
-          alt="Linkedin Logo"
-          style={{ width: '130px', height: '30px' }}
-        />
+        <Link
+          className=""
+          to={'/'}
+        >
+          <img
+            src="/linkedin-svgrepo-com.svg"
+            className="logo d-lg-none"
+            aria-describedby="logo"
+            alt="Linkedin Logo"
+            style={{ width: '35px' }}
+          />
+          <img
+            src="/linkedin-logo-3801732491.png"
+            className="logo d-none d-lg-block"
+            aria-describedby="logo"
+            alt="Linkedin Logo"
+            style={{ width: '110px', height: '30px' }}
+          />
+        </Link>
       </div>
       <div className=" d-flex column-gap-3 align-items-center">
         <HomeCatagory display="d-none d-lg-inline" />
@@ -33,7 +41,7 @@ export const HomeNavigationBar = () => {
             data-testid="signin-btn"
           >
             <button
-              className=" btn rounded-5 fs-6"
+              className="rounded-5 fs-6 signin-btn"
               style={{
                 width: '100px',
                 height: '50px',
