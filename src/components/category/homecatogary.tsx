@@ -11,7 +11,7 @@ export const HomeCatagory = (props: HomeCatagoryType) => {
       <ul className=" d-flex justify-content-around align-items-center column-gap-md-4 column-gap-lg-5 p-0 py-2 py-lg-0 m-lg-0">
         <li className=" list-unstyled">
           <Link
-            to="/"
+            to="/guest/articles"
             className=" link "
           >
             <i className=" bi bi-newspaper"></i>
@@ -21,7 +21,7 @@ export const HomeCatagory = (props: HomeCatagoryType) => {
 
         <li className=" list-unstyled">
           <Link
-            to="/"
+            to="/guest/people"
             className=" link "
           >
             <i className=" bi bi-people-fill"></i>
@@ -31,7 +31,7 @@ export const HomeCatagory = (props: HomeCatagoryType) => {
 
         <li className=" list-unstyled">
           <Link
-            to="/"
+            to="/guest/learning"
             className=" link "
           >
             <i className=" bi bi-play-btn"></i>
@@ -41,7 +41,7 @@ export const HomeCatagory = (props: HomeCatagoryType) => {
 
         <li className=" list-unstyled">
           <Link
-            to="/"
+            to="/guest/jobs"
             className=" link "
           >
             <i className=" bi bi-bag-fill"></i>
@@ -51,7 +51,7 @@ export const HomeCatagory = (props: HomeCatagoryType) => {
 
         <li className=" list-unstyled">
           <Link
-            to="/"
+            to="/guest/games"
             className=" link "
           >
             <i className=" bi bi-puzzle-fill"></i>

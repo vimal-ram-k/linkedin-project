@@ -1,0 +1,8 @@
+@use '../../base/variables';
+
+.signin-btn {
+  background-color: transparent;
+}
+.signin-btn:hover {
+  background-color: variables.$hover--primary-blue;
+}
