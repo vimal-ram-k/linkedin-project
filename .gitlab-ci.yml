@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 image: node:18 # Base image with Node.js installed
 
 stages:
@@ -7,6 +8,10 @@ stages:
 stages:
   - build
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+=======
+image : node:22
+stages:
+>>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
   - test
   - deploy
 
@@ -37,6 +42,7 @@ test:
   only:
     - main
 
+<<<<<<< HEAD
 build:
   stage: build
   script:
@@ -45,6 +51,8 @@ build:
   only:
     - main
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+=======
+>>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
 
 deploy:
   stage: deploy
