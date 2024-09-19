@@ -7,7 +7,7 @@ import { TermsAndConditions } from '../../components/termsandcondition/termsandc
 import { GoogleSignButton } from '../../components/buttons/googlesignbtn';
 import { AppleSignInBtn } from '../../components/buttons/applesigninbtn';
 import { JoinNow } from '../../components/buttons/joinnowbtn';
-
+import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
 export const Home = () => {
   return (
     <div>
@@ -15,22 +15,30 @@ export const Home = () => {
       <HomeCatagory display="d-block d-lg-none" />
 
       <div
-        className=" container d-flex flex-column row-gap-2"
-        style={{ height: '60dvh' }}
+        className=" container d-flex flex-column flex-lg-row row-gap-2 align-items-center justify-content-around column-gap-3"
+        style={{ height: '75dvh' }}
       >
-        <h1
-          className=" mt-3 p-0 text-center"
-          style={{ color: '#595c5e', fontSize: '1.8rem' }}
+        <div
+          className="home-banner"
         >
-          Welcome to your professional community
-        </h1>
+          <h1
+            className="  p-0 text-center text-lg-start header-banner"
+            style={{ color: '#595c5e' }}
+          >
+            Welcome to your professional community
+          </h1>
 
-        <GoogleSignButton />
-        <AppleSignInBtn />
+          <GoogleSignButton />
+          <AppleSignInBtn />
 
-        <TermsAndConditions />
+          <TermsAndConditions />
 
-        <JoinNow />
+          <JoinNow />
+        </div>
+        <img
+          src={mainbanner}
+          alt=""
+        />
       </div>
 
       <div
