@@ -1,7 +1,48 @@
 image: node:22
 stages:
   - build
+  - test
 
+# Caching node_modules to avoid re-installing dependencies in every stage
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+install-dependencies:
+  stage: install
+  image: node:22
+  script:
+    - npm install
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 day
+
+build-job:
+  stage: build
+  image: node:22
+  script:
+    - npm run build
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+
+test-job:
+  stage: test
+  image: node:22
+  script:
+    - npm run test
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+=======
+image: node:18 # Base image with Node.js installed
+
+stages:
+  - install
   - test
   - deploy
 
@@ -10,7 +51,13 @@ variables:
 
 before_script:
   - echo "Installing dependencies..."
-  - npm install
+  - npm ci
+
+install:
+  stage: install
+  script:
+    - echo "Installing dependencies..."
+    - npm install
 
 test:
   stage: test
@@ -18,7 +65,10 @@ test:
     - echo "Running tests..."
     - npm install
     - npm run test
-  cache:
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - node_modules/
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying the project..."
+    # Add your deployment commands here
+>>>>>>> 401f503 (Add .gitlab-ci.yml)
