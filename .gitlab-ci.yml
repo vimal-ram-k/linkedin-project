@@ -22,6 +22,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 image: node:18 # Base image with Node.js installed
 
@@ -130,10 +131,13 @@ install:
 >>>>>>> a177d46 (Add .gitlab-ci.yml)
 =======
 >>>>>>> 10bba30 (Add footer with responsive layout)
+=======
+>>>>>>> efbb13e (Add .gitlab-ci.yml)
 image: node:22
 stages:
   - install
   - build
+<<<<<<< HEAD
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
 <<<<<<< HEAD
 >>>>>>> 65e263e (Add .gitlab-ci.yml)
@@ -194,6 +198,8 @@ image: node:22
 >>>>>>> 4296c1e (Add .gitlab-ci.yml image node version 22)
 =======
 >>>>>>> 3f03985 (Add .gitlab-ci.yml)
+=======
+>>>>>>> efbb13e (Add .gitlab-ci.yml)
   - test
 
 # Caching node_modules to avoid re-installing dependencies in every stage
@@ -207,6 +213,7 @@ install-dependencies:
   image: node:22
   script:
     - npm install
+<<<<<<< HEAD
 =======
   - npm install
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
@@ -509,18 +516,19 @@ build:
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> efbb13e (Add .gitlab-ci.yml)
   artifacts:
     paths:
       - node_modules/
     expire_in: 1 day
->>>>>>> 9ca94b1 (Add feature caching in .gitlab-ci.yml)
 
-<<<<<<< HEAD
 build-job:
   stage: build
   image: node:22
   script:
     - npm run build
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> ef103fc (Add .gitlab-ci.yml)
 
@@ -1007,6 +1015,8 @@ test-job:
 >>>>>>> 7898957 (Add .gitlab-ci.yml)
 =======
 =======
+=======
+>>>>>>> efbb13e (Add .gitlab-ci.yml)
   cache:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
@@ -1016,15 +1026,12 @@ test-job:
   stage: test
   image: node:22
   script:
-=======
->>>>>>> d9420ce (Add feature caching in .gitlab-ci.yml)
-=======
->>>>>>> 10bba30 (Add footer with responsive layout)
     - npm run test
   cache:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
       - node_modules/
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1159,3 +1166,5 @@ deploy:
 =======
 >>>>>>> 10bba30 (Add footer with responsive layout)
 >>>>>>> 59204ac (Add footer with responsive layout)
+=======
+>>>>>>> efbb13e (Add .gitlab-ci.yml)
