@@ -27,6 +27,7 @@ stages:
 stages:
   - build
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
 =======
 image : node:22
@@ -75,10 +76,50 @@ image: node:22
 =======
 >>>>>>> 8014825 (Add .gitlab-ci.yml)
 =======
+  - test
+
+# Caching node_modules to avoid re-installing dependencies in every stage
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+install-dependencies:
+  stage: install
+  image: node:22
+  script:
+    - npm install
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 day
+
+build-job:
+  stage: build
+  image: node:22
+  script:
+    - npm run build
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+
+test-job:
+  stage: test
+  image: node:22
+  script:
+    - npm run test
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+>>>>>>> e8f5b7e (Add .gitlab-ci.yml)
+=======
 image: node:18 # Base image with Node.js installed
 
 stages:
   - install
+<<<<<<< HEAD
 =======
 stages:
   - build
@@ -162,6 +203,8 @@ stages:
 =======
 
 >>>>>>> 876aa17 (Add .gitlab-ci.yml)
+=======
+>>>>>>> e8f5b7e (Add .gitlab-ci.yml)
   - test
   - deploy
 
@@ -170,7 +213,13 @@ variables:
 
 before_script:
   - echo "Installing dependencies..."
-  - npm install
+  - npm ci
+
+install:
+  stage: install
+  script:
+    - echo "Installing dependencies..."
+    - npm install
 
 test:
   stage: test
@@ -410,6 +459,7 @@ test-job:
 <<<<<<< HEAD
 <<<<<<< HEAD
     - npm run test
+<<<<<<< HEAD
   cache:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
@@ -563,10 +613,14 @@ build:
 >>>>>>> 8014825 (Add .gitlab-ci.yml)
 
 >>>>>>> 858cf21 (Add .gitlab-ci.yml)
+=======
+
+>>>>>>> e8f5b7e (Add .gitlab-ci.yml)
 deploy:
   stage: deploy
   script:
     - echo "Deploying the project..."
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     # Add your deployment commands here
@@ -647,3 +701,7 @@ test-job:
     paths:
       - node_modules/
 >>>>>>> 6090065 (Add .gitlab-ci.yml)
+=======
+    # Add your deployment commands here
+>>>>>>> 401f503 (Add .gitlab-ci.yml)
+>>>>>>> e8f5b7e (Add .gitlab-ci.yml)
