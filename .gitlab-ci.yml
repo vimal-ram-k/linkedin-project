@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 image: node:22
 =======
 <<<<<<< HEAD
@@ -28,19 +29,9 @@ stages:
 >>>>>>> 858cf21 (Add .gitlab-ci.yml)
 =======
 >>>>>>> b37803a (Add .gitlab-ci.yml image node version 22)
+=======
+>>>>>>> 8014825 (Add .gitlab-ci.yml)
 image : node:22
-stages:
-  - install
-  - build
-=======
-=======
->>>>>>> 0b8fcaf (Add .gitlab-ci.yml image node version 22)
-<<<<<<< HEAD
-image: node:18 # Base image with Node.js installed
-
-stages:
-  - install
-=======
 stages:
   - build
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
@@ -52,7 +43,6 @@ image : node:22
 stages:
 >>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
 >>>>>>> 0b8fcaf (Add .gitlab-ci.yml image node version 22)
->>>>>>> 15db498 (Add .gitlab-ci.yml image node version 22)
   - test
 
 # Caching node_modules to avoid re-installing dependencies in every stage
@@ -61,30 +51,17 @@ cache:
   paths:
     - node_modules/
 
-<<<<<<< HEAD
 install-dependencies:
-=======
 before_script:
   - echo "Installing dependencies..."
-<<<<<<< HEAD
   - npm ci
 
 install:
->>>>>>> 65e263e (Add .gitlab-ci.yml)
-  stage: install
-  image: node:22
-  script:
-    - npm install
-<<<<<<< HEAD
   artifacts:
     paths:
       - node_modules/
     expire_in: 1 day
-=======
-=======
-  - npm install
->>>>>>> 4ee7531 (Add .gitlab-ci.yml)
->>>>>>> 65e263e (Add .gitlab-ci.yml)
+
 
 build-job:
   stage: build
@@ -101,11 +78,12 @@ test-job:
   image: node:22
   script:
     - npm run test
-<<<<<<< HEAD
+
   cache:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
       - node_modules/
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -235,6 +213,12 @@ build-job:
 =======
 <<<<<<< HEAD
 >>>>>>> b37803a (Add .gitlab-ci.yml image node version 22)
+=======
+    only:
+      - main
+
+
+>>>>>>> 8014825 (Add .gitlab-ci.yml)
 build:
   stage: build
   script:
@@ -242,6 +226,7 @@ build:
     - npm run build
   only:
     - main
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
@@ -352,11 +337,15 @@ build:
 >>>>>>> 4c3a3df (Add .gitlab-ci.yml image node version 22)
 =======
 >>>>>>> b37803a (Add .gitlab-ci.yml image node version 22)
+=======
+
+>>>>>>> 8014825 (Add .gitlab-ci.yml)
 
 deploy:
   stage: deploy
   script:
     - echo "Deploying the project..."
+<<<<<<< HEAD
 <<<<<<< HEAD
     # Add your deployment commands here
 >>>>>>> 401f503 (Add .gitlab-ci.yml)
@@ -373,4 +362,13 @@ deploy:
   only:
     - main
 >>>>>>> 4c3a3df (Add .gitlab-ci.yml image node version 22)
->>>>>>> 499e212 (Add .gitlab-ci.yml image node version 22)
+=======
+>>>>>>> fe8149c (Add .gitlab-ci.yml)
+=======
+=======
+    # Add your deploy commands here, e.g., AWS, Docker
+  only:
+    - main
+>>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+>>>>>>> 65e263e (Add .gitlab-ci.yml)
+>>>>>>> 858cf21 (Add .gitlab-ci.yml)
