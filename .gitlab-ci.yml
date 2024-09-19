@@ -21,6 +21,7 @@ image: node:22
 image : node:22
 >>>>>>> b37803a (Add .gitlab-ci.yml image node version 22)
 stages:
+  - install
   - build
 <<<<<<< HEAD
 =======
@@ -98,16 +99,16 @@ cache:
     - node_modules/
 
 install-dependencies:
-before_script:
-  - echo "Installing dependencies..."
-  - npm ci
-
-install:
+  stage: install
+  image: node:22
+  script:
+    - npm install
   artifacts:
     paths:
       - node_modules/
     expire_in: 1 day
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 build-job:
@@ -222,6 +223,8 @@ install:
 >>>>>>> 65e263e (Add .gitlab-ci.yml)
 >>>>>>> 858cf21 (Add .gitlab-ci.yml)
 
+=======
+>>>>>>> a392ea5 (Add .gitlab-ci.yml)
 build-job:
   stage: build
   image: node:22
@@ -284,10 +287,10 @@ test-job:
   image: node:22
   script:
     - npm run test
-
   cache:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
+<<<<<<< HEAD
       - node_modules/
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -486,3 +489,6 @@ test-job:
   only:
     - main
 >>>>>>> 8014825 (Add .gitlab-ci.yml)
+=======
+      - node_modules/
+>>>>>>> a392ea5 (Add .gitlab-ci.yml)
