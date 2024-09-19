@@ -7,7 +7,7 @@ import { SubcriptionCard } from '../subcriptioncard/subcriptioncard';
 import { ProfileViwerCard } from '../subcriptioncard/profileviwercard';
 import { ExtraOptionsCard } from '../subcriptioncard/extraoptionscard';
 import { RootState } from '../../store';
-import { UseSelector, useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 export const ProfileCard = () => {
   const [showMore, setShowMore] = useState<boolean>(false);

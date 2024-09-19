@@ -7,7 +7,6 @@ import { TermsAndConditions } from '../../components/termsandcondition/termsandc
 import { GoogleSignButton } from '../../components/buttons/googlesignbtn';
 import { AppleSignInBtn } from '../../components/buttons/applesigninbtn';
 import { JoinNow } from '../../components/buttons/joinnowbtn';
-import { Suspense, useState } from 'react';
 
 export const Home = () => {
   return (
