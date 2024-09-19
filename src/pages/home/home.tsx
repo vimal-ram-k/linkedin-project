@@ -25,14 +25,21 @@ import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVik
 =======
 >>>>>>> 876aa17 (Add .gitlab-ci.yml)
 import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
+<<<<<<< HEAD
 =======
 >>>>>>> ef103fc (Add .gitlab-ci.yml)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7898957 (Add .gitlab-ci.yml)
 >>>>>>> 2a641a1 (Add .gitlab-ci.yml)
 =======
 >>>>>>> 947122d (Fixed home merge issue)
+=======
+=======
+import { Footer } from '../../components/footer/footer';
+>>>>>>> 62136b6 (Add footer with responsive laypout)
+>>>>>>> 3990765 (Add footer with responsive laypout)
 export const Home = () => {
   return (
     <div className="">
@@ -393,7 +400,7 @@ export const Home = () => {
 
       <div
         className=" py-5 px-3 d-flex flex-column gap-3"
-        style={{ height: '50dvh' }}
+        style={{ height: '550px' }}
       >
         <img
           src={searchjob}
@@ -428,6 +435,7 @@ export const Home = () => {
           </select>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };
