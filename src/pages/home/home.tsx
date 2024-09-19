@@ -7,8 +7,8 @@ import { TermsAndConditions } from '../../components/termsandcondition/termsandc
 import { GoogleSignButton } from '../../components/buttons/googlesignbtn';
 import { AppleSignInBtn } from '../../components/buttons/applesigninbtn';
 import { JoinNow } from '../../components/buttons/joinnowbtn';
-<<<<<<< HEAD
 import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -17,6 +17,8 @@ import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVik
 =======
 =======
 >>>>>>> 57b121b (Add .gitlab-ci.yml)
+=======
+>>>>>>> 0a0aae1 (Fixed home merge issue)
 import { Footer } from '../../components/footer/footer';
 <<<<<<< HEAD
 >>>>>>> 62136b6 (Add footer with responsive laypout)
@@ -24,9 +26,14 @@ import { Footer } from '../../components/footer/footer';
 =======
 >>>>>>> 2a641a1 (Add .gitlab-ci.yml)
 =======
+=======
+>>>>>>> 947122d (Fixed home merge issue)
 
+<<<<<<< HEAD
 >>>>>>> 7898957 (Add .gitlab-ci.yml)
 >>>>>>> 6ff3dba (Add .gitlab-ci.yml)
+=======
+>>>>>>> 0a0aae1 (Fixed home merge issue)
 export const Home = () => {
   return (
     <div className="">
