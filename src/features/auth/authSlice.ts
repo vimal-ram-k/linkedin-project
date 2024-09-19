@@ -29,7 +29,7 @@ const authSlice = createSlice({
 });
 
 export const createAsync = createAsyncThunk('user/loginAsync', async () => {
-  const promise = new Promise((res, rej) => {
+  const promise = new Promise((res) => {
     setTimeout(() => {
       res('Vimal Ram K');
     }, 10000);
