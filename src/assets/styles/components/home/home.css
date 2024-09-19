@@ -9,8 +9,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> deb4dca (Fixed landing page main banner size and reponsive design issues)
+=======
+>>>>>>> f885d26 (Fixed css issue)
 .mainbanner-img {
   width: 350px;
   border-radius: 1%;
@@ -33,6 +36,7 @@
     border-radius: 1%;
   }
 }
+<<<<<<< HEAD
 =======
 >>>>>>> 431878d (Design responsive main banner in landing page)
 =======
@@ -81,6 +85,8 @@
     border-radius: 1%;
   }
 }
+=======
+>>>>>>> f885d26 (Fixed css issue)
 @media screen and (min-width: 960px) {
   .header-banner {
     font-size: 2rem;
@@ -91,6 +97,7 @@
   }
   .home-banner {
     width: 400px;
+<<<<<<< HEAD
 >>>>>>> a3d0840 (Fixed landing page main banner size and reponsive design issues)
 =======
 @media screen and (min-width: 960px) {
@@ -120,5 +127,7 @@
   .home-banner {
     width: 400px;
 >>>>>>> deb4dca (Fixed landing page main banner size and reponsive design issues)
+=======
+>>>>>>> f885d26 (Fixed css issue)
   }
 }/*# sourceMappingURL=home.css.map */

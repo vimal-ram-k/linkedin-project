@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 {"version":3,"sources":["home.scss","home.css"],"names":[],"mappings":"AAAA;EACE,qBAAA;EACA,eAAA;EACA,iBAAA;EACA,cAAA;ACCF;;ADEA;EACE,YAAA;EACA,iBAAA;ACCF;;ADEA;EACE,YAAA;ACCF;;ADEA;EACE;IACE,YAAA;ECCF;EDEA;IACE,iBAAA;ECAF;EDGA;IACE,kCAAA;IACA,iBAAA;ECDF;AACF;ADIA;EACE;IACE,eAAA;ECFF;EDKA;IACE,iCAAA;IACA,iBAAA;ECHF;EDMA;IACE,YAAA;ECJF;AACF","file":"home.css"}
 =======
 {"version":3,"sources":["home.scss","home.css"],"names":[],"mappings":"AAAA;EACE,qBAAA;EACA,eAAA;EACA,iBAAA;EACA,cAAA;ACCF;;ADEA;EACE;IACE,eAAA;ECCF;AACF;ADEA;EACE,YAAA;ACAF;;ADGA;EACE;IACE,YAAA;ECAF;AACF","file":"home.css"}
@@ -15,3 +16,6 @@
 =======
 {"version":3,"sources":["home.scss","home.css"],"names":[],"mappings":"AAAA;EACE,qBAAA;EACA,eAAA;EACA,iBAAA;EACA,cAAA;ACCF;;ADEA;EACE,YAAA;EACA,iBAAA;ACCF;;ADEA;EACE,YAAA;ACCF;;ADEA;EACE;IACE,YAAA;ECCF;EDEA;IACE,iBAAA;ECAF;EDGA;IACE,kCAAA;IACA,iBAAA;ECDF;AACF;ADIA;EACE;IACE,eAAA;ECFF;EDKA;IACE,iCAAA;IACA,iBAAA;ECHF;EDMA;IACE,YAAA;ECJF;AACF","file":"home.css"}
 >>>>>>> deb4dca (Fixed landing page main banner size and reponsive design issues)
+=======
+{"version":3,"sources":["home.scss","home.css"],"names":[],"mappings":"AAAA;EACE,qBAAA;EACA,eAAA;EACA,iBAAA;EACA,cAAA;ACCF;;ADEA;EACE,YAAA;EACA,iBAAA;ACCF;;ADEA;EACE,YAAA;ACCF;;ADEA;EACE;IACE,YAAA;ECCF;EDEA;IACE,iBAAA;ECAF;EDGA;IACE,kCAAA;IACA,iBAAA;ECDF;AACF;ADIA;EACE;IACE,eAAA;ECFF;EDKA;IACE,iCAAA;IACA,iBAAA;ECHF;EDMA;IACE,YAAA;ECJF;AACF","file":"home.css"}
+>>>>>>> f885d26 (Fixed css issue)

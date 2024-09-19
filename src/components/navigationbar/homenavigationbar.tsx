@@ -25,7 +25,11 @@ export const HomeNavigationBar = () => {
             className="logo d-none d-lg-block"
             aria-describedby="logo"
 <<<<<<< HEAD
+<<<<<<< HEAD
             alt="Linkedin Logo2"
+=======
+            alt="Linkedin Logo"
+>>>>>>> f885d26 (Fixed css issue)
             style={{ width: '110px', height: '30px' }}
           />
         </Link>
