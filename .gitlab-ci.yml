@@ -18,12 +18,22 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 image: node:18 # Base image with Node.js installed
 
 stages:
   - install
 =======
+=======
+image: node:22
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+image : node:22
+>>>>>>> dcfbd1b (Add .gitlab-ci.yml image node version 22)
+>>>>>>> 4c8093e (Add .gitlab-ci.yml image node version 22)
 stages:
   - build
 <<<<<<< HEAD
@@ -115,16 +125,28 @@ test-job:
       - node_modules/
 >>>>>>> e8f5b7e (Add .gitlab-ci.yml)
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 65e263e (Add .gitlab-ci.yml)
+=======
+>>>>>>> 0b8fcaf (Add .gitlab-ci.yml image node version 22)
+>>>>>>> dcfbd1b (Add .gitlab-ci.yml image node version 22)
 image: node:18 # Base image with Node.js installed
 
 stages:
   - install
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 4c8093e (Add .gitlab-ci.yml image node version 22)
 stages:
   - build
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
 =======
+<<<<<<< HEAD
 >>>>>>> 2a641a1 (Add .gitlab-ci.yml)
 image : node:22
 >>>>>>> b37803a (Add .gitlab-ci.yml image node version 22)
@@ -205,6 +227,12 @@ stages:
 >>>>>>> 876aa17 (Add .gitlab-ci.yml)
 =======
 >>>>>>> e8f5b7e (Add .gitlab-ci.yml)
+=======
+image : node:22
+stages:
+>>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
+>>>>>>> dcfbd1b (Add .gitlab-ci.yml image node version 22)
+>>>>>>> 4c8093e (Add .gitlab-ci.yml image node version 22)
   - test
   - deploy
 
@@ -284,9 +312,30 @@ build:
 =======
     - npm run test
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 876aa17 (Add .gitlab-ci.yml)
   only:
     - main
+=======
+=======
+<<<<<<< HEAD
+=======
+  only:
+    - main
+
+<<<<<<< HEAD
+build:
+  stage: build
+  script:
+    - echo "Building the project..."
+    - npm run build
+  only:
+    - main
+>>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+=======
+>>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
+>>>>>>> dcfbd1b (Add .gitlab-ci.yml image node version 22)
+>>>>>>> 4c8093e (Add .gitlab-ci.yml image node version 22)
 
 deploy:
   stage: deploy
