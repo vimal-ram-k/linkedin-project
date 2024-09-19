@@ -31,6 +31,7 @@ image: node:22
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 image : node:22
 >>>>>>> dcfbd1b (Add .gitlab-ci.yml image node version 22)
 >>>>>>> 4c8093e (Add .gitlab-ci.yml image node version 22)
@@ -131,7 +132,18 @@ test-job:
 >>>>>>> 65e263e (Add .gitlab-ci.yml)
 =======
 >>>>>>> 0b8fcaf (Add .gitlab-ci.yml image node version 22)
+<<<<<<< HEAD
 >>>>>>> dcfbd1b (Add .gitlab-ci.yml image node version 22)
+=======
+=======
+>>>>>>> 8ab746c (Add .gitlab-ci.yml)
+=======
+>>>>>>> 7898957 (Add .gitlab-ci.yml)
+=======
+>>>>>>> 07b5e32 (Add feature caching in .gitlab-ci.yml)
+=======
+>>>>>>> b86e844 (Add .gitlab-ci.yml)
+>>>>>>> bfc3889 (Add .gitlab-ci.yml)
 image: node:18 # Base image with Node.js installed
 
 stages:
@@ -146,6 +158,7 @@ stages:
   - build
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2a641a1 (Add .gitlab-ci.yml)
 image : node:22
@@ -190,6 +203,10 @@ stages:
 >>>>>>> b3529be (Add .gitlab-ci.yml)
 =======
 >>>>>>> 858cf21 (Add .gitlab-ci.yml)
+=======
+=======
+>>>>>>> b3529be (Add .gitlab-ci.yml)
+>>>>>>> 3165b08 (Add .gitlab-ci.yml)
 image : node:22
 stages:
 >>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
@@ -794,4 +811,81 @@ test-job:
 =======
     # Add your deployment commands here
 >>>>>>> 401f503 (Add .gitlab-ci.yml)
+<<<<<<< HEAD
 >>>>>>> e8f5b7e (Add .gitlab-ci.yml)
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+    # Add your deploy commands here, e.g., AWS, Docker
+<<<<<<< HEAD
+  only:
+    - main
+>>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+<<<<<<< HEAD
+>>>>>>> 65e263e (Add .gitlab-ci.yml)
+=======
+=======
+>>>>>>> ef103fc (Add .gitlab-ci.yml)
+<<<<<<< HEAD
+>>>>>>> 7898957 (Add .gitlab-ci.yml)
+=======
+=======
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+
+test-job:
+  stage: test
+  image: node:22
+  script:
+    - npm run test
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+<<<<<<< HEAD
+>>>>>>> 9ca94b1 (Add feature caching in .gitlab-ci.yml)
+<<<<<<< HEAD
+>>>>>>> 07b5e32 (Add feature caching in .gitlab-ci.yml)
+=======
+=======
+=======
+image: node:18 # Base image with Node.js installed
+
+stages:
+  - install
+  - test
+  - deploy
+
+variables:
+  NODE_ENV: production
+
+before_script:
+  - echo "Installing dependencies..."
+  - npm ci
+
+install:
+  stage: install
+  script:
+    - echo "Installing dependencies..."
+    - npm install
+
+test:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - npm run test
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying the project..."
+    # Add your deployment commands here
+>>>>>>> 401f503 (Add .gitlab-ci.yml)
+>>>>>>> b3529be (Add .gitlab-ci.yml)
+>>>>>>> b86e844 (Add .gitlab-ci.yml)
+>>>>>>> bfc3889 (Add .gitlab-ci.yml)
+>>>>>>> 3165b08 (Add .gitlab-ci.yml)
