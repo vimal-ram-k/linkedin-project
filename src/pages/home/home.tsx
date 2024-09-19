@@ -20,6 +20,7 @@ export const Home = () => {
 
       <div
 <<<<<<< HEAD
+<<<<<<< HEAD
         className=" container d-flex flex-column flex-lg-row row-gap-1 align-items-center justify-content-around"
         style={{ height: '70dvh' }}
       >
@@ -32,6 +33,12 @@ export const Home = () => {
           className="home-banner"
         >
 >>>>>>> f531892 (Design responsive main banner in landing page)
+=======
+        className=" container d-flex flex-column flex-lg-row row-gap-1 align-items-center justify-content-around"
+        style={{ height: '70dvh' }}
+      >
+        <div className="home-banner">
+>>>>>>> deb4dca (Fixed landing page main banner size and reponsive design issues)
           <h1
             className="  p-0 text-center text-lg-start header-banner"
             style={{ color: '#595c5e' }}
@@ -42,6 +49,7 @@ export const Home = () => {
           <GoogleSignButton />
           <AppleSignInBtn />
 <<<<<<< HEAD
+<<<<<<< HEAD
           <TermsAndConditions />
           <JoinNow />
         </div>
@@ -49,12 +57,17 @@ export const Home = () => {
           className="mainbanner-img"
 =======
 
+=======
+>>>>>>> deb4dca (Fixed landing page main banner size and reponsive design issues)
           <TermsAndConditions />
-
           <JoinNow />
         </div>
         <img
+<<<<<<< HEAD
 >>>>>>> f531892 (Design responsive main banner in landing page)
+=======
+          className="mainbanner-img"
+>>>>>>> deb4dca (Fixed landing page main banner size and reponsive design issues)
           src={mainbanner}
           alt=""
         />
