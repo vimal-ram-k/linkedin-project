@@ -2,6 +2,11 @@ image : node:22
 stages:
   - install
   - build
+>>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+=======
+image : node:22
+stages:
+>>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
   - test
 
 # Caching node_modules to avoid re-installing dependencies in every stage
