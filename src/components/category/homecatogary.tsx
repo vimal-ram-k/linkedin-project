@@ -9,10 +9,14 @@ export const HomeCatagory = (props: HomeCatagoryType) => {
   return (
     <nav className={`${props.display}`}>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <ul className=" container d-flex justify-content-lg-around justify-content-around align-items-center  column-gap-lg-5 p-0 py-2 py-lg-0 m-lg-0">
 =======
       <ul className=" d-flex justify-content-around align-items-center column-gap-md-4 column-gap-lg-5 p-0 py-2 py-lg-0 m-lg-0">
 >>>>>>> f88737e (Design responsive landing page navigationbar layout)
+=======
+      <ul className=" container d-flex justify-content-lg-around justify-content-around align-items-center  column-gap-lg-5 p-0 py-2 py-lg-0 m-lg-0">
+>>>>>>> deb505e (Fixed category component gap issue)
         <li className=" list-unstyled">
           <Link
             to="/guest/articles"
