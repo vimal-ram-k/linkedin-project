@@ -1,0 +1,18 @@
+@use '../../base/variables';
+
+.footer-link {
+  text-decoration: none;
+  color: #040404;
+  font-weight: bold;
+  opacity: 50%;
+}
+
+.footer-link:hover {
+  color: variables.$primary-blue;
+  text-decoration: underline;
+  opacity: 100%;
+}
+
+.footer-link-dark {
+  color: #60605f;
+}

@@ -1,0 +1,51 @@
+{
+  "General": [
+    "Sign Up",
+    "Help Center",
+    "About",
+    "Press",
+    "Blog",
+    "Careers",
+    "Developers"
+  ],
+  "Browse LinkedIn": [
+    "Learning",
+    "Jobs",
+    "Games",
+    "Salary",
+    "Mobile",
+    "Services",
+    "Products",
+    "Top Companies Hub"
+  ],
+  "Business Solutions": ["Talent", "Marketing", "Sales", "Learning"],
+  "Directories": [
+    "Members",
+    "Jobs",
+    "Companies",
+    "Featured",
+    "Learning",
+    "Posts",
+    "Articles",
+    "Schools",
+    "News",
+    "News Letters",
+    "Services",
+    "Products",
+    "Advice",
+    "People Search"
+  ],
+
+  "Persona terms": [
+    "About",
+    "Accessbility",
+    "User Agreement",
+    "Privacy Policy",
+    "Cookie Policy",
+    "Copyright Policy",
+    "Brand Policy",
+    "Guest Controls",
+    "Community Guidelines",
+    "Language"
+  ]
+}
