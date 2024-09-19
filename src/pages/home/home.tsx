@@ -11,6 +11,7 @@ import { JoinNow } from '../../components/buttons/joinnowbtn';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
 =======
 >>>>>>> 7898957 (Add .gitlab-ci.yml)
@@ -21,7 +22,11 @@ import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVik
 =======
 =======
 >>>>>>> 947122d (Fixed home merge issue)
+=======
+>>>>>>> 876aa17 (Add .gitlab-ci.yml)
 import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
+=======
+>>>>>>> ef103fc (Add .gitlab-ci.yml)
 
 <<<<<<< HEAD
 >>>>>>> 7898957 (Add .gitlab-ci.yml)

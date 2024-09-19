@@ -26,6 +26,7 @@ stages:
 =======
 stages:
   - build
+<<<<<<< HEAD
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
 =======
 image : node:22
@@ -158,19 +159,25 @@ stages:
 >>>>>>> b37803a (Add .gitlab-ci.yml image node version 22)
 =======
 >>>>>>> 8014825 (Add .gitlab-ci.yml)
+=======
+
+>>>>>>> 876aa17 (Add .gitlab-ci.yml)
   - test
+  - deploy
 
-# Caching node_modules to avoid re-installing dependencies in every stage
-cache:
-  key: ${CI_COMMIT_REF_SLUG}
-  paths:
-    - node_modules/
+variables:
+  NODE_ENV: production
 
-install-dependencies:
-  stage: install
-  image: node:22
+before_script:
+  - echo "Installing dependencies..."
+  - npm install
+
+test:
+  stage: test
   script:
+    - echo "Running tests..."
     - npm install
+<<<<<<< HEAD
   artifacts:
     paths:
       - node_modules/
@@ -225,12 +232,16 @@ build:
   script:
     - echo "Building the project..."
     - npm run build
+=======
+    - npm run test
+>>>>>>> 876aa17 (Add .gitlab-ci.yml)
   only:
     - main
 
 deploy:
   stage: deploy
   script:
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     - echo "Running tests..."
@@ -623,3 +634,9 @@ test-job:
 >>>>>>> 2e5b7fd (Add .gitlab-ci.yml)
 =======
 >>>>>>> a177d46 (Add .gitlab-ci.yml)
+=======
+    - echo "Deploying the project..."
+    # Add your deploy commands here, e.g., AWS, Docker
+  only:
+    - main
+>>>>>>> 876aa17 (Add .gitlab-ci.yml)
