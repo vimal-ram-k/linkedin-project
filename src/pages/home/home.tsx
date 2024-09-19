@@ -31,6 +31,7 @@ import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVik
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ef103fc (Add .gitlab-ci.yml)
 
@@ -68,6 +69,10 @@ import { Footer } from '../../components/footer/footer';
 =======
 >>>>>>> 0a0aae1 (Fixed home merge issue)
 >>>>>>> 3a7cba4 (Fixed home merge issue)
+=======
+import { Footer } from '../../components/footer/footer';
+
+>>>>>>> abd62f6 (Fixed rebase issue)
 export const Home = () => {
   return (
     <div className="">
