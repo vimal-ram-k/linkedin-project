@@ -234,6 +234,7 @@ build:
     - npm run build
 =======
     - npm run test
+<<<<<<< HEAD
 >>>>>>> 876aa17 (Add .gitlab-ci.yml)
   only:
     - main
@@ -640,3 +641,9 @@ test-job:
   only:
     - main
 >>>>>>> 876aa17 (Add .gitlab-ci.yml)
+=======
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+>>>>>>> 6090065 (Add .gitlab-ci.yml)
