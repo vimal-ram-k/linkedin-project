@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { HomeCatagory } from '../category/homecatogary';
-import { HomeCatagory } from '../category/homecatogary';
 
 export const HomeNavigationBar = () => {
   return (

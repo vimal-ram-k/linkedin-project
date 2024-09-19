@@ -7,72 +7,8 @@ import { TermsAndConditions } from '../../components/termsandcondition/termsandc
 import { GoogleSignButton } from '../../components/buttons/googlesignbtn';
 import { AppleSignInBtn } from '../../components/buttons/applesigninbtn';
 import { JoinNow } from '../../components/buttons/joinnowbtn';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
-=======
->>>>>>> 7898957 (Add .gitlab-ci.yml)
-
-=======
-import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
->>>>>>> 431878d (Design responsive main banner in landing page)
-=======
-=======
->>>>>>> 947122d (Fixed home merge issue)
-=======
->>>>>>> 876aa17 (Add .gitlab-ci.yml)
-=======
->>>>>>> 3a7cba4 (Fixed home merge issue)
-import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ef103fc (Add .gitlab-ci.yml)
-
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7898957 (Add .gitlab-ci.yml)
->>>>>>> 2a641a1 (Add .gitlab-ci.yml)
-=======
->>>>>>> 947122d (Fixed home merge issue)
-=======
-=======
-=======
->>>>>>> 57b121b (Add .gitlab-ci.yml)
-=======
->>>>>>> 0a0aae1 (Fixed home merge issue)
 import { Footer } from '../../components/footer/footer';
-<<<<<<< HEAD
->>>>>>> 62136b6 (Add footer with responsive laypout)
-<<<<<<< HEAD
->>>>>>> 3990765 (Add footer with responsive laypout)
-=======
-=======
-=======
->>>>>>> 2a641a1 (Add .gitlab-ci.yml)
-=======
-=======
->>>>>>> 947122d (Fixed home merge issue)
-
-<<<<<<< HEAD
->>>>>>> 7898957 (Add .gitlab-ci.yml)
->>>>>>> 6ff3dba (Add .gitlab-ci.yml)
-<<<<<<< HEAD
->>>>>>> fd9be2b (Add .gitlab-ci.yml)
-=======
-=======
->>>>>>> 0a0aae1 (Fixed home merge issue)
->>>>>>> 3a7cba4 (Fixed home merge issue)
-=======
-import { Footer } from '../../components/footer/footer';
-
->>>>>>> abd62f6 (Fixed rebase issue)
 export const Home = () => {
   return (
     <div className="">
@@ -80,26 +16,10 @@ export const Home = () => {
       <HomeCatagory display="d-block d-lg-none" />
 
       <div
-<<<<<<< HEAD
-<<<<<<< HEAD
         className=" container d-flex flex-column flex-lg-row row-gap-1 align-items-center justify-content-around"
         style={{ height: '70dvh' }}
       >
         <div className="home-banner">
-=======
-        className=" container d-flex flex-column flex-lg-row row-gap-2 align-items-center justify-content-around column-gap-3"
-        style={{ height: '75dvh' }}
-      >
-        <div
-          className="home-banner"
-        >
->>>>>>> 431878d (Design responsive main banner in landing page)
-=======
-        className=" container d-flex flex-column flex-lg-row row-gap-1 align-items-center justify-content-around"
-        style={{ height: '70dvh' }}
-      >
-        <div className="home-banner">
->>>>>>> a3d0840 (Fixed landing page main banner size and reponsive design issues)
           <h1
             className="  p-0 text-center text-lg-start header-banner"
             style={{ color: '#595c5e' }}
@@ -109,26 +29,11 @@ export const Home = () => {
 
           <GoogleSignButton />
           <AppleSignInBtn />
-<<<<<<< HEAD
-<<<<<<< HEAD
           <TermsAndConditions />
           <JoinNow />
         </div>
         <img
           className="mainbanner-img"
-=======
-
-=======
->>>>>>> a3d0840 (Fixed landing page main banner size and reponsive design issues)
-          <TermsAndConditions />
-          <JoinNow />
-        </div>
-        <img
-<<<<<<< HEAD
->>>>>>> 431878d (Design responsive main banner in landing page)
-=======
-          className="mainbanner-img"
->>>>>>> a3d0840 (Fixed landing page main banner size and reponsive design issues)
           src={mainbanner}
           alt=""
         />
