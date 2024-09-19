@@ -1,23 +1,41 @@
-image: node:22
-
+image : node:22
 stages:
+  - install
+  - build
   - test
-  - deploy
 
-test:
-  stage: test
+# Caching node_modules to avoid re-installing dependencies in every stage
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+install-dependencies:
+  stage: install
+  image: node:22
   script:
-    - echo "Running tests..."
-    - npm run test
+    - npm install
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 day
 
-build:
+build-job:
   stage: build
+  image: node:22
   script:
     - npm run build
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
 
-
-deploy:
-  stage: deploy
+test-job:
+  stage: test
+  image: node:22
   script:
-    - echo "Deploying the project..."
-    # Add your deploy commands here, e.g., AWS, Docker
+    - npm run test
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
