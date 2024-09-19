@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 image: node:22
 stages:
   - install
@@ -299,17 +300,32 @@ install:
 =======
 image: node:22
 
+=======
+image : node:22
+>>>>>>> f8d76df (Add feature caching in .gitlab-ci.yml)
 stages:
-  - test
+  - install
   - build
-  - deploy
+  - test
 
+<<<<<<< HEAD
 >>>>>>> fe8149c (Add .gitlab-ci.yml)
 test:
   stage: test
+=======
+# Caching node_modules to avoid re-installing dependencies in every stage
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+install-dependencies:
+  stage: install
+  image: node:22
+>>>>>>> f8d76df (Add feature caching in .gitlab-ci.yml)
   script:
-    - echo "Running tests..."
     - npm install
+<<<<<<< HEAD
     - npm run test
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -317,11 +333,19 @@ test:
   only:
     - main
 =======
+=======
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 day
+>>>>>>> f8d76df (Add feature caching in .gitlab-ci.yml)
 
-build:
+build-job:
   stage: build
+  image: node:22
   script:
     - npm run build
+<<<<<<< HEAD
 >>>>>>> fe8149c (Add .gitlab-ci.yml)
 
 <<<<<<< HEAD
@@ -361,3 +385,19 @@ deploy:
 >>>>>>> 4c3a3df (Add .gitlab-ci.yml image node version 22)
 =======
 >>>>>>> fe8149c (Add .gitlab-ci.yml)
+=======
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+
+test-job:
+  stage: test
+  image: node:22
+  script:
+    - npm run test
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+>>>>>>> f8d76df (Add feature caching in .gitlab-ci.yml)
