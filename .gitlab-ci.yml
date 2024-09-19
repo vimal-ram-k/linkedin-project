@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 image: node:22
 stages:
   - install
@@ -283,3 +284,5 @@ deploy:
 >>>>>>> 401f503 (Add .gitlab-ci.yml)
 >>>>>>> b3529be (Add .gitlab-ci.yml)
 >>>>>>> b86e844 (Add .gitlab-ci.yml)
+=======
+>>>>>>> 9b9e95f (Add .gitlab-ci.yml)
