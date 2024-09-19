@@ -7,7 +7,10 @@ import { TermsAndConditions } from '../../components/termsandcondition/termsandc
 import { GoogleSignButton } from '../../components/buttons/googlesignbtn';
 import { AppleSignInBtn } from '../../components/buttons/applesigninbtn';
 import { JoinNow } from '../../components/buttons/joinnowbtn';
+<<<<<<< HEAD
 import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
+=======
+>>>>>>> 7898957 (Add .gitlab-ci.yml)
 
 export const Home = () => {
   return (

@@ -5,6 +5,9 @@ import { GoogleSignButton } from '../buttons/googlesignbtn';
 import { AppleSignInBtn } from '../buttons/applesigninbtn';
 import { JoinNow } from '../buttons/joinnowbtn';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7898957 (Add .gitlab-ci.yml)
 import { AppDispatch } from '../../store';
 import { useDispatch } from 'react-redux';
 import { createAsync } from '../../features/auth/authSlice';

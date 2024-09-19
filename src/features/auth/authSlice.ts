@@ -42,10 +42,14 @@ const authSlice = createSlice({
 
 export const createAsync = createAsyncThunk('user/loginAsync', async () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
   const promise = new Promise((res) => {
 =======
   const promise = new Promise((res, rej) => {
 >>>>>>> 0978ff7 (Add createasyncthunk feature)
+=======
+  const promise = new Promise((res) => {
+>>>>>>> 7898957 (Add .gitlab-ci.yml)
     setTimeout(() => {
       res('Vimal Ram K');
     }, 10000);

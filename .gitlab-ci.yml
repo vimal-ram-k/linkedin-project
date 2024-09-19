@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 image: node:22
 stages:
   - install
@@ -13,6 +14,8 @@ stages:
 >>>>>>> 3cc00a9 (Add .gitlab-ci.yml)
 =======
 >>>>>>> 8ab746c (Add .gitlab-ci.yml)
+=======
+>>>>>>> 7898957 (Add .gitlab-ci.yml)
 <<<<<<< HEAD
 image: node:18 # Base image with Node.js installed
 
@@ -83,9 +86,22 @@ install:
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
 >>>>>>> 65e263e (Add .gitlab-ci.yml)
 
+<<<<<<< HEAD
 build-job:
   stage: build
   image: node:22
+=======
+=======
+image: node:22
+
+stages:
+  - test
+  - deploy
+
+>>>>>>> ef103fc (Add .gitlab-ci.yml)
+test:
+  stage: test
+>>>>>>> 7898957 (Add .gitlab-ci.yml)
   script:
     - npm run build
   cache:
@@ -100,6 +116,7 @@ test-job:
 <<<<<<< HEAD
 =======
     - echo "Running tests..."
+<<<<<<< HEAD
     - npm install
 >>>>>>> e3fe733 (Add .gitlab-ci.yml)
     - npm run test
@@ -109,10 +126,21 @@ test-job:
     paths:
       - node_modules/
 =======
+=======
+    - npm run test
+<<<<<<< HEAD
+>>>>>>> 7898957 (Add .gitlab-ci.yml)
 <<<<<<< HEAD
 =======
   only:
     - main
+=======
+
+build:
+  stage: build
+  script:
+    - npm run build
+>>>>>>> ef103fc (Add .gitlab-ci.yml)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -145,7 +173,13 @@ deploy:
     # Add your deployment commands here
 =======
     # Add your deploy commands here, e.g., AWS, Docker
+<<<<<<< HEAD
   only:
     - main
 >>>>>>> 4ee7531 (Add .gitlab-ci.yml)
+<<<<<<< HEAD
 >>>>>>> 65e263e (Add .gitlab-ci.yml)
+=======
+=======
+>>>>>>> ef103fc (Add .gitlab-ci.yml)
+>>>>>>> 7898957 (Add .gitlab-ci.yml)
