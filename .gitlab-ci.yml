@@ -90,7 +90,6 @@ image : node:22
 image: node:22
 >>>>>>> d9420ce (Add feature caching in .gitlab-ci.yml)
 stages:
-  - install
   - build
 <<<<<<< HEAD
 =======
@@ -181,6 +180,7 @@ install-dependencies:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 build-job:
@@ -218,16 +218,18 @@ test:
   stage: test
 <<<<<<< HEAD
 >>>>>>> 7898957 (Add .gitlab-ci.yml)
+=======
+build:
+  stage: build
+>>>>>>> d05cc9d (Add .gitlab-ci.yml image node version 22)
   script:
+    - echo "Building the project..."
     - npm run build
-  cache:
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - node_modules/
+  only:
+    - main
 
-test-job:
-  stage: test
-  image: node:22
+deploy:
+  stage: deploy
   script:
 <<<<<<< HEAD
 =======
