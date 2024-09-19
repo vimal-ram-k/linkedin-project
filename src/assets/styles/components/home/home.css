@@ -7,6 +7,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .mainbanner-img {
   width: 350px;
   border-radius: 1%;
@@ -30,10 +31,13 @@
 }
 =======
 >>>>>>> 431878d (Design responsive main banner in landing page)
+=======
+>>>>>>> f531892 (Design responsive main banner in landing page)
 @media screen and (min-width: 960px) {
   .header-banner {
     font-size: 2rem;
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
   .mainbanner-img {
     width: clamp(450px, 30dvw, 600px);
@@ -49,10 +53,14 @@
 >>>>>>> a3d0840 (Fixed landing page main banner size and reponsive design issues)
 }
 
+=======
+}
+>>>>>>> f531892 (Design responsive main banner in landing page)
 .home-banner {
   width: 80dvw;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 810px) {
   .home-banner {
 <<<<<<< HEAD
@@ -80,5 +88,10 @@
   .home-banner {
     width: 400px;
 >>>>>>> a3d0840 (Fixed landing page main banner size and reponsive design issues)
+=======
+@media screen and (min-width: 960px) {
+  .home-banner {
+    width: 20dvw;
+>>>>>>> f531892 (Design responsive main banner in landing page)
   }
 }/*# sourceMappingURL=home.css.map */

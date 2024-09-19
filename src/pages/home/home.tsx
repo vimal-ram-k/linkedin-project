@@ -8,7 +8,10 @@ import { GoogleSignButton } from '../../components/buttons/googlesignbtn';
 import { AppleSignInBtn } from '../../components/buttons/applesigninbtn';
 import { JoinNow } from '../../components/buttons/joinnowbtn';
 import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
+<<<<<<< HEAD
 import { Footer } from '../../components/footer/footer';
+=======
+>>>>>>> f531892 (Design responsive main banner in landing page)
 export const Home = () => {
   return (
     <div className="">
@@ -16,10 +19,19 @@ export const Home = () => {
       <HomeCatagory display="d-block d-lg-none" />
 
       <div
+<<<<<<< HEAD
         className=" container d-flex flex-column flex-lg-row row-gap-1 align-items-center justify-content-around"
         style={{ height: '70dvh' }}
       >
         <div className="home-banner">
+=======
+        className=" container d-flex flex-column flex-lg-row row-gap-2 align-items-center justify-content-around column-gap-3"
+        style={{ height: '75dvh' }}
+      >
+        <div
+          className="home-banner"
+        >
+>>>>>>> f531892 (Design responsive main banner in landing page)
           <h1
             className="  p-0 text-center text-lg-start header-banner"
             style={{ color: '#595c5e' }}
@@ -29,11 +41,20 @@ export const Home = () => {
 
           <GoogleSignButton />
           <AppleSignInBtn />
+<<<<<<< HEAD
           <TermsAndConditions />
           <JoinNow />
         </div>
         <img
           className="mainbanner-img"
+=======
+
+          <TermsAndConditions />
+
+          <JoinNow />
+        </div>
+        <img
+>>>>>>> f531892 (Design responsive main banner in landing page)
           src={mainbanner}
           alt=""
         />
