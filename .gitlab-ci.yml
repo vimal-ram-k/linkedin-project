@@ -2,6 +2,7 @@ image: node:22
 
 stages:
   - test
+  - build
   - deploy
 
 test:
