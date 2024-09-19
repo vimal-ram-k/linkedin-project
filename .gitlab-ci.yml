@@ -56,7 +56,40 @@ install-dependencies:
       - node_modules/
     expire_in: 1 day
 
+<<<<<<< HEAD
 build-job:
+=======
+<<<<<<< HEAD
+=======
+=======
+image: node:22
+
+stages:
+  - test
+  - build
+  - deploy
+
+>>>>>>> ef103fc (Add .gitlab-ci.yml)
+>>>>>>> 4370c60 (add build .gitlab-ci.yml)
+test:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - npm install
+    - npm run test
+<<<<<<< HEAD
+=======
+  only:
+    - main
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8e0480a (Add .gitlab-ci.yml)
+build:
+>>>>>>> 297ed8f (add build .gitlab-ci.yml)
   stage: build
   image: node:22
   script:
