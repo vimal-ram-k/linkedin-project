@@ -26,6 +26,7 @@ export const HomeNavigationBar = () => {
             aria-describedby="logo"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             alt="Linkedin Logo2"
 =======
             alt="Linkedin Logo"
@@ -51,6 +52,9 @@ export const HomeNavigationBar = () => {
 >>>>>>> f88737e (Design responsive landing page navigationbar layout)
 =======
             alt="Linkedin Logo"
+=======
+            alt="Linkedin Logo2"
+>>>>>>> da9bdcf (Fixed test failuer)
             style={{ width: '110px', height: '30px' }}
           />
         </Link>
