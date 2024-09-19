@@ -1,22 +1,19 @@
-image : node:22
+image: node:22
+
 stages:
   - test
   - deploy
-
-variables:
-  NODE_ENV: production
-
-before_script:
-  - echo "Installing dependencies..."
-  - npm install
 
 test:
   stage: test
   script:
     - echo "Running tests..."
     - npm run test
-  only:
-    - main
+
+build:
+  stage: build
+  script:
+    - npm run build
 
 
 deploy:
@@ -24,5 +21,3 @@ deploy:
   script:
     - echo "Deploying the project..."
     # Add your deploy commands here, e.g., AWS, Docker
-  only:
-    - main
