@@ -38,8 +38,17 @@ import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVik
 =======
 =======
 import { Footer } from '../../components/footer/footer';
+<<<<<<< HEAD
 >>>>>>> 62136b6 (Add footer with responsive laypout)
+<<<<<<< HEAD
 >>>>>>> 3990765 (Add footer with responsive laypout)
+=======
+=======
+=======
+
+>>>>>>> 7898957 (Add .gitlab-ci.yml)
+>>>>>>> 6ff3dba (Add .gitlab-ci.yml)
+>>>>>>> fd9be2b (Add .gitlab-ci.yml)
 export const Home = () => {
   return (
     <div className="">
