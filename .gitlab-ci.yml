@@ -1,22 +1,7 @@
-<<<<<<< HEAD
 image : node:22
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-image: node:18 # Base image with Node.js installed
-
->>>>>>> 7898957 (Add .gitlab-ci.yml)
 stages:
   - install
   - build
->>>>>>> 4ee7531 (Add .gitlab-ci.yml)
-=======
-image : node:22
-stages:
->>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
   - test
 
 # Caching node_modules to avoid re-installing dependencies in every stage
@@ -35,77 +20,22 @@ install-dependencies:
       - node_modules/
     expire_in: 1 day
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 build-job:
-=======
-=======
-=======
-image: node:22
-
-stages:
-  - test
-  - build
-  - deploy
-
->>>>>>> ef103fc (Add .gitlab-ci.yml)
->>>>>>> 7898957 (Add .gitlab-ci.yml)
-test:
-  stage: test
-  script:
-    - echo "Running tests..."
-    - npm install
-    - npm run test
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  only:
-    - main
-=======
-
-build:
-  stage: build
-  script:
-    - npm run build
->>>>>>> ef103fc (Add .gitlab-ci.yml)
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 8e0480a (Add .gitlab-ci.yml)
-build:
->>>>>>> e3fe733 (Add .gitlab-ci.yml)
   stage: build
   image: node:22
   script:
     - npm run build
-  only:
-    - main
-<<<<<<< HEAD
->>>>>>> 4ee7531 (Add .gitlab-ci.yml)
-=======
->>>>>>> 564fb52 (Add .gitlab-ci.yml image node version 22)
-=======
->>>>>>> 8397db2 (Add .gitlab-ci.yml)
->>>>>>> 8e0480a (Add .gitlab-ci.yml)
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
 
-=======
->>>>>>> 0d9bf5a (Add .gitlab-ci.yml)
-deploy:
-  stage: deploy
+test-job:
+  stage: test
+  image: node:22
   script:
-    - echo "Deploying the project..."
-    # Add your deployment commands here
-<<<<<<< HEAD
-=======
-=======
-    # Add your deploy commands here, e.g., AWS, Docker
-<<<<<<< HEAD
-  only:
-    - main
->>>>>>> 4ee7531 (Add .gitlab-ci.yml)
-=======
->>>>>>> ef103fc (Add .gitlab-ci.yml)
->>>>>>> 7898957 (Add .gitlab-ci.yml)
+    - npm run test
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
