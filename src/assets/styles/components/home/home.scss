@@ -5,53 +5,15 @@
   color: #0965c2;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 .mainbanner-img {
   width: 350px;
   border-radius: 1%;
-=======
-=======
->>>>>>> f531892 (Design responsive main banner in landing page)
-@media screen and (min-width: 960px) {
-  .header-banner {
-    font-size: 2rem;
-  }
-<<<<<<< HEAD
->>>>>>> 431878d (Design responsive main banner in landing page)
-=======
-.mainbanner-img {
-  width: 350px;
-  border-radius: 1%;
->>>>>>> a3d0840 (Fixed landing page main banner size and reponsive design issues)
-=======
->>>>>>> f531892 (Design responsive main banner in landing page)
-=======
-.mainbanner-img {
-  width: 350px;
-  border-radius: 1%;
->>>>>>> deb4dca (Fixed landing page main banner size and reponsive design issues)
-=======
-.mainbanner-img {
-  width: 350px;
-  border-radius: 1%;
->>>>>>> f885d26 (Fixed css issue)
 }
 
 .home-banner {
   width: 80dvw;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f885d26 (Fixed css issue)
 @media screen and (min-width: 810px) {
   .home-banner {
     width: 450px;
@@ -79,54 +41,5 @@
 
   .home-banner {
     width: 400px;
-<<<<<<< HEAD
-=======
-@media screen and (min-width: 960px) {
-  .home-banner {
-    width: 20dvw;
->>>>>>> 431878d (Design responsive main banner in landing page)
-=======
-@media screen and (min-width: 810px) {
-  .home-banner {
-=======
-@media screen and (min-width: 810px) {
-  .home-banner {
->>>>>>> deb4dca (Fixed landing page main banner size and reponsive design issues)
-    width: 450px;
-  }
-
-  .header-banner {
-    font-size: 1.5rem;
-  }
-
-  .mainbanner-img {
-    width: clamp(450px, 100dvw, 500px);
-    border-radius: 1%;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .header-banner {
-    font-size: 2rem;
-  }
-
-  .mainbanner-img {
-    width: clamp(450px, 30dvw, 600px);
-    border-radius: 1%;
-  }
-
-  .home-banner {
-    width: 400px;
-<<<<<<< HEAD
->>>>>>> a3d0840 (Fixed landing page main banner size and reponsive design issues)
-=======
-@media screen and (min-width: 960px) {
-  .home-banner {
-    width: 20dvw;
->>>>>>> f531892 (Design responsive main banner in landing page)
-=======
->>>>>>> deb4dca (Fixed landing page main banner size and reponsive design issues)
-=======
->>>>>>> f885d26 (Fixed css issue)
   }
 }

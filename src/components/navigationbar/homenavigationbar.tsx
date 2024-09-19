@@ -5,10 +5,6 @@ export const HomeNavigationBar = () => {
   return (
     <header className=" container py-2 d-flex justify-content-lg-around justify-content-between align-items-center">
       <div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 69e9878 (Fixed layout issue, font style, links)
         <Link
           className=""
           to={'/'}
@@ -24,41 +20,10 @@ export const HomeNavigationBar = () => {
             src="/linkedin-logo-3801732491.png"
             className="logo d-none d-lg-block"
             aria-describedby="logo"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             alt="Linkedin Logo2"
-=======
-            alt="Linkedin Logo"
->>>>>>> f885d26 (Fixed css issue)
             style={{ width: '110px', height: '30px' }}
           />
         </Link>
-=======
-        <img
-          src="/linkedin-svgrepo-com.svg"
-          className="logo d-lg-none"
-          aria-describedby="logo"
-          alt="Linkedin Logo"
-          style={{ width: '35px' }}
-        />
-        <img
-          src="/linkedin-logo-3801732491.png"
-          className="logo d-none d-lg-block"
-          aria-describedby="logo"
-          alt="Linkedin Logo"
-          style={{ width: '130px', height: '30px' }}
-        />
->>>>>>> f88737e (Design responsive landing page navigationbar layout)
-=======
-            alt="Linkedin Logo"
-=======
-            alt="Linkedin Logo2"
->>>>>>> da9bdcf (Fixed test failuer)
-            style={{ width: '110px', height: '30px' }}
-          />
-        </Link>
->>>>>>> 69e9878 (Fixed layout issue, font style, links)
       </div>
       <div className=" d-flex column-gap-3 align-items-center">
         <HomeCatagory display="d-none d-lg-inline" />
@@ -72,15 +37,7 @@ export const HomeNavigationBar = () => {
             data-testid="signin-btn"
           >
             <button
-<<<<<<< HEAD
-<<<<<<< HEAD
               className="rounded-5 fs-6 signin-btn"
-=======
-              className=" btn rounded-5 fs-6"
->>>>>>> f88737e (Design responsive landing page navigationbar layout)
-=======
-              className="rounded-5 fs-6 signin-btn"
->>>>>>> 69e9878 (Fixed layout issue, font style, links)
               style={{
                 width: '100px',
                 height: '50px',

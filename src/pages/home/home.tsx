@@ -8,14 +8,7 @@ import { GoogleSignButton } from '../../components/buttons/googlesignbtn';
 import { AppleSignInBtn } from '../../components/buttons/applesigninbtn';
 import { JoinNow } from '../../components/buttons/joinnowbtn';
 import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { Footer } from '../../components/footer/footer';
-=======
->>>>>>> f531892 (Design responsive main banner in landing page)
-=======
-import { Footer } from '../../components/footer/footer';
->>>>>>> 62136b6 (Add footer with responsive laypout)
 export const Home = () => {
   return (
     <div className="">
@@ -23,26 +16,10 @@ export const Home = () => {
       <HomeCatagory display="d-block d-lg-none" />
 
       <div
-<<<<<<< HEAD
-<<<<<<< HEAD
         className=" container d-flex flex-column flex-lg-row row-gap-1 align-items-center justify-content-around"
         style={{ height: '70dvh' }}
       >
         <div className="home-banner">
-=======
-        className=" container d-flex flex-column flex-lg-row row-gap-2 align-items-center justify-content-around column-gap-3"
-        style={{ height: '75dvh' }}
-      >
-        <div
-          className="home-banner"
-        >
->>>>>>> f531892 (Design responsive main banner in landing page)
-=======
-        className=" container d-flex flex-column flex-lg-row row-gap-1 align-items-center justify-content-around"
-        style={{ height: '70dvh' }}
-      >
-        <div className="home-banner">
->>>>>>> deb4dca (Fixed landing page main banner size and reponsive design issues)
           <h1
             className="  p-0 text-center text-lg-start header-banner"
             style={{ color: '#595c5e' }}
@@ -52,26 +29,11 @@ export const Home = () => {
 
           <GoogleSignButton />
           <AppleSignInBtn />
-<<<<<<< HEAD
-<<<<<<< HEAD
           <TermsAndConditions />
           <JoinNow />
         </div>
         <img
           className="mainbanner-img"
-=======
-
-=======
->>>>>>> deb4dca (Fixed landing page main banner size and reponsive design issues)
-          <TermsAndConditions />
-          <JoinNow />
-        </div>
-        <img
-<<<<<<< HEAD
->>>>>>> f531892 (Design responsive main banner in landing page)
-=======
-          className="mainbanner-img"
->>>>>>> deb4dca (Fixed landing page main banner size and reponsive design issues)
           src={mainbanner}
           alt=""
         />

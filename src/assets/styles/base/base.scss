@@ -18,10 +18,6 @@ root {
   color: variables.$primary-blue;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 62136b6 (Add footer with responsive laypout)
 a:not([class~='footer-link']):not([class~='footer-link-dark']) {
   text-decoration: none !important;
   color: variables.$primary-blue !important;
@@ -29,17 +25,4 @@ a:not([class~='footer-link']):not([class~='footer-link-dark']) {
 
 a:hover {
   cursor: pointer;
-<<<<<<< HEAD
-=======
-a {
-  text-decoration: none !important;
-  color: variables.$primary-blue !important;
->>>>>>> f88737e (Design responsive landing page navigationbar layout)
 }
-=======
-}
-<<<<<<< HEAD
-
->>>>>>> 69e9878 (Fixed layout issue, font style, links)
-=======
->>>>>>> 62136b6 (Add footer with responsive laypout)

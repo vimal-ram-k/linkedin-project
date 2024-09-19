@@ -1,30 +1,11 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-{"version":3,"sources":["base.scss","base.css","_variables.scss"],"names":[],"mappings":"AACQ,iMAAA;AACR;EACE,UAAA;EACA,UAAA;EACA,sBAAA;EACA,iCAAA;EACA,gBAAA;EACA,kBAAA;ACAF;;ADGA;EACE,WAAA;EACA,sBAAA;ACAF;;ADGA;EACE,cEjBa;ADiBf;;ADGA;EACE,gCAAA;EACA,yBAAA;ACAF;;ADGA;EACE,eAAA;ACAF","file":"base.css"}
-=======
-{"version":3,"sources":["base.scss","base.css","_variables.scss"],"names":[],"mappings":"AAEA;EACE,UAAA;EACA,UAAA;EACA,sBAAA;EACA,oCAAA;ACDF;;ADIA;EACE,WAAA;EACA,sBAAA;ACDF;;ADIA;EACE,cEfa;ADcf;;ADIA;EACE,gCAAA;EACA,yBAAA;ACDF","file":"base.css"}
->>>>>>> 8a7f19c (Design responsive landing page navigationbar layout)
-=======
-{"version":3,"sources":["base.scss","base.css","_variables.scss"],"names":[],"mappings":"AACQ,iMAAA;AACR;EACE,UAAA;EACA,UAAA;EACA,sBAAA;EACA,iCAAA;EACA,gBAAA;EACA,kBAAA;ACAF;;ADGA;EACE,WAAA;EACA,sBAAA;ACAF;;ADGA;EACE,cEjBa;ADiBf;;ADGA;EACE,gCAAA;EACA,yBAAA;ACAF;;ADGA;EACE,eAAA;ACAF","file":"base.css"}
->>>>>>> 5eafc05 (Fixed layout issue, font style, links)
-=======
-{"version":3,"sources":["base.scss","base.css","_variables.scss"],"names":[],"mappings":"AAEA;EACE,UAAA;EACA,UAAA;EACA,sBAAA;EACA,oCAAA;ACDF;;ADIA;EACE,WAAA;EACA,sBAAA;ACDF;;ADIA;EACE,cEfa;ADcf;;ADIA;EACE,gCAAA;EACA,yBAAA;ACDF","file":"base.css"}
->>>>>>> f88737e (Design responsive landing page navigationbar layout)
-=======
-{"version":3,"sources":["base.scss","base.css","_variables.scss"],"names":[],"mappings":"AACQ,iMAAA;AACR;EACE,UAAA;EACA,UAAA;EACA,sBAAA;EACA,iCAAA;EACA,gBAAA;EACA,kBAAA;ACAF;;ADGA;EACE,WAAA;EACA,sBAAA;ACAF;;ADGA;EACE,cEjBa;ADiBf;;ADGA;EACE,gCAAA;EACA,yBAAA;ACAF;;ADGA;EACE,eAAA;ACAF","file":"base.css"}
->>>>>>> 69e9878 (Fixed layout issue, font style, links)
-=======
 {
   "version": 3,
   "sources": [
-    "home.scss",
-    "home.css"
+    "base.scss",
+    "base.css",
+    "_variables.scss"
   ],
   "names": [],
-  "mappings": "AAAA;EACE,qBAAA;EACA,eAAA;EACA,iBAAA;EACA,cAAA;ACCF;;ADEA;EACE,YAAA;EACA,iBAAA;ACCF;;ADEA;EACE,YAAA;ACCF;;ADEA;EACE;IACE,YAAA;ECCF;EDEA;IACE,iBAAA;ECAF;EDGA;IACE,kCAAA;IACA,iBAAA;ECDF;AACF;ADIA;EACE;IACE,eAAA;ECFF;EDKA;IACE,iCAAA;IACA,iBAAA;ECHF;EDMA;IACE,YAAA;ECJF;AACF",
-  "file": "home.css"
+  "mappings": "AACQ,iMAAA;AACR;EACE,UAAA;EACA,UAAA;EACA,sBAAA;EACA,iCAAA;EACA,gBAAA;EACA,kBAAA;ACAF;;ADGA;EACE,WAAA;EACA,sBAAA;ACAF;;ADGA;EACE,cEjBa;ADiBf;;ADGA;EACE,gCAAA;EACA,yBAAA;ACAF;;ADGA;EACE,eAAA;ACAF",
+  "file": "base.css"
 }
->>>>>>> f885d26 (Fixed css issue)
