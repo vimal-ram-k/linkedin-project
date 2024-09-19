@@ -5,15 +5,23 @@
   color: #0965c2;
 }
 
+<<<<<<< HEAD
 .mainbanner-img {
   width: 350px;
   border-radius: 1%;
+=======
+@media screen and (min-width: 960px) {
+  .header-banner {
+    font-size: 2rem;
+  }
+>>>>>>> 431878d (Design responsive main banner in landing page)
 }
 
 .home-banner {
   width: 80dvw;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 810px) {
   .home-banner {
     width: 450px;
@@ -41,5 +49,10 @@
 
   .home-banner {
     width: 400px;
+=======
+@media screen and (min-width: 960px) {
+  .home-banner {
+    width: 20dvw;
+>>>>>>> 431878d (Design responsive main banner in landing page)
   }
 }

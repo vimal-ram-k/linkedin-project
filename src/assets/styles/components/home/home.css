@@ -5,6 +5,7 @@
   color: #0965c2;
 }
 
+<<<<<<< HEAD
 .mainbanner-img {
   width: 350px;
   border-radius: 1%;
@@ -26,15 +27,28 @@
     border-radius: 1%;
   }
 }
+=======
+>>>>>>> 431878d (Design responsive main banner in landing page)
 @media screen and (min-width: 960px) {
   .header-banner {
     font-size: 2rem;
   }
+<<<<<<< HEAD
   .mainbanner-img {
     width: clamp(450px, 30dvw, 600px);
     border-radius: 1%;
   }
   .home-banner {
     width: 400px;
+=======
+}
+.home-banner {
+  width: 80dvw;
+}
+
+@media screen and (min-width: 960px) {
+  .home-banner {
+    width: 20dvw;
+>>>>>>> 431878d (Design responsive main banner in landing page)
   }
 }/*# sourceMappingURL=home.css.map */
