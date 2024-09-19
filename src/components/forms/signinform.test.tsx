@@ -1,18 +1,21 @@
-import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { SigninForm } from './signinform';
-import App from '../../App';
+import { store } from '../../store';
+import { Provider } from 'react-redux';
 
 describe('Signin form tests', () => {
   beforeEach(() => {
     render(
       <MemoryRouter initialEntries={['/login/signin']}>
-        <Routes>
-          <Route
-            path="/login/signin"
-            element={<SigninForm />}
-          />
-        </Routes>
+        <Provider store={store}>
+          <Routes>
+            <Route
+              path="/login/signin"
+              element={<SigninForm />}
+            />
+          </Routes>
+        </Provider>
       </MemoryRouter>
     );
   });
