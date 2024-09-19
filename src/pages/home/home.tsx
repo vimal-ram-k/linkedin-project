@@ -10,14 +10,19 @@ import { JoinNow } from '../../components/buttons/joinnowbtn';
 <<<<<<< HEAD
 import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ef103fc (Add .gitlab-ci.yml)
 
 =======
+=======
+>>>>>>> 57b121b (Add .gitlab-ci.yml)
 import { Footer } from '../../components/footer/footer';
 <<<<<<< HEAD
 >>>>>>> 62136b6 (Add footer with responsive laypout)
 =======
+=======
+>>>>>>> 2a641a1 (Add .gitlab-ci.yml)
 =======
 
 >>>>>>> 7898957 (Add .gitlab-ci.yml)
