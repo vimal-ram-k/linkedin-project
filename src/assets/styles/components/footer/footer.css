@@ -1,0 +1,16 @@
+.footer-link {
+  text-decoration: none;
+  color: #040404;
+  font-weight: bold;
+  opacity: 50%;
+}
+
+.footer-link:hover {
+  color: #0965c2;
+  text-decoration: underline;
+  opacity: 100%;
+}
+
+.footer-link-dark {
+  color: #60605f;
+}/*# sourceMappingURL=footer.css.map */

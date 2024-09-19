@@ -18,7 +18,7 @@ root {
   color: variables.$primary-blue;
 }
 
-a {
+a:not([class~='footer-link']):not([class~='footer-link-dark']) {
   text-decoration: none !important;
   color: variables.$primary-blue !important;
 }
@@ -26,4 +26,3 @@ a {
 a:hover {
   cursor: pointer;
 }
-
