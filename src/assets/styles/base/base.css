@@ -15,5 +15,6 @@ root {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
+  color: #0965c2 !important;
 }/*# sourceMappingURL=base.css.map */
