@@ -10,17 +10,15 @@ import { JoinNow } from '../../components/buttons/joinnowbtn';
 import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
 export const Home = () => {
   return (
-    <div>
+    <div className="">
       <HomeNavigationBar />
       <HomeCatagory display="d-block d-lg-none" />
 
       <div
-        className=" container d-flex flex-column flex-lg-row row-gap-2 align-items-center justify-content-around column-gap-3"
-        style={{ height: '75dvh' }}
+        className=" container d-flex flex-column flex-lg-row row-gap-1 align-items-center justify-content-around"
+        style={{ height: '70dvh' }}
       >
-        <div
-          className="home-banner"
-        >
+        <div className="home-banner">
           <h1
             className="  p-0 text-center text-lg-start header-banner"
             style={{ color: '#595c5e' }}
@@ -30,95 +28,96 @@ export const Home = () => {
 
           <GoogleSignButton />
           <AppleSignInBtn />
-
           <TermsAndConditions />
-
           <JoinNow />
         </div>
         <img
+          className="mainbanner-img"
           src={mainbanner}
           alt=""
         />
       </div>
 
       <div
-        className=" container py-5"
+        className=" container-fluid py-5 d-flex justify-content-center"
         style={{ height: '50dvh', backgroundColor: '#f2f2f0' }}
       >
-        <h1
-          className=" fw-normal"
-          style={{ fontSize: '1.5rem' }}
-        >
-          Explore collaborative articles
-        </h1>
+        <div className="">
+          <h1
+            className=" fw-normal"
+            style={{ fontSize: '1.5rem' }}
+          >
+            Explore collaborative articles
+          </h1>
 
-        <p className=" fw-normal py-2">
-          We’re unlocking community knowledge in a new way. Experts add insights
-          directly into each article, started with the help of AI.
-        </p>
+          <p className=" fw-normal py-2">
+            We’re unlocking community knowledge in a new way. Experts add
+            insights directly into each article, started with the help of AI.
+          </p>
 
-        <ul className=" d-flex flex-wrap gap-2 column-gap-2">
-          <li className="">
-            <button
-              className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-              style={{ fontSize: '0.9rem' }}
-            >
-              Marketing
-            </button>
-          </li>
-          <li className="">
-            <button
-              className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-              style={{ fontSize: '0.9rem' }}
-            >
-              Public Administration
-            </button>
-          </li>
-          <li className="">
-            <button
-              className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-              style={{ fontSize: '0.9rem' }}
-            >
-              Healthcare
-            </button>
-          </li>
-          <li className="">
-            <button
-              className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-              style={{ fontSize: '0.9rem' }}
-            >
-              Engineering
-            </button>
-          </li>
-          <li className="">
-            <button
-              className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-              style={{ fontSize: '0.9rem' }}
-            >
-              IT Services
-            </button>
-          </li>
-          <li className="">
-            <button
-              className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-              style={{ fontSize: '0.9rem' }}
-            >
-              Sustainability
-            </button>
-          </li>
-          <li className="">
-            <button
-              className=" btn  text-primary fw-bold rounded-5 px-3 py-2"
-              style={{
-                fontSize: '0.9rem',
-                color: '#0965c2',
-                border: '1px solid #0965c2',
-              }}
-            >
-              Show all
-            </button>
-          </li>
-        </ul>
+          <ul className=" d-flex flex-wrap gap-2 column-gap-2">
+            <li className="">
+              <button
+                className=" btn border border-black fw-normal rounded-5 px-3 py-2"
+                style={{ fontSize: '0.9rem' }}
+              >
+                Marketing
+              </button>
+            </li>
+            <li className="">
+              <button
+                className=" btn border border-black fw-normal rounded-5 px-3 py-2"
+                style={{ fontSize: '0.9rem' }}
+              >
+                Public Administration
+              </button>
+            </li>
+            <li className="">
+              <button
+                className=" btn border border-black fw-normal rounded-5 px-3 py-2"
+                style={{ fontSize: '0.9rem' }}
+              >
+                Healthcare
+              </button>
+            </li>
+            <li className="">
+              <button
+                className=" btn border border-black fw-normal rounded-5 px-3 py-2"
+                style={{ fontSize: '0.9rem' }}
+              >
+                Engineering
+              </button>
+            </li>
+            <li className="">
+              <button
+                className=" btn border border-black fw-normal rounded-5 px-3 py-2"
+                style={{ fontSize: '0.9rem' }}
+              >
+                IT Services
+              </button>
+            </li>
+            <li className="">
+              <button
+                className=" btn border border-black fw-normal rounded-5 px-3 py-2"
+                style={{ fontSize: '0.9rem' }}
+              >
+                Sustainability
+              </button>
+            </li>
+            <li className="">
+              <button
+                className=" btn  text-primary fw-bold rounded-5 px-3 py-2"
+                style={{
+                  fontSize: '0.9rem',
+                  color: '#0965c2',
+                  border: '1px solid #0965c2',
+                }}
+              >
+                Show all
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div
