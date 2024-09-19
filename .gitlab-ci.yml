@@ -896,15 +896,31 @@ install:
   - npm install
 >>>>>>> 4c3a3df (Add .gitlab-ci.yml image node version 22)
 
+=======
+image: node:22
+
+stages:
+  - test
+  - deploy
+
+>>>>>>> fe8149c (Add .gitlab-ci.yml)
 test:
   stage: test
   script:
     - echo "Running tests..."
     - npm run test
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   only:
     - main
+=======
+
+build:
+  stage: build
+  script:
+    - npm run build
+>>>>>>> fe8149c (Add .gitlab-ci.yml)
 
 >>>>>>> 4c3a3df (Add .gitlab-ci.yml image node version 22)
 
@@ -927,6 +943,7 @@ deploy:
 >>>>>>> 9b9e95f (Add .gitlab-ci.yml)
 =======
     # Add your deploy commands here, e.g., AWS, Docker
+<<<<<<< HEAD
   only:
     - main
 >>>>>>> 4c3a3df (Add .gitlab-ci.yml image node version 22)
