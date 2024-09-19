@@ -85,6 +85,17 @@ install:
 
 test:
   stage: test
+=======
+# Caching node_modules to avoid re-installing dependencies in every stage
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+install-dependencies:
+  stage: install
+  image: node:22
+>>>>>>> 9ca94b1 (Add feature caching in .gitlab-ci.yml)
   script:
     - echo "Running tests..."
     - npm run test
@@ -95,11 +106,19 @@ test:
   only:
     - main
 =======
+=======
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 day
+>>>>>>> 9ca94b1 (Add feature caching in .gitlab-ci.yml)
 
-build:
+build-job:
   stage: build
+  image: node:22
   script:
     - npm run build
+<<<<<<< HEAD
 >>>>>>> ef103fc (Add .gitlab-ci.yml)
 
 <<<<<<< HEAD
