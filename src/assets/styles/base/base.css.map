@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sources":["base.scss","base.css","_variables.scss"],"names":[],"mappings":"AACQ,iMAAA;AACR;EACE,UAAA;EACA,UAAA;EACA,sBAAA;EACA,iCAAA;EACA,gBAAA;EACA,kBAAA;ACAF;;ADGA;EACE,WAAA;EACA,sBAAA;ACAF;;ADGA;EACE,cEjBa;ADiBf;;ADGA;EACE,gCAAA;EACA,yBAAA;ACAF;;ADGA;EACE,eAAA;ACAF","file":"base.css"}
+=======
+{"version":3,"sources":["base.scss","base.css","_variables.scss"],"names":[],"mappings":"AAEA;EACE,UAAA;EACA,UAAA;EACA,sBAAA;EACA,oCAAA;ACDF;;ADIA;EACE,WAAA;EACA,sBAAA;ACDF;;ADIA;EACE,cEfa;ADcf;;ADIA;EACE,gCAAA;EACA,yBAAA;ACDF","file":"base.css"}
+>>>>>>> 8a7f19c (Design responsive landing page navigationbar layout)

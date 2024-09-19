@@ -20,8 +20,11 @@ root {
 a {
   text-decoration: none !important;
   color: #0965c2 !important;
+<<<<<<< HEAD
 }
 
 a:hover {
   cursor: pointer;
+=======
+>>>>>>> 8a7f19c (Design responsive landing page navigationbar layout)
 }/*# sourceMappingURL=base.css.map */

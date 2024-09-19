@@ -1,29 +1,25 @@
 import { Link } from 'react-router-dom';
 import { HomeCatagory } from '../category/homecatogary';
+import { HomeCatagory } from '../category/homecatogary';
 
 export const HomeNavigationBar = () => {
   return (
     <header className=" container py-2 d-flex justify-content-lg-around justify-content-between align-items-center">
       <div>
-        <Link
-          className=""
-          to={'/'}
-        >
-          <img
-            src="/linkedin-svgrepo-com.svg"
-            className="logo d-lg-none"
-            aria-describedby="logo"
-            alt="Linkedin Logo"
-            style={{ width: '35px' }}
-          />
-          <img
-            src="/linkedin-logo-3801732491.png"
-            className="logo d-none d-lg-block"
-            aria-describedby="logo"
-            alt="Linkedin Logo2"
-            style={{ width: '110px', height: '30px' }}
-          />
-        </Link>
+        <img
+          src="/linkedin-svgrepo-com.svg"
+          className="logo d-lg-none"
+          aria-describedby="logo"
+          alt="Linkedin Logo"
+          style={{ width: '35px' }}
+        />
+        <img
+          src="/linkedin-logo-3801732491.png"
+          className="logo d-none d-lg-block"
+          aria-describedby="logo"
+          alt="Linkedin Logo"
+          style={{ width: '130px', height: '30px' }}
+        />
       </div>
       <div className=" d-flex column-gap-3 align-items-center">
         <HomeCatagory display="d-none d-lg-inline" />
@@ -37,7 +33,7 @@ export const HomeNavigationBar = () => {
             data-testid="signin-btn"
           >
             <button
-              className="rounded-5 fs-6 signin-btn"
+              className=" btn rounded-5 fs-6"
               style={{
                 width: '100px',
                 height: '50px',
