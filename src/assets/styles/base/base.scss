@@ -18,6 +18,7 @@ root {
   color: variables.$primary-blue;
 }
 
+<<<<<<< HEAD
 a:not([class~='footer-link']):not([class~='footer-link-dark']) {
   text-decoration: none !important;
   color: variables.$primary-blue !important;
@@ -25,4 +26,9 @@ a:not([class~='footer-link']):not([class~='footer-link-dark']) {
 
 a:hover {
   cursor: pointer;
+=======
+a {
+  text-decoration: none !important;
+  color: variables.$primary-blue !important;
+>>>>>>> f88737e (Design responsive landing page navigationbar layout)
 }
