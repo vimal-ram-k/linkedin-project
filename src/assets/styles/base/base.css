@@ -26,7 +26,11 @@ root {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 a:not([class~='footer-link']):not([class~='footer-link-dark']) {
+=======
+a:not([class~=footer-link]):not([class~=footer-link-dark]) {
+>>>>>>> 62136b6 (Add footer with responsive laypout)
   text-decoration: none !important;
   color: #0965c2 !important;
 }

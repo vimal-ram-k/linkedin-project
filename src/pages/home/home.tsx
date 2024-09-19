@@ -9,9 +9,13 @@ import { AppleSignInBtn } from '../../components/buttons/applesigninbtn';
 import { JoinNow } from '../../components/buttons/joinnowbtn';
 import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { Footer } from '../../components/footer/footer';
 =======
 >>>>>>> f531892 (Design responsive main banner in landing page)
+=======
+import { Footer } from '../../components/footer/footer';
+>>>>>>> 62136b6 (Add footer with responsive laypout)
 export const Home = () => {
   return (
     <div className="">
