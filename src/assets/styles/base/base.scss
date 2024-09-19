@@ -17,5 +17,6 @@ root {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
+  color: variables.$primary-blue !important;
 }

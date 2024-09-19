@@ -1,10 +1,14 @@
 import { Link } from 'react-router-dom';
 import '../../assets/styles/components/category/homecatogary.css';
 
-export const HomeCatagory = () => {
+type HomeCatagoryType = {
+  display: 'd-none d-lg-inline' | 'd-block d-lg-none';
+};
+
+export const HomeCatagory = (props: HomeCatagoryType) => {
   return (
-    <nav>
-      <ul className=" d-flex justify-content-around p-0 py-2">
+    <nav className={`${props.display}`}>
+      <ul className=" d-flex justify-content-around align-items-center column-gap-md-4 column-gap-lg-5 p-0 py-2 py-lg-0 m-lg-0">
         <li className=" list-unstyled">
           <Link
             to="/"
