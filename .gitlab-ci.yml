@@ -1,0 +1,35 @@
+stages:
+  - build
+  - test
+  - deploy
+
+variables:
+  NODE_ENV: production
+
+before_script:
+  - echo "Installing dependencies..."
+  - npm install
+
+test:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - npm run test
+  only:
+    - main
+
+build:
+  stage: build
+  script:
+    - echo "Building the project..."
+    - npm run build
+  only:
+    - main
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying the project..."
+    # Add your deploy commands here, e.g., AWS, Docker
+  only:
+    - main
