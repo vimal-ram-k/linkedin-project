@@ -96,6 +96,7 @@ image: node:22
 
 stages:
   - test
+  - build
   - deploy
 
 >>>>>>> ef103fc (Add .gitlab-ci.yml)
