@@ -18,6 +18,7 @@ test:
   stage: test
   script:
     - echo "Running tests..."
+    - npm install
     - npm run test
   only:
     - main
