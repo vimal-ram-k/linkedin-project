@@ -21,7 +21,7 @@ export const HomeNavigationBar = () => {
             src="/linkedin-logo-3801732491.png"
             className="logo d-none d-lg-block"
             aria-describedby="logo"
-            alt="Linkedin Logo"
+            alt="Linkedin Logo2"
             style={{ width: '110px', height: '30px' }}
           />
         </Link>
