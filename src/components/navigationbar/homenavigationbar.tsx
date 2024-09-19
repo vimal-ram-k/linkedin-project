@@ -3,10 +3,7 @@ import { HomeCatagory } from '../category/homecatogary';
 
 export const HomeNavigationBar = () => {
   return (
-    <header
-      className=" container py-2 d-flex justify-content-lg-around justify-content-between align-items-center"
-      style={{ height: '80px' }}
-    >
+    <header className=" container py-2 d-flex justify-content-lg-around justify-content-between align-items-center">
       <div>
         <Link
           className=""
