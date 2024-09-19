@@ -26,9 +26,14 @@ a:not([class~='footer-link']):not([class~='footer-link-dark']) {
 
 a:hover {
   cursor: pointer;
+<<<<<<< HEAD
 =======
 a {
   text-decoration: none !important;
   color: variables.$primary-blue !important;
 >>>>>>> f88737e (Design responsive landing page navigationbar layout)
 }
+=======
+}
+
+>>>>>>> 69e9878 (Fixed layout issue, font style, links)

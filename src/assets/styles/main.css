@@ -6,7 +6,10 @@
 @import url(../styles//components/profilecard/profilecard.css);
 @import url(../styles//components/searchbar/searchbar.css);
 @import url(../styles//components//buttons/buttons.css);
+<<<<<<< HEAD
 @import url('../styles/components/footer/footer.css');
+=======
+>>>>>>> 69e9878 (Fixed layout issue, font style, links)
 @import url(../styles/base/base.css);
 
 @import url('../../../node_modules/bootstrap/dist/css/bootstrap.css');
