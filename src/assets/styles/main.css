@@ -5,6 +5,7 @@
 @import url(../styles//components/newscard/newscard.css);
 @import url(../styles//components/profilecard/profilecard.css);
 @import url(../styles//components/searchbar/searchbar.css);
+@import url(../styles//components//buttons/buttons.css);
 @import url(../styles/base/base.css);
 
 @import url('../../../node_modules/bootstrap/dist/css/bootstrap.css');
