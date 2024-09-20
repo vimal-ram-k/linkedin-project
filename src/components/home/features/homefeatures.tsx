@@ -26,84 +26,109 @@ export const HomeFeatures = () => {
   };
   return (
     <div
-      className=" d-flex position-relative container"
-      style={{ height: '60dvh', backgroundColor: '#f2f2f0' }}
+      className=" container-fluid d-lg-flex justify-content-lg-center position-relative gr-light-bg py-5"
+      style={{ height: '600px' }}
     >
-      <button
-        onClick={flexScroller}
-        id="prev-btn"
-        className=" position-absolute top-50 border-0 bg-black bg-opacity-75 rounded-circle z-3"
-        style={{ width: '40px', height: '40px' }}
-      >
-        <i className=" bi bi-arrow-left-circle-fill text-white"></i>
-      </button>
+      {currentSection > 1 ? (
+        <button
+          onClick={flexScroller}
+          id="prev-btn"
+          className=" position-absolute top-50 border-0 bg-black bg-opacity-75 rounded-circle z-3 d-lg-none"
+          style={{ width: '40px', height: '40px' }}
+        >
+          <i className=" bi bi-arrow-left text-white"></i>
+        </button>
+      ) : (
+        <></>
+      )}
       <ul
         id="flex-scroller"
-        className=" d-flex align-items-center column-gap-4 overflow-scroll"
+        className=" d-flex column-gap-5 d-lg-block overflow-scroll"
         style={{ scrollbarWidth: 'none' }}
       >
         <li
-          className=" d-flex flex-column gap-2"
+          className="row d-flex flex-column d-lg-block flex-lg-row row-gap-3"
           id="section1"
         >
-          <img
-            src={image1}
-            alt=""
-            width={300}
-          />
-          <h1 style={{ color: '#b14020', fontSize: '1.3rem' }}>
-            Let the right people know you’re open to work
-          </h1>
-          <p>
-            With the Open To Work feature, you can privately tell recruiters or
-            publicly share with the LinkedIn community that you are looking for
-            new job opportunities.
-          </p>
+          <div className=" col-lg-6 order-lg-1">
+            <img
+              src={image1}
+              alt=""
+              width={300}
+            />
+          </div>
+          <div className=" col-lg-6">
+            <h1
+              className=" rd-header"
+              style={{ fontSize: '1.3rem' }}
+            >
+              Let the right people know you’re open to work
+            </h1>
+            <p>
+              With the Open To Work feature, you can privately tell recruiters
+              or publicly share with the LinkedIn community that you are looking
+              for new job opportunities.
+            </p>
+          </div>
         </li>
         <li
-          className=" d-flex flex-column gap-2"
+          className="row d-flex flex-column row-gap-3"
           id="section2"
         >
-          <img
-            src={image2}
-            alt=""
-            width={300}
-          />
-          <h1 style={{ color: '#b14020', fontSize: '1.3rem' }}>
-            Conversations today could lead to opportunity tomorrow
-          </h1>
-          <p>
-            Sending messages to people you know is a great way to strengthen
-            relationships as you take the next step in your career.
-          </p>
+          <div className=" col-lg-6 order-lg-1">
+            <img
+              src={image2}
+              alt=""
+              width={300}
+            />
+          </div>
+          <div className=" col-lg-6 order-1">
+            <h1
+              className=" rd-header"
+              style={{ fontSize: '1.3rem' }}
+            >
+              Conversations today could lead to opportunity tomorrow
+            </h1>
+            <p>
+              Sending messages to people you know is a great way to strengthen
+              relationships as you take the next step in your career.
+            </p>
+          </div>
         </li>
         <li
-          className=" d-flex flex-column gap-2"
+          className="row d-flex flex-column row-gap-3"
           id="section3"
         >
-          <img
-            src={image3}
-            alt=""
-            width={300}
-          />
-          <h1 style={{ color: '#b14020', fontSize: '1.3rem' }}>
-            Stay up to date on your industry
-          </h1>
-          <p>
-            From live videos, to stories, to newsletters and more, LinkedIn is
-            full of ways to stay up to date on the latest discussions in your
-            industry.
-          </p>
+          <div className=" col-lg-6 order-lg-1">
+            <img
+              src={image3}
+              alt=""
+              width={300}
+            />
+          </div>
+          <div className=" col-lg-6">
+            <h1
+              className=" rd-header"
+              style={{ fontSize: '1.3rem' }}
+            >
+              Stay up to date on your industry
+            </h1>
+            <p>
+              From live videos, to stories, to newsletters and more, LinkedIn is
+              full of ways to stay up to date on the latest discussions in your
+              industry.
+            </p>
+          </div>
         </li>
       </ul>
-      {currentSection < 4 ? (
+      {currentSection < 3 ? (
         <button
           id="next-btn"
           onClick={flexScroller}
-          className=" position-absolute border-0 bg-black bg-opacity-75 rounded-circle z-3"
+          className=" position-absolute border-0 bg-black bg-opacity-75 rounded-circle z-3 d-lg-none"
           style={{ width: '40px', height: '40px', right: '0', top: '50%' }}
         >
-          <i className=" bi bi-arrow-right-circle-fill text-white"></i>
+          <i className=" bi bi-arrow-right text-white"></i>
         </button>
       ) : (
         <></>
