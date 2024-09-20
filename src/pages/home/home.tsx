@@ -9,12 +9,8 @@ import { AppleSignInBtn } from '../../components/buttons/applesigninbtn';
 import { JoinNow } from '../../components/buttons/joinnowbtn';
 import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png';
 import { Footer } from '../../components/footer/footer';
-<<<<<<< HEAD
-
-=======
 import { Link } from 'react-router-dom';
 import home_data from './home.json';
->>>>>>> dev
 export const Home = () => {
   return (
     <div className="">
@@ -46,49 +42,6 @@ export const Home = () => {
       </div>
 
       <div
-<<<<<<< HEAD
-        className=" container-fluid py-5 d-flex justify-content-center"
-        style={{ height: '50dvh', backgroundColor: '#f2f2f0' }}
-      >
-        <div className="">
-          <h1
-            className=" fw-normal"
-            style={{ fontSize: '1.5rem' }}
-          >
-            Explore collaborative articles
-          </h1>
-
-          <p className=" fw-normal py-2">
-            We’re unlocking community knowledge in a new way. Experts add
-            insights directly into each article, started with the help of AI.
-          </p>
-
-          <ul className=" d-flex flex-wrap gap-2 column-gap-2">
-            <li className="">
-              <button
-                className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-                style={{ fontSize: '0.9rem' }}
-              >
-                Marketing
-              </button>
-            </li>
-            <li className="">
-              <button
-                className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-                style={{ fontSize: '0.9rem' }}
-              >
-                Public Administration
-              </button>
-            </li>
-            <li className="">
-              <button
-                className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-                style={{ fontSize: '0.9rem' }}
-              >
-                Healthcare
-              </button>
-            </li>
-=======
         className=" container-fluid py-5  d-lg-flex justify-content-lg-center align-items-lg-center"
         style={{ height: '400px', backgroundColor: '#f2f2f0' }}
       >
@@ -189,7 +142,6 @@ export const Home = () => {
           </div>
 
           <ul className=" d-flex flex-wrap gap-2 column-gap-2 p-0 col-lg-6">
->>>>>>> dev
             <li className="">
               <button
                 className=" btn border border-black fw-normal rounded-5 px-3 py-2"
@@ -203,11 +155,7 @@ export const Home = () => {
                 className=" btn border border-black fw-normal rounded-5 px-3 py-2"
                 style={{ fontSize: '0.9rem' }}
               >
-<<<<<<< HEAD
-                IT Services
-=======
                 Bussiness Developement
->>>>>>> dev
               </button>
             </li>
             <li className="">
@@ -215,25 +163,11 @@ export const Home = () => {
                 className=" btn border border-black fw-normal rounded-5 px-3 py-2"
                 style={{ fontSize: '0.9rem' }}
               >
-<<<<<<< HEAD
-                Sustainability
-=======
                 Finance
->>>>>>> dev
               </button>
             </li>
             <li className="">
               <button
-<<<<<<< HEAD
-                className=" btn  text-primary fw-bold rounded-5 px-3 py-2"
-                style={{
-                  fontSize: '0.9rem',
-                  color: '#0965c2',
-                  border: '1px solid #0965c2',
-                }}
-              >
-                Show all
-=======
                 className=" btn border border-black fw-normal rounded-5 px-3 py-2"
                 style={{ fontSize: '0.9rem' }}
               >
@@ -254,13 +188,10 @@ export const Home = () => {
                 style={{ fontSize: '0.9rem' }}
               >
                 Customer Service
->>>>>>> dev
               </button>
             </li>
           </ul>
         </div>
-<<<<<<< HEAD
-=======
       </div>
 
       <div
@@ -369,7 +300,6 @@ export const Home = () => {
             </button>
           </li>
         </ul>
->>>>>>> dev
       </div>
 
       <div
@@ -477,8 +407,6 @@ export const Home = () => {
           </select>
         </section>
       </div>
-<<<<<<< HEAD
-=======
 
       <div className=" gr-light-bg  pt-5">
         <div
@@ -574,7 +502,6 @@ export const Home = () => {
           Get started
         </button>
       </div>
->>>>>>> dev
       <Footer />
     </div>
   );
