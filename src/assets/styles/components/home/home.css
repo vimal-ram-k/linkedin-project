@@ -5,6 +5,25 @@
   color: #0965c2;
 }
 
+<<<<<<< HEAD
+=======
+.gr-light-bg {
+  background-color: #f2f2f0 !important;
+}
+
+.gr-dark-bg {
+  background-color: #eae5df !important;
+}
+
+.bl-light-bg {
+  background-color: rgba(9, 101, 194, 0.0980392157);
+}
+
+.rd-header {
+  color: #b14020;
+}
+
+>>>>>>> dev
 .mainbanner-img {
   width: 350px;
   border-radius: 1%;
