@@ -4,4 +4,14 @@
 
 .signin-btn:hover {
   background-color: rgba(9, 101, 194, 0.0980392157);
+}
+
+.signin-btn-colored {
+  background-color: #0965c2;
+  color: white !important;
+}
+
+button {
+  height: "50px";
+  width: "300px";
 }/*# sourceMappingURL=buttons.css.map */

@@ -27,11 +27,12 @@ export const Home = () => {
           >
             Welcome to your professional community
           </h1>
-
-          <GoogleSignButton />
-          <AppleSignInBtn />
-          <TermsAndConditions />
-          <JoinNow />
+          <div className=" d-flex flex-column row-gap-3">
+            <GoogleSignButton />
+            <AppleSignInBtn />
+            <TermsAndConditions />
+            <JoinNow />
+          </div>
         </div>
         <img
           className="mainbanner-img col-lg-5"
