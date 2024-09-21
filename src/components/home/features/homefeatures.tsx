@@ -27,7 +27,7 @@ export const HomeFeatures = () => {
   return (
     <div
       className=" container-fluid d-lg-flex justify-content-lg-center position-relative gr-light-bg py-5"
-      style={{ height: '600px' }}
+      style={{ height: 'auto' }}
     >
       {currentSection > 1 ? (
         <button
@@ -43,14 +43,14 @@ export const HomeFeatures = () => {
       )}
       <ul
         id="flex-scroller"
-        className=" d-flex column-gap-5 d-lg-block overflow-scroll"
+        className=" container d-flex column-gap-5 d-lg-block overflow-scrol"
         style={{ scrollbarWidth: 'none' }}
       >
         <li
-          className="row d-flex flex-column d-lg-block flex-lg-row row-gap-3"
+          className="row-gap-3 row"
           id="section1"
         >
-          <div className=" col-lg-6 order-lg-1">
+          <div className=" col-lg-6 order-lg-1 d-lg-flex justify-content-lg-center">
             <img
               src={image1}
               alt=""
@@ -72,10 +72,10 @@ export const HomeFeatures = () => {
           </div>
         </li>
         <li
-          className="row d-flex flex-column row-gap-3"
+          className="row row-gap-3"
           id="section2"
         >
-          <div className=" col-lg-6 order-lg-1">
+          <div className=" col-lg-6 order-lg-1 d-lg-flex justify-content-lg-center">
             <img
               src={image2}
               alt=""
@@ -96,10 +96,10 @@ export const HomeFeatures = () => {
           </div>
         </li>
         <li
-          className="row d-flex flex-column row-gap-3"
+          className="row row-gap-3"
           id="section3"
         >
-          <div className=" col-lg-6 order-lg-1">
+          <div className=" col-lg-6 order-lg-1 d-lg-flex justify-content-lg-center">
             <img
               src={image3}
               alt=""

@@ -1,24 +1,28 @@
-input::placeholder{
-    font-size: 0.9rem;
+input::placeholder {
+  font-size: 0.9rem;
+  font-weight: normal;
 }
 
-input:focus{
-    outline: none;
+input {
+  font-weight: normal;
+}
+input:focus {
+  outline: none;
 }
 
-input:focus .searchbar-outer{
-    outline: 1px solid blue;
+input:focus .searchbar-outer {
+  outline: 1px solid blue;
 }
-.nav-item-name{
-    font-size: 0.8rem;
+.nav-item-name {
+  font-size: 0.8rem;
 }
 
-.search-icon{
+.search-icon {
+  color: #000;
+}
+
+.dark {
+  .search-icon {
     color: #000;
-}
-
-.dark{
-    .search-icon{
-        color: #000;
-    }
+  }
 }

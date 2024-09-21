@@ -3,7 +3,7 @@ import footer_data from './footer.json';
 export const Footer = () => {
   return (
     <div
-      className=" container-fluid m-0 p-0 row  py-4"
+      className=" container-fluid m-0 p-0 row  pt-4"
       style={{ backgroundColor: '#f2f2f0' }}
     >
       <div className=" col-lg-3">

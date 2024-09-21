@@ -11,31 +11,31 @@ import mainbanner from '../../assets/images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVik
 import { Footer } from '../../components/footer/footer';
 import { Link } from 'react-router-dom';
 import home_data from './home.json';
+import footer_banner_logo from '../../assets/images/eghb2zc0p5s2x42wbi80w4v8a.jpg';
+import footer_bg from '../../assets/images/4ezbw852t2wrgf27zl1o1qtu7.png';
 export const Home = () => {
   return (
     <div className="">
       <HomeNavigationBar />
       <HomeCatagory display="d-block d-lg-none" />
 
-      <div
-        className=" container d-flex flex-column flex-lg-row row-gap-1 align-items-center justify-content-around"
-        style={{ height: '70dvh' }}
-      >
-        <div className="home-banner">
+      <div className=" container d-flex flex-column flex-lg-row row-gap-1 align-items-center justify-content-around py-5">
+        <div className="home-banner row">
           <h1
-            className="  p-0 text-center text-lg-start header-banner"
+            className="  p-0 text-center text-lg-start header-banner col-lg-7 w-100"
             style={{ color: '#595c5e' }}
           >
             Welcome to your professional community
           </h1>
-
-          <GoogleSignButton />
-          <AppleSignInBtn />
-          <TermsAndConditions />
-          <JoinNow />
+          <div className=" d-flex flex-column row-gap-3">
+            <GoogleSignButton />
+            <AppleSignInBtn />
+            <TermsAndConditions />
+            <JoinNow />
+          </div>
         </div>
         <img
-          className="mainbanner-img"
+          className="mainbanner-img col-lg-5"
           src={mainbanner}
           alt=""
         />
@@ -47,66 +47,46 @@ export const Home = () => {
       >
         <div className=" container row ">
           <div className="col-lg-6">
-            <h1
-              className=" fw-normal"
-              style={{ fontSize: '1.5rem' }}
-            >
-              Explore collaborative articles
-            </h1>
+            <h1 className=" fw-normal">Explore collaborative articles</h1>
 
-            <p className=" fw-normal py-2">
+            <p
+              className=" fw-light py-2"
+              style={{ fontSize: '1.2rem' }}
+            >
               We’re unlocking community knowledge in a new way. Experts add
               insights directly into each article, started with the help of AI.
             </p>
           </div>
 
           <div className=" col-lg-6">
-            <ul className=" d-flex flex-wrap gap-2 column-gap-2 p-0 ">
+            <ul className=" d-flex flex-wrap gap-2 column-gap-2 p-0">
               <li className="">
-                <button
-                  className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-                  style={{ fontSize: '0.9rem' }}
-                >
+                <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
                   Marketing
                 </button>
               </li>
               <li className="">
-                <button
-                  className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-                  style={{ fontSize: '0.9rem' }}
-                >
+                <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
                   Public Administration
                 </button>
               </li>
               <li className="">
-                <button
-                  className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-                  style={{ fontSize: '0.9rem' }}
-                >
+                <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
                   Healthcare
                 </button>
               </li>
               <li className="">
-                <button
-                  className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-                  style={{ fontSize: '0.9rem' }}
-                >
+                <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
                   Engineering
                 </button>
               </li>
               <li className="">
-                <button
-                  className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-                  style={{ fontSize: '0.9rem' }}
-                >
+                <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
                   IT Services
                 </button>
               </li>
               <li className="">
-                <button
-                  className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-                  style={{ fontSize: '0.9rem' }}
-                >
+                <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
                   Sustainability
                 </button>
               </li>
@@ -129,56 +109,36 @@ export const Home = () => {
 
       <div
         className=" py-5 container-fluid d-flex justify-content-center align-items-lg-center"
-        style={{ height: '300px' }}
+        style={{ height: '350px' }}
       >
         <div className=" container row">
           <div className=" col-lg-6">
-            <h1
-              className=" py-3"
-              style={{ fontSize: ' 1.3rem' }}
-            >
-              Find the right job or intership for you
-            </h1>
+            <h1 className=" py-3">Find the right job or intership for you</h1>
           </div>
 
           <ul className=" d-flex flex-wrap gap-2 column-gap-2 p-0 col-lg-6">
             <li className="">
-              <button
-                className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-                style={{ fontSize: '0.9rem' }}
-              >
+              <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
                 Engineering
               </button>
             </li>
             <li className="">
-              <button
-                className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-                style={{ fontSize: '0.9rem' }}
-              >
+              <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
                 Bussiness Developement
               </button>
             </li>
             <li className="">
-              <button
-                className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-                style={{ fontSize: '0.9rem' }}
-              >
+              <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
                 Finance
               </button>
             </li>
             <li className="">
-              <button
-                className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-                style={{ fontSize: '0.9rem' }}
-              >
+              <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
                 Administrative Assiant
               </button>
             </li>
             <li className="">
-              <button
-                className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-                style={{ fontSize: '0.9rem' }}
-              >
+              <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
                 Retail Associate
               </button>
             </li>
@@ -223,83 +183,65 @@ export const Home = () => {
       </div>
 
       <div
-        className=" container-fluid py-5 container d-lg-flex justify-content-lg-center align-items-lg-center"
-        style={{ height: '300px' }}
+        className=" container-fluid py-5  d-lg-flex justify-content-lg-center  align-items-lg-center "
+        style={{ height: '380px' }}
       >
-        <div className=" container col-lg-6">
-          <h1
-            className=" py-3"
-            style={{ fontSize: ' 1.3rem' }}
-          >
-            Discover the best software tools
-          </h1>
-          <p className=" fw-light">
-            Connect with buyers who have first-hand experience to find the best
-            products for you.
-          </p>
+        <div className=" container row ">
+          <div className=" col-lg-6">
+            <h1 className=" py-3">Discover the best software tools</h1>
+            <p
+              className=" fw-light py-2"
+              style={{ fontSize: '1.2rem' }}
+            >
+              Connect with buyers who have first-hand experience to find the
+              best products for you.
+            </p>
+          </div>
+          <ul className=" d-flex flex-wrap gap-2 column-gap-2 p-0 col-lg-6">
+            <li className="">
+              <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
+                Engineering
+              </button>
+            </li>
+            <li className="">
+              <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
+                Bussiness Developement
+              </button>
+            </li>
+            <li className="">
+              <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
+                Finance
+              </button>
+            </li>
+            <li className="">
+              <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
+                Administrative Assiant
+              </button>
+            </li>
+            <li className="">
+              <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
+                Retail Associate
+              </button>
+            </li>
+            <li className="">
+              <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
+                Customer Service
+              </button>
+            </li>
+            <li className="">
+              <button
+                className=" btn fw-medium rounded-5 px-3 py-2"
+                style={{
+                  fontSize: '0.9rem',
+                  color: '#0965c2',
+                  border: '1px solid #0965c2',
+                }}
+              >
+                Show all
+              </button>
+            </li>
+          </ul>
         </div>
-        <ul className=" d-flex flex-wrap gap-2 column-gap-2 p-0 col-lg-6">
-          <li className="">
-            <button
-              className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-              style={{ fontSize: '0.9rem' }}
-            >
-              Engineering
-            </button>
-          </li>
-          <li className="">
-            <button
-              className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-              style={{ fontSize: '0.9rem' }}
-            >
-              Bussiness Developement
-            </button>
-          </li>
-          <li className="">
-            <button
-              className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-              style={{ fontSize: '0.9rem' }}
-            >
-              Finance
-            </button>
-          </li>
-          <li className="">
-            <button
-              className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-              style={{ fontSize: '0.9rem' }}
-            >
-              Administrative Assiant
-            </button>
-          </li>
-          <li className="">
-            <button
-              className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-              style={{ fontSize: '0.9rem' }}
-            >
-              Retail Associate
-            </button>
-          </li>
-          <li className="">
-            <button
-              className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-              style={{ fontSize: '0.9rem' }}
-            >
-              Customer Service
-            </button>
-          </li>
-          <li className="">
-            <button
-              className=" btn fw-medium rounded-5 px-3 py-2"
-              style={{
-                fontSize: '0.9rem',
-                color: '#0965c2',
-                border: '1px solid #0965c2',
-              }}
-            >
-              Show all
-            </button>
-          </li>
-        </ul>
       </div>
 
       <div
@@ -307,39 +249,28 @@ export const Home = () => {
         style={{ height: '300px' }}
       >
         <div className=" col-lg-6">
-          <h1
-            className=" py-3"
-            style={{ fontSize: ' 1.3rem' }}
+          <h1 className=" py-3">Keep your mind sharp with games</h1>
+          <p
+            className=" fw-light py-2"
+            style={{ fontSize: '1.2rem' }}
           >
-            Keep your mind sharp with games
-          </h1>
-          <p className=" fw-light">
             Take a break and reconnect with your network through quick daily
             games.
           </p>
         </div>
         <ul className=" d-flex flex-wrap gap-2 column-gap-2 p-0 mt-4 col-lg-6">
           <li className="">
-            <button
-              className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-              style={{ fontSize: '0.9rem' }}
-            >
+            <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
               Pinpoint
             </button>
           </li>
           <li className="">
-            <button
-              className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-              style={{ fontSize: '0.9rem' }}
-            >
+            <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
               Queens
             </button>
           </li>
           <li className="">
-            <button
-              className=" btn border border-black fw-normal rounded-5 px-3 py-2"
-              style={{ fontSize: '0.9rem' }}
-            >
+            <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
               Crossclimb
             </button>
           </li>
@@ -348,71 +279,70 @@ export const Home = () => {
 
       <HomeFeatures />
 
-      <div
-        className=" py-5 px-3 d-flex flex-column gap-3"
-        style={{ height: '50dvh' }}
-      >
-        <img
-          src={connectpeople}
-          alt=""
-          width={300}
-        />
-        <h1
-          className=" fw-light"
-          style={{ fontSize: '1.3rem' }}
-        >
-          Connect with people who can help{' '}
-        </h1>
-        <button
-          className=" border border-1 py-1 px-2 bg-transparent rounded-5 text-black border-black opacity-75 fw-medium"
-          style={{ width: '200px', fontSize: '0.85rem' }}
-        >
-          Find people you know
-        </button>
-      </div>
-
-      <div
-        className=" py-5 px-3 d-flex flex-column gap-3"
-        style={{ height: '550px' }}
-      >
-        <img
-          src={searchjob}
-          alt=""
-          width={300}
-        />
-        <h1 style={{ fontSize: '1.4rem' }}>
-          Learn the skills you need to succeed
-        </h1>
-        <section className=" border rounded-2 px-3 position-relative py-3">
-          <h1
-            className=" position-absolute opacity-75"
-            style={{ fontSize: '1rem' }}
-          >
-            Choose a topic learn about
-          </h1>
-          <select
-            name=""
-            id=""
-            className=" border-1 bg-transparent border border-0 opacity-0"
-          >
-            <option
-              value="IT"
-              disabled
-              hidden
-            >
-              Choose a topic to learn about
-            </option>
-            <option value="IT">Choose a topic to learn about</option>
-            <option value="IT">Choose a topic to learn about</option>
-          </select>
-        </section>
-      </div>
-
-      <div className=" gr-light-bg  pt-5">
+      <div className=" d-lg-flex justify-content-lg-center column-gap-lg-3">
         <div
-          className=" container "
-          style={{ height: '40dvh' }}
+          className=" py-5 px-3 d-flex flex-column gap-3"
+          style={{ height: '50dvh' }}
         >
+          <img
+            src={connectpeople}
+            alt=""
+            width={300}
+          />
+          <h1
+            className=" fw-light"
+            style={{ fontSize: '1.3rem' }}
+          >
+            Connect with people who can help{' '}
+          </h1>
+          <button
+            className=" border border-1 py-1 px-2 bg-transparent rounded-5 text-black border-black opacity-75 fw-medium"
+            style={{ width: '300px', fontSize: '1rem' }}
+          >
+            Find people you know
+          </button>
+        </div>
+
+        <div
+          className=" py-5 px-3 d-flex flex-column gap-3"
+          style={{ height: '550px' }}
+        >
+          <img
+            src={searchjob}
+            alt=""
+            width={300}
+          />
+          <h1 style={{ fontSize: '1.4rem' }}>
+            Learn the skills you need to succeed
+          </h1>
+          <section className=" border rounded-2 px-3 position-relative py-3">
+            <h1
+              className=" position-absolute opacity-75"
+              style={{ fontSize: '1rem' }}
+            >
+              Choose a topic learn about
+            </h1>
+            <select
+              name=""
+              id=""
+              className=" border-1 bg-transparent border border-0 opacity-0"
+            >
+              <option
+                value="IT"
+                disabled
+                hidden
+              >
+                Choose a topic to learn about
+              </option>
+              <option value="IT">Choose a topic to learn about</option>
+              <option value="IT">Choose a topic to learn about</option>
+            </select>
+          </section>
+        </div>
+      </div>
+
+      <div className=" row py-3">
+        <div className=" container gr-light-bg  py-5  col-lg-6 h-100">
           <h1
             className="rd-header fw-normal"
             style={{ fontSize: '1.4rem' }}
@@ -450,6 +380,12 @@ export const Home = () => {
             })}
           </ul>
         </div>
+        <img
+          className=" col-lg-6 d-none d-lg-flex"
+          src={footer_banner_logo}
+          alt=""
+          style={{ width: '600px' }}
+        />
       </div>
 
       <div className="bl-light-bg py-5">
@@ -479,28 +415,31 @@ export const Home = () => {
         </div>
       </div>
 
-      <div
-        className=" container d-flex flex-column justify-content-center"
-        style={{ height: '200px' }}
-      >
-        <h1
-          className=" fw-light"
-          style={{ fontSize: '1.3rem' }}
-        >
-          Join your colleagues, classmates, and friends on LinkedIn.
-        </h1>
-        <button
-          className=" btn border border-0 text-white rounded-5"
-          style={{
-            width: '120px',
-            height: '35px',
-            backgroundColor: '#0965c2',
-            fontWeight: 'bold',
-            fontSize: '0.9rem',
-          }}
-        >
-          Get started
-        </button>
+      <div className=" d-flex flex-column justify-content-center card border-0 position-relative py-4">
+        <div className=" container card-title pt-4">
+          <h1 className=" fw-light">
+            Join your colleagues, classmates, and friends on LinkedIn.
+          </h1>
+          <button
+            className=" btn border border-0 text-white rounded-5"
+            style={{
+              width: '120px',
+              height: '35px',
+              backgroundColor: '#0965c2',
+              fontWeight: 'bold',
+              fontSize: '0.9rem',
+            }}
+          >
+            Get started
+          </button>
+        </div>
+        <div className="card-img d-none d-lg-block">
+          <img
+            src={footer_bg}
+            alt=""
+            style={{ width: '100dvw' }}
+          />
+        </div>
       </div>
       <Footer />
     </div>
