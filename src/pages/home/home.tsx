@@ -12,6 +12,8 @@ import { Footer } from '../../components/footer/footer';
 import { Link } from 'react-router-dom';
 import home_data from './home.json';
 import footer_banner_logo from '../../assets/images/eghb2zc0p5s2x42wbi80w4v8a.jpg';
+import footer_bg from '../../assets/images/4ezbw852t2wrgf27zl1o1qtu7.png';
+
 export const Home = () => {
   return (
     <div className="">
@@ -41,8 +43,8 @@ export const Home = () => {
       </div>
 
       <div
-        className=" container-fluid py-5  d-lg-flex justify-content-lg-center align-items-lg-center"
-        style={{ height: '450px', backgroundColor: '#f2f2f0' }}
+        className=" container-fluid py-5  d-lg-flex justify-content-lg-center align-items-lg-center hm-banner"
+        style={{ backgroundColor: '#f2f2f0' }}
       >
         <div className=" container row ">
           <div className="col-lg-6">
@@ -106,10 +108,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <div
-        className=" py-5 container-fluid d-flex justify-content-center align-items-lg-center"
-        style={{ height: '350px' }}
-      >
+      <div className=" py-5 container-fluid d-flex justify-content-center align-items-lg-center hm-banner-sm">
         <div className=" container row">
           <div className=" col-lg-6">
             <h1 className=" py-3">Find the right job or intership for you</h1>
@@ -154,21 +153,19 @@ export const Home = () => {
       </div>
 
       <div
-        className=" container-fluid py-5  d-lg-flex justify-content-lg-center  align-items-lg-center"
-        style={{ backgroundColor: '#f1ebe4', height: '200px' }}
+        className=" container-fluid py-5  d-lg-flex flex-lg-column justify-content-lg-center  align-items-lg-center hm-banner-sm"
+        id="hm-small"
+        style={{ backgroundColor: '#f1ebe4' }}
       >
-        <div className="container row">
-          <div className="col-lg-6">
-            <h1
-              className=" text-nowrap"
-              style={{ fontSize: ' 1.2rem', color: '#b14020' }}
-            >
+        <div className="container d-flex flex-column row-gap-lg-2">
+          <div className="">
+            <h1 style={{ color: '#b14020' }}>
               Post your job for millions of people to see
             </h1>
           </div>
-          <div className=" col-lg-3">
+          <div className="">
             <button
-              className=" btn  mt-5 fw-medium rounded-5 px-3 py-2 col-lg-6 mt-lg-0"
+              className=" btn  mt-5 fw-medium rounded-5 px-3 py-2 mt-lg-0"
               style={{
                 fontSize: '0.9rem',
                 color: '#0965c2',
@@ -181,10 +178,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <div
-        className=" container-fluid py-5  d-lg-flex justify-content-lg-center  align-items-lg-center "
-        style={{ height: '440px' }}
-      >
+      <div className=" container-fluid py-5  d-lg-flex justify-content-lg-center  align-items-lg-center hm-banner">
         <div className=" container row ">
           <div className=" col-lg-6">
             <h1 className=" py-3">Discover the best software tools</h1>
@@ -243,10 +237,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <div
-        className=" py-5 container d-lg-flex justify-content-lg-center align-items-lg-center"
-        style={{ height: '340px' }}
-      >
+      <div className=" py-5 container d-lg-flex justify-content-lg-center align-items-lg-center hm-banner-md">
         <div className=" col-lg-6">
           <h1 className=" py-3">Keep your mind sharp with games</h1>
           <p
@@ -414,7 +405,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className=" d-flex flex-column justify-content-center card border-0 position-relative py-4">
+      <div className=" d-flex flex-column justify-content-center card border-0 position-relative">
         <div className=" container card-title pt-4">
           <h1 className=" fw-light">
             Join your colleagues, classmates, and friends on LinkedIn.
@@ -431,6 +422,13 @@ export const Home = () => {
           >
             Get started
           </button>
+        </div>
+        <div className="card-img d-none d-lg-block">
+          <img
+            src={footer_bg}
+            alt=""
+            style={{ width: '100dvw' }}
+          />
         </div>
       </div>
       <Footer />

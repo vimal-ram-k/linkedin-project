@@ -5,6 +5,14 @@
   color: #0965c2;
 }
 
+.hm-banner {
+  height: 500px;
+}
+
+.hm-banner-sm:not([id~=hm-small]) {
+  height: 350px;
+}
+
 .gr-light-bg {
   background-color: #f2f2f0 !important;
 }
@@ -33,6 +41,9 @@
 @media screen and (min-width: 810px) {
   .home-banner {
     width: 450px;
+  }
+  .hm-banner {
+    height: 400px;
   }
   .header-banner {
     font-size: 1.6rem;
