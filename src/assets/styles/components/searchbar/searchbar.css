@@ -1,9 +1,15 @@
 input::-moz-placeholder {
   font-size: 0.9rem;
+  font-weight: normal;
 }
 
 input::placeholder {
   font-size: 0.9rem;
+  font-weight: normal;
+}
+
+input {
+  font-weight: normal;
 }
 
 input:focus {

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import linkedinlogo from '../../assets/images/linkedin-logo-3801732491.png';
+import linkedinlogo from '/linkedin-logo-3801732491.png';
 import { TermsAndConditions } from '../termsandcondition/termsandconditions';
 import { GoogleSignButton } from '../buttons/googlesignbtn';
 import { AppleSignInBtn } from '../buttons/applesigninbtn';
@@ -10,85 +10,88 @@ import { createAsync } from '../../features/auth/authSlice';
 export const SigninForm = () => {
   const appDispatch: AppDispatch = useDispatch();
   return (
-    <div className=" container ">
-      <Link to="/home">
-        <img
-          src={linkedinlogo}
-          alt=""
-          width={150}
-          height={150}
-        />
-      </Link>
-      <form className=" container ps-3">
-        <h1>Sign in</h1>
-        <span>Stay updated on your professional word</span>
-        <input
-          className=" ps-3 my-3 d-block rounded-2 border border-1 border-opacity-75 border-black"
-          type="text"
-          name="username"
-          placeholder="Email or phone"
-          style={{ width: '80dvw', height: '50px' }}
-        />
-        <input
-          type="password"
-          className="ps-3 my-3 d-block rounded-2 border border-1 border-opacity-75 border-black"
-          name="password"
-          id="usr-password"
-          placeholder="Password"
-          style={{ width: '80dvw', height: '50px' }}
-        />
-        <button
-          className=" d-block border-0 bg-transparent"
-          style={{}}
+    <div className=" container-fluid py-5 d-flex justify-content-center align-items-center">
+      <div className=" ">
+        <Link to="/home">
+          <img
+            src={linkedinlogo}
+            alt=""
+            width={120}
+            height={25}
+          />
+        </Link>
+        <form
+          className=" pt-4 m-auto "
+          style={{ width: '400px' }}
         >
-          <Link
-            to="/forgotpassword"
-            className=" fw-bold"
-            style={{ color: '#0965c2' }}
-          >
-            Forgot password?
-          </Link>
-        </button>
-        <button
-          className=" text-white rounded-5 border border-0 my-3"
-          onClick={() => appDispatch(createAsync())}
-          style={{ backgroundColor: '#0965c2', width: '80dvw', height: '50px' }}
-        >
+          <h1 className=" m-0 fw-medium">Sign in</h1>
+          <span className=" fw-normal">
+            Stay updated on your professional word
+          </span>
+          <input
+            className=" ps-3 my-4 d-block rounded-2 border border-1 border-opacity-75 border-black"
+            type="text"
+            name="username"
+            placeholder="Email or phone"
+            style={{ height: '50px', width: '300px' }}
+          />
+          <input
+            type="password"
+            className="ps-3 my-3 d-block rounded-2 border border-1 border-opacity-75 border-black"
+            name="password"
+            id="usr-password"
+            style={{ height: '50px', width: '300px' }}
+            placeholder="Password"
+          />
+          <button className=" d-block border-0 bg-transparent">
+            <Link
+              to="/forgotpassword"
+              className=" fw-light"
+              style={{ color: '#0965c2' }}
+            >
+              Forgot password?
+            </Link>
+          </button>
           <Link
             to="/feed"
-            className=" text-white"
+            className=""
             data-testid="test-submit"
           >
-            Sign in
+            <button
+              className="rounded-5 border border-0 my-3 signin-btn-colored fw-medium "
+              onClick={() => appDispatch(createAsync())}
+              style={{ height: '50px', width: '300px' }}
+            >
+              Sign in
+            </button>
           </Link>
-        </button>
 
-        <div className="mt-2 d-flex align-items-center justify-content-around">
-          <span
-            className=" bg-black opacity-25 "
-            style={{ width: '40dvw', height: '2px' }}
-          ></span>
-          <h1
-            className=" opacity-50 m-0 "
-            style={{ fontSize: '0.8rem' }}
-          >
-            or
-          </h1>
-          <span
-            className=" bg-black opacity-25 "
-            style={{ width: '40dvw', height: '2px' }}
-          ></span>
-        </div>
-      </form>
+          <div className=" d-flex align-items-center column-gap-2">
+            <span
+              className=" bg-black opacity-25 "
+              style={{ width: '130px', height: '1px' }}
+            ></span>
+            <h1
+              className=" opacity-50 m-0 "
+              style={{ fontSize: '0.8rem' }}
+            >
+              or
+            </h1>
+            <span
+              className=" bg-black opacity-25 "
+              style={{ width: '130px', height: '1px' }}
+            ></span>
+          </div>
 
-      <div
-        className="m-auto"
-        style={{ width: '80dvw' }}
-      >
-        <TermsAndConditions />
-        <GoogleSignButton />
-        <AppleSignInBtn />
-        <JoinNow />
+          <div className="  d-flex flex-column row-gap-2">
+            <TermsAndConditions />
+            <GoogleSignButton />
+            <AppleSignInBtn />
+            <div className=" mt-4">
+              <JoinNow />
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   );

@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 
 export const TermsAndConditions = () => {
   return (
-    <>
+    <div className="">
       <p
-        className=" text-center text-wrap  my-4 "
-        style={{ fontSize: '0.8rem', fontWeight: '200' }}
+        className=" text-start text-wrap "
+        style={{ fontSize: '0.7rem', fontWeight: '200' }}
       >
         By clicking Continue to join or sign in, you agree to LinkedIn’s
         <Link
@@ -29,6 +29,6 @@ export const TermsAndConditions = () => {
         </Link>
         .
       </p>
-    </>
+    </div>
   );
 };

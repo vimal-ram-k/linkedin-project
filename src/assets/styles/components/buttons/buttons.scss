@@ -6,3 +6,13 @@
 .signin-btn:hover {
   background-color: variables.$hover--primary-blue;
 }
+
+.signin-btn-colored {
+  background-color: variables.$primary-blue;
+  color: white !important;
+}
+
+button {
+  height: '50px';
+  width: '300px';
+}
