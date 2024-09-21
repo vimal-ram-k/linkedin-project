@@ -12,7 +12,6 @@ import { Footer } from '../../components/footer/footer';
 import { Link } from 'react-router-dom';
 import home_data from './home.json';
 import footer_banner_logo from '../../assets/images/eghb2zc0p5s2x42wbi80w4v8a.jpg';
-import footer_bg from '../../assets/images/4ezbw852t2wrgf27zl1o1qtu7.png';
 export const Home = () => {
   return (
     <div className="">
@@ -43,7 +42,7 @@ export const Home = () => {
 
       <div
         className=" container-fluid py-5  d-lg-flex justify-content-lg-center align-items-lg-center"
-        style={{ height: '400px', backgroundColor: '#f2f2f0' }}
+        style={{ height: '450px', backgroundColor: '#f2f2f0' }}
       >
         <div className=" container row ">
           <div className="col-lg-6">
@@ -184,7 +183,7 @@ export const Home = () => {
 
       <div
         className=" container-fluid py-5  d-lg-flex justify-content-lg-center  align-items-lg-center "
-        style={{ height: '380px' }}
+        style={{ height: '440px' }}
       >
         <div className=" container row ">
           <div className=" col-lg-6">
@@ -246,7 +245,7 @@ export const Home = () => {
 
       <div
         className=" py-5 container d-lg-flex justify-content-lg-center align-items-lg-center"
-        style={{ height: '300px' }}
+        style={{ height: '340px' }}
       >
         <div className=" col-lg-6">
           <h1 className=" py-3">Keep your mind sharp with games</h1>
@@ -381,7 +380,7 @@ export const Home = () => {
           </ul>
         </div>
         <img
-          className=" col-lg-6 d-none d-lg-flex"
+          className=" col-xl-6 d-none d-xl-flex"
           src={footer_banner_logo}
           alt=""
           style={{ width: '600px' }}
@@ -432,13 +431,6 @@ export const Home = () => {
           >
             Get started
           </button>
-        </div>
-        <div className="card-img d-none d-lg-block">
-          <img
-            src={footer_bg}
-            alt=""
-            style={{ width: '100dvw' }}
-          />
         </div>
       </div>
       <Footer />
