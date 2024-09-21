@@ -43,7 +43,7 @@ export const HomeFeatures = () => {
       )}
       <ul
         id="flex-scroller"
-        className=" container d-flex column-gap-5 d-lg-block overflow-scrol"
+        className=" container d-flex column-gap-5 d-lg-block overflow-scroll"
         style={{ scrollbarWidth: 'none' }}
       >
         <li
