@@ -1,3 +1,5 @@
+@use '../../base/variables';
+
 .support-link {
   text-decoration: none;
   display: inline;
@@ -5,6 +7,26 @@
   color: #0965c2;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+.gr-light-bg {
+  background-color: variables.$primary-grey-light !important;
+}
+
+.gr-dark-bg {
+  background-color: variables.$primary-grey-dark !important;
+}
+
+.bl-light-bg {
+  background-color: variables.$hover--primary-blue;
+}
+.rd-header {
+  color: variables.$primary-red;
+}
+>>>>>>> dev
+>>>>>>> tesing
 .mainbanner-img {
   width: 350px;
   border-radius: 1%;

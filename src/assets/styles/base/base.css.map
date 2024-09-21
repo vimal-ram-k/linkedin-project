@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": 3,
   "sources": [
@@ -9,3 +10,6 @@
   "mappings": "AACQ,iMAAA;AACR;EACE,UAAA;EACA,UAAA;EACA,sBAAA;EACA,iCAAA;EACA,gBAAA;EACA,kBAAA;ACAF;;ADGA;EACE,WAAA;EACA,sBAAA;ACAF;;ADGA;EACE,cEjBa;ADiBf;;ADGA;EACE,gCAAA;EACA,yBAAA;ACAF;;ADGA;EACE,eAAA;ACAF",
   "file": "base.css"
 }
+=======
+{"version":3,"sources":["base.scss","base.css","_variables.scss"],"names":[],"mappings":"AACQ,iMAAA;AACR;EACE,UAAA;EACA,UAAA;EACA,sBAAA;EACA,iCAAA;EACA,gBAAA;EACA,kBAAA;ACAF;;ADGA;EACE,WAAA;EACA,sBAAA;ACAF;;ADGA;EACE,cEjBa;ADiBf;;ADGA;EACE,gCAAA;EACA,yBAAA;ACAF;;ADGA;EACE,eAAA;ACAF","file":"base.css"}
+>>>>>>> tesing
