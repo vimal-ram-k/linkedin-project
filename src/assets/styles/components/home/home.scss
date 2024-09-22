@@ -53,6 +53,10 @@
     font-size: 2rem;
   }
 
+  .hm-bn-header {
+    font-size: 1.8rem;
+  }
+
   .mainbanner-img {
     width: clamp(450px, 30dvw, 600px);
     border-radius: 1%;
@@ -60,5 +64,40 @@
 
   .home-banner {
     width: 400px;
+  }
+}
+
+#bg-gray {
+  background-color: #f2f2f0;
+}
+
+#bg-light-red {
+  background-color: #f1ebe4;
+}
+
+.home-sub-banner:not([id~='bg-light-red']):not([id~='bn-height-large']):not(
+    [id~='bn-height-small']
+  ) {
+  height: clamp(200px, 100vh, 500px);
+}
+
+.home-sub-banner[id~='bg-light-red'] {
+  height: clamp(200px, 100vh, 300px);
+
+  button {
+    color: variables.$primary-red;
+    border: 2px solid variables.$primary-red !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-sub-banner:not([id~='bg-light-red']) {
+    height: clamp(200px, 100vh, 350px);
+  }
+
+  .home-sub-banner[id~='bg-light-red'] {
+    display: flex;
+    flex-direction: column !important;
+    height: clamp(200px, 100vh, 300px);
   }
 }

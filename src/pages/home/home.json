@@ -1,4 +1,62 @@
 {
+  "banners": [
+    {
+      "header": "Explore collaborative articles",
+      "description": "We’re unlocking community knowledge in a new way. Experts add insights directly into each article, started with the help of AI.",
+      "links": [
+        "Marketing",
+        "Public Administration",
+        "Healthcare",
+        "Engineering",
+        "It Services",
+        "Sustainbality",
+        "Show all"
+      ],
+      "id": "bg-gray"
+    },
+    {
+      "header": "Find the right job or intership for you",
+      "description": "",
+      "links": [
+        "Engineering",
+        "Bussiness Development",
+        "Finance",
+        "Administrative Assiant",
+        "Retail Associate",
+        "Customer Service",
+        "Show more"
+      ]
+    },
+    {
+      "header": " Post your job for millions of people to see",
+      "description": "",
+      "links": ["Post a job"],
+      "id": "bg-light-red"
+    },
+    {
+      "header": " Discover the best software tools ",
+      "description": " Connect with buyers who have first-hand experience to find the best products for you. ",
+      "links": [
+        "E-Commerce Platforms",
+        "CRM Software",
+        "Human Resources Management Systems",
+        "Recruiting Software",
+        "Sales Intelligence Software",
+        "Project Management Software",
+        "Help Desk Software",
+        "Social Networking Software",
+        "Descktop Publishing Software",
+        "Show all"
+      ],
+      "id": "bn-height-large"
+    },
+    {
+      "header": " Keep your mind sharp with games ",
+      "description": " Take a break and reconnect with your network through quick daily games. ",
+      "links": ["Pinpint", "Queens", "Crossclimb"],
+      "id": "bn-height-small"
+    }
+  ],
   "usage": [
     {
       "url": "",
