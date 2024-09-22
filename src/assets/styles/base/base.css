@@ -8,6 +8,10 @@
   font-style: normal;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .dark {
   color: #fff;
   background-color: #000;
@@ -28,6 +32,6 @@ a:hover {
 
 @media screen and (min-width: 769px) {
   .row {
-    font-size: 0.9rem !important;
+    font-size: 1.1rem !important;
   }
 }/*# sourceMappingURL=base.css.map */

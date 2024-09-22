@@ -12,6 +12,8 @@ import { Footer } from '../../components/footer/footer';
 import { Link } from 'react-router-dom';
 import home_data from './home.json';
 import footer_banner_logo from '../../assets/images/eghb2zc0p5s2x42wbi80w4v8a.jpg';
+import footer_bg from '../../assets/images/4ezbw852t2wrgf27zl1o1qtu7.png';
+
 export const Home = () => {
   return (
     <div className="">
@@ -231,7 +233,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className=" d-flex flex-column justify-content-center card border-0 position-relative py-4">
+      <div className=" d-flex flex-column justify-content-center card border-0 position-relative">
         <div className=" container card-title pt-4">
           <h1 className=" fw-light">
             Join your colleagues, classmates, and friends on LinkedIn.
@@ -248,6 +250,13 @@ export const Home = () => {
           >
             Get started
           </button>
+        </div>
+        <div className="card-img d-none d-lg-block">
+          <img
+            src={footer_bg}
+            alt=""
+            style={{ width: '100dvw' }}
+          />
         </div>
       </div>
       <Footer />
