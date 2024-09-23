@@ -7,8 +7,14 @@
   color: #0965c2;
 }
 
-<<<<<<< HEAD
-=======
+.hm-banner {
+  height: 500px;
+}
+
+.hm-banner-sm:not([id~='hm-small']) {
+  height: 350px;
+}
+
 .gr-light-bg {
   background-color: variables.$primary-grey-light !important;
 }
@@ -23,7 +29,6 @@
 .rd-header {
   color: variables.$primary-red;
 }
->>>>>>> dev
 .mainbanner-img {
   width: 350px;
   border-radius: 1%;
@@ -36,6 +41,10 @@
 @media screen and (min-width: 810px) {
   .home-banner {
     width: 450px;
+  }
+
+  .hm-banner {
+    height: 400px;
   }
 
   .header-banner {
