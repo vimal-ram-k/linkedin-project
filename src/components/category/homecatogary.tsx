@@ -8,7 +8,10 @@ type HomeCatagoryType = {
 export const HomeCatagory = (props: HomeCatagoryType) => {
   return (
     <nav className={`${props.display}`}>
-      <ul className=" container d-flex justify-content-lg-around justify-content-around align-items-center  column-gap-lg-5 p-0 py-2 py-lg-0 m-lg-0">
+      <ul
+        className=" container d-flex justify-content-lg-around justify-content-around align-items-center  column-gap-lg-5 p-0 py-2 py-lg-0 m-lg-0"
+        data-testid="hm-catagory"
+      >
         <li className=" list-unstyled">
           <Link
             to="/guest/articles"
