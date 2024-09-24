@@ -7,6 +7,7 @@ import { Home } from './pages/home/home.tsx';
 import { SigninForm } from './components/forms/signinform.tsx';
 import { store } from '../src/store.ts';
 import { Provider } from 'react-redux';
+import { Signup } from './pages/signup/signup.tsx';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Provider store={store}>
@@ -27,6 +28,10 @@ createRoot(document.getElementById('root')!).render(
           <Route
             path="/feed"
             element={<App />}
+          />
+          <Route
+            path="/signup"
+            element={<Signup />}
           />
         </Routes>
       </Router>
