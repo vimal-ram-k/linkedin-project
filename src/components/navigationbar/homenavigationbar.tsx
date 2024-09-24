@@ -49,18 +49,23 @@ export const HomeNavigationBar = () => {
               Sign in
             </button>
           </Link>
-          <button
-            className=" btn border text-white rounded-5"
-            style={{
-              width: '120px',
-              height: '50px',
-              backgroundColor: '#0965c2',
-              fontWeight: 'bold',
-              fontSize: '0.9rem',
-            }}
+          <Link
+            to="/signup"
+            data-testid="signin-btn"
           >
-            Join now
-          </button>
+            <button
+              className=" btn border text-white rounded-5"
+              style={{
+                width: '120px',
+                height: '50px',
+                backgroundColor: '#0965c2',
+                fontWeight: 'bold',
+                fontSize: '0.9rem',
+              }}
+            >
+              Join now
+            </button>
+          </Link>
         </nav>
       </div>
     </header>
