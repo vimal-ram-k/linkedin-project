@@ -3,7 +3,6 @@ import { GoogleSignButton } from '../../components/buttons/googlesignbtn';
 import { JoinNow } from '../../components/buttons/joinnowbtn';
 import { TermsAndConditions } from '../../components/termsandcondition/termsandconditions';
 import linkedin_logo from '/linkedin-logo-3801732491.png';
-import { Footer } from '../../components/footer/footer';
 import { CommonFooter } from '../../components/footer/commonfooter';
 
 export const Signup = () => {
