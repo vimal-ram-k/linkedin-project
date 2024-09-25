@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import linkedinlogo from '/linkedin-logo-3801732491.png';
 import { TermsAndConditions } from '../termsandcondition/termsandconditions';
 import { GoogleSignButton } from '../buttons/googlesignbtn';
@@ -7,8 +7,38 @@ import { JoinNow } from '../buttons/joinnowbtn';
 import { AppDispatch } from '../../store';
 import { useDispatch } from 'react-redux';
 import { createAsync } from '../../features/auth/authSlice';
+import React, { useState } from 'react';
+import axios from 'axios';
 export const SigninForm = () => {
+  const navigate = useNavigate();
+  const [userDetails, setUserDetails] = useState({
+    username: '',
+    userpassword: '',
+  });
+
   const appDispatch: AppDispatch = useDispatch();
+
+  const authValidation = async (e: Event) => {
+    e.preventDefault();
+    const formdata = new FormData();
+    formdata.append('useremail', userDetails.username);
+    formdata.append('userpassword', userDetails.userpassword);
+
+    const data = await axios.post(
+      'http://localhost:8080/api/v1/users/user',
+      formdata,
+      {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      }
+    );
+
+    if (data.status === 200) {
+      appDispatch(createAsync());
+      navigate('/feed');
+    }
+  };
   return (
     <div className=" container-fluid py-5 d-flex justify-content-center align-items-center">
       <div className=" ">
@@ -33,6 +63,12 @@ export const SigninForm = () => {
             type="text"
             name="username"
             placeholder="Email or phone"
+            onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
+              setUserDetails((prev) => ({
+                ...prev,
+                username: event.target.value,
+              }));
+            }}
             style={{ height: '50px', width: '300px' }}
           />
           <input
@@ -42,6 +78,12 @@ export const SigninForm = () => {
             id="usr-password"
             style={{ height: '50px', width: '300px' }}
             placeholder="Password"
+            onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
+              setUserDetails((prev) => ({
+                ...prev,
+                userpassword: event.target.value,
+              }));
+            }}
           />
           <button className=" d-block border-0 bg-transparent">
             <Link
@@ -59,7 +101,7 @@ export const SigninForm = () => {
           >
             <button
               className="rounded-5 border border-0 my-3 signin-btn-colored fw-medium "
-              onClick={() => appDispatch(createAsync())}
+              onClick={authValidation}
               style={{ height: '50px', width: '300px' }}
             >
               Sign in

@@ -4,8 +4,40 @@ import { JoinNow } from '../../components/buttons/joinnowbtn';
 import { TermsAndConditions } from '../../components/termsandcondition/termsandconditions';
 import linkedin_logo from '/linkedin-logo-3801732491.png';
 import { CommonFooter } from '../../components/footer/commonfooter';
+import axios from 'axios';
+import React, { useState } from 'react';
 
 export const Signup = () => {
+  const [userDetails, setUserDetails] = useState({
+    useremail: '',
+    userpassword: '',
+  });
+
+  const AuthValidation = async (e: Event) => {
+    e.preventDefault(); // Prevent page reload
+    const formdata = new FormData();
+    formdata.append('useremail', userDetails.useremail);
+    formdata.append('userpassword', userDetails.userpassword);
+
+    try {
+      const response = await axios.post(
+        'http://localhost:8080/api/v1/users/add',
+        formdata,
+        {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+        }
+      );
+
+      // Log the response or handle success
+      console.log('Success:', response.data);
+    } catch (error) {
+      // Handle error
+      console.error('Error during authentication:', error);
+    }
+  };
+
   return (
     <div className=" container py-3 d-flex justify-content-center">
       <div
@@ -34,6 +66,13 @@ export const Signup = () => {
           <input
             type="text"
             className=" ps-2 py-2"
+            value={userDetails.useremail}
+            onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
+              setUserDetails((prev) => ({
+                ...prev,
+                useremail: event.target.value,
+              }));
+            }}
           />
           <label
             htmlFor="password"
@@ -44,6 +83,13 @@ export const Signup = () => {
           <input
             type="password"
             className=" ps-2 py-2"
+            value={userDetails.userpassword}
+            onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
+              setUserDetails((prev) => ({
+                ...prev,
+                userpassword: event.target.value,
+              }));
+            }}
           />
           <div className=" d-flex align-items-center column-gap-2 py-3">
             <input
@@ -54,7 +100,10 @@ export const Signup = () => {
             <label htmlFor="rememberme">Remember me</label>
           </div>
           <TermsAndConditions />
-          <button className="signin-btn-colored border-0 py-2 rounded-5 fw-normal">
+          <button
+            onClick={AuthValidation}
+            className="signin-btn-colored border-0 py-2 rounded-5 fw-normal"
+          >
             Agreee & Join
           </button>
 
