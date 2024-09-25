@@ -13,7 +13,7 @@ export const Signup = () => {
     userpassword: '',
   });
 
-  const AuthValidation = async (e: Event) => {
+  const AuthValidation = async (e: React.MouseEvent) => {
     e.preventDefault(); // Prevent page reload
     const formdata = new FormData();
     formdata.append('useremail', userDetails.useremail);
@@ -101,7 +101,9 @@ export const Signup = () => {
           </div>
           <TermsAndConditions />
           <button
-            onClick={AuthValidation}
+            onClick={(e: React.MouseEvent) => {
+              AuthValidation(e);
+            }}
             className="signin-btn-colored border-0 py-2 rounded-5 fw-normal"
           >
             Agreee & Join
