@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { GoogleSignButton } from '../../components/buttons/googlesignbtn';
 import { JoinNow } from '../../components/buttons/joinnowbtn';
 import { TermsAndConditions } from '../../components/termsandcondition/termsandconditions';
@@ -8,6 +8,8 @@ import axios from 'axios';
 import React, { useState } from 'react';
 
 export const Signup = () => {
+  const Navigator = useNavigate();
+  const [notification, setNotification] = useState<boolean>(false);
   const [userDetails, setUserDetails] = useState({
     useremail: '',
     userpassword: '',
@@ -32,6 +34,11 @@ export const Signup = () => {
 
       // Log the response or handle success
       console.log('Success:', response.data);
+      setNotification(true);
+
+      setTimeout(() => {
+        Navigator('/login/signin');
+      }, 2000);
     } catch (error) {
       // Handle error
       console.error('Error during authentication:', error);
@@ -99,6 +106,11 @@ export const Signup = () => {
             />
             <label htmlFor="rememberme">Remember me</label>
           </div>
+          {notification && (
+            <span className=" bg-success text-white d-block text-center py-2 rounded-3 fw-normal">
+              New User created successfully..
+            </span>
+          )}
           <TermsAndConditions />
           <button
             onClick={(e: React.MouseEvent) => {
