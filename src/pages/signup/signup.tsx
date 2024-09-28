@@ -5,15 +5,30 @@ import { TermsAndConditions } from '../../components/termsandcondition/termsandc
 import linkedin_logo from '/linkedin-logo-3801732491.png';
 import { CommonFooter } from '../../components/footer/commonfooter';
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export const Signup = () => {
   const Navigator = useNavigate();
+  const [height, setHeight] = useState<number>(0);
   const [notification, setNotification] = useState<boolean>(false);
   const [userDetails, setUserDetails] = useState({
     useremail: '',
     userpassword: '',
   });
+
+  useEffect(() => {
+    const getHeight = () => {
+      setHeight(window.innerHeight);
+    };
+
+    getHeight();
+
+    window.addEventListener('resize', getHeight);
+
+    return () => {
+      window.removeEventListener('resize', getHeight);
+    };
+  }, []);
 
   const AuthValidation = async (e: React.MouseEvent) => {
     e.preventDefault(); // Prevent page reload
@@ -121,10 +136,10 @@ export const Signup = () => {
             Agreee & Join
           </button>
 
-          <div className=" d-flex align-items-center column-gap-2">
+          <div className=" d-flex justify-content-center align-items-center column-gap-2">
             <span
               className=" bg-black opacity-25 "
-              style={{ width: '130px', height: '1px' }}
+              style={{ width: '170px', height: '1px' }}
             ></span>
             <h1
               className=" opacity-50 m-0 "
@@ -134,19 +149,32 @@ export const Signup = () => {
             </h1>
             <span
               className=" bg-black opacity-25 "
-              style={{ width: '130px', height: '1px' }}
+              style={{ width: '170px', height: '1px' }}
             ></span>
           </div>
           <GoogleSignButton />
           <JoinNow />
-          <h1 className=" fw-normal fs-6 opacity-75 text-center">
-            Looking to create a page for bussiness? <Link to="/">Get help</Link>
+          <h1 className=" fs-6  text-center opacity-75">
+            Looking to create a page for bussiness?{' '}
+            <Link
+              to="/"
+              className=" fw-normal"
+            >
+              Get help
+            </Link>
           </h1>
         </form>
+        <div className=" d-lg-none">
+          <CommonFooter />
+        </div>
       </div>
-      <div className=" position-absolute bottom-0 ">
-        <CommonFooter />
-      </div>
+      {height > 768 ? (
+        <div className=" d-none d-lg-block position-absolute bottom-0 ">
+          <CommonFooter />
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };

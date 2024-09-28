@@ -47,8 +47,8 @@ export const SigninForm = () => {
   };
   return (
     <div
-      className=" container-fluid py-5 d-flex flex-column row-gap-4"
-      style={{ maxWidth: '400px' }}
+      className=" container py-5 d-flex flex-column row-gap-4"
+      style={{ maxWidth: '420px' }}
     >
       <Link to="/home">
         <img
