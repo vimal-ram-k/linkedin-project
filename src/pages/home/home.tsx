@@ -1,4 +1,3 @@
-import { HomeCatagory } from '../../components/category/homecatogary';
 import { HomeNavigationBar } from '../../components/navigationbar/homenavigationbar';
 import { HomeFeatures } from '../../components/home/features/homefeatures';
 import searchjob from '../../assets/images/1dhh8rr3wohexkaya6jhn2y8j.svg';
@@ -16,19 +15,17 @@ import footer_bg from '../../assets/images/4ezbw852t2wrgf27zl1o1qtu7.png';
 
 export const Home = () => {
   return (
-    <div className="">
+    <div className=" container-fluid">
       <HomeNavigationBar />
-      <HomeCatagory display="d-block d-lg-none" />
-
-      <div className=" container d-flex flex-column flex-lg-row row-gap-1 align-items-center justify-content-around py-5">
+      <div className=" container d-flex flex-column flex-lg-row row-gap-1 align-items-center justify-content-around py-3">
         <div className="home-banner row">
           <h1
-            className="  p-0 text-center text-lg-start header-banner col-lg-7 w-100"
+            className="  p-0 text-center text-lg-start header-banner col-lg-7 w-100 py-3"
             style={{ color: '#595c5e' }}
           >
             Welcome to your professional community
           </h1>
-          <div className=" d-flex flex-column row-gap-3">
+          <div className=" d-flex flex-column row-gap-4 pt-4">
             <GoogleSignButton />
             <AppleSignInBtn />
             <TermsAndConditions />

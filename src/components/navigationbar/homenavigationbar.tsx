@@ -9,19 +9,19 @@ export const HomeNavigationBar = () => {
           className=""
           to={'/'}
         >
-          <img
+          {/* <img
             src="/linkedin-svgrepo-com.svg"
             className="logo d-lg-none"
             aria-describedby="logo"
             alt="Linkedin Logo"
             style={{ width: '35px' }}
-          />
+          /> */}
           <img
             src="/linkedin-logo-3801732491.png"
-            className="logo d-none d-lg-block"
+            // className="logo d-none d-lg-block"
             aria-describedby="logo"
             alt="Linkedin Logo2"
-            style={{ width: '110px', height: '30px' }}
+            style={{ width: '100px', height: '25px' }}
           />
         </Link>
       </div>
@@ -33,37 +33,37 @@ export const HomeNavigationBar = () => {
         ></div>
         <nav className=" d-flex column-gap-2">
           <Link
-            to="/login/signin"
-            data-testid="signin-btn"
-          >
-            <button
-              className="rounded-5 fs-6 signin-btn"
-              style={{
-                width: '100px',
-                height: '50px',
-                color: '#0965c2',
-                border: '1px solid #0965c2',
-                fontWeight: 'bold',
-              }}
-            >
-              Sign in
-            </button>
-          </Link>
-          <Link
             to="/signup"
             data-testid="signin-btn"
           >
             <button
-              className=" btn border text-white rounded-5"
+              className=" btn border-0 bg-transparent fw-medium"
               style={{
                 width: '120px',
-                height: '50px',
+                height: '45px',
                 backgroundColor: '#0965c2',
                 fontWeight: 'bold',
                 fontSize: '0.9rem',
               }}
             >
               Join now
+            </button>
+          </Link>
+          <Link
+            to="/login/signin"
+            data-testid="signin-btn"
+          >
+            <button
+              className="rounded-5 fs-6 fw-medium signin-btn"
+              style={{
+                width: '100px',
+                height: '45px',
+                color: '#0965c2',
+                border: '1px solid #0965c2',
+                fontWeight: 'bold',
+              }}
+            >
+              Sign in
             </button>
           </Link>
         </nav>

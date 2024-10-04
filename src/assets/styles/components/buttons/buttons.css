@@ -7,7 +7,7 @@
 }
 
 .signin-btn-colored {
-  background-color: #0965c2;
+  background-color: #0965c2 !important;
   color: white !important;
 }
 

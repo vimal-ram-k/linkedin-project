@@ -34,8 +34,9 @@
   border-radius: 1%;
 }
 
-.home-banner {
-  width: 80dvw;
+.header-banner {
+  font-size: 1.7rem;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 810px) {

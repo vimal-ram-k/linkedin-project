@@ -10,7 +10,7 @@ describe('home tests', () => {
         <Home />
       </BrowserRouter>
     );
-    const linkedinlogo = screen.getByAltText('Linkedin Logo');
+    const linkedinlogo = screen.getByAltText('Linkedin Logo2');
     expect(linkedinlogo).toBeInTheDocument();
   });
 });
