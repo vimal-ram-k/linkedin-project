@@ -26,7 +26,7 @@ export const HomeFeatures = () => {
   };
   return (
     <div
-      className=" container-fluid d-lg-flex justify-content-lg-center position-relative gr-light-bg py-5"
+      className=" container-fluid d-lg-flex justify-content-lg-center position-relative gr-light-bg py-4"
       style={{ height: 'auto' }}
     >
       {currentSection > 1 ? (

@@ -20,12 +20,12 @@ export const Home = () => {
       <div className=" container d-flex flex-column flex-lg-row row-gap-1 align-items-center justify-content-around py-3">
         <div className="home-banner row">
           <h1
-            className="  p-0 text-center text-lg-start header-banner col-lg-7 w-100 py-3"
+            className="  p-0 text-center text-lg-start header-banner col-lg-7 w-100 py-4"
             style={{ color: '#595c5e' }}
           >
             Welcome to your professional community
           </h1>
-          <div className=" d-flex flex-column row-gap-4 pt-4">
+          <div className=" d-flex flex-column row-gap-3 pt-2">
             <GoogleSignButton />
             <AppleSignInBtn />
             <TermsAndConditions />
@@ -47,11 +47,11 @@ export const Home = () => {
           >
             <div className=" container row ">
               <div className="col-lg-6">
-                <h1 className=" fw-normal hm-bn-header">{item.header}</h1>
+                <h1 className=" fw-normal fs-5 hm-bn-header">{item.header}</h1>
 
                 <p
-                  className=" fw-light py-2"
-                  style={{ fontSize: '1.2rem' }}
+                  className=" fw-light py-2 "
+                  style={{ fontSize: '0.9rem' }}
                 >
                   {item.description}
                 </p>
@@ -63,7 +63,10 @@ export const Home = () => {
                     if (items !== 'Show all') {
                       return (
                         <li className="">
-                          <button className=" btn border border-black fw-normal rounded-5 px-3 py-2">
+                          <button
+                            className=" btn border border-black fw-normal rounded-5 px-2  py-2"
+                            style={{ fontSize: '0.8rem' }}
+                          >
                             {items}
                           </button>
                         </li>
@@ -72,7 +75,7 @@ export const Home = () => {
                       return (
                         <li className="">
                           <button
-                            className=" btn text-primary fw-bold rounded-5 px-3 py-2"
+                            className=" btn text-primary fw-normal rounded-5 px-3 py-2"
                             style={{
                               fontSize: '0.9rem',
                               color: '#0965c2',
@@ -102,7 +105,7 @@ export const Home = () => {
           <img
             src={connectpeople}
             alt=""
-            width={300}
+            width={250}
           />
           <h1
             className=" fw-light"
@@ -112,31 +115,41 @@ export const Home = () => {
           </h1>
           <button
             className=" border border-1 py-1 px-2 bg-transparent rounded-5 text-black border-black opacity-75 fw-medium"
-            style={{ width: '300px', fontSize: '1rem' }}
+            style={{ width: '200px', fontSize: '0.9rem' }}
           >
             Find people you know
           </button>
         </div>
 
         <div
-          className=" py-5 px-3 d-flex flex-column gap-3"
+          className=" py-5 px-3 d-flex flex-column gap-4"
           style={{ height: '550px' }}
         >
           <img
             src={searchjob}
             alt=""
-            width={300}
+            width={250}
+            className=" py-2"
           />
-          <h1 style={{ fontSize: '1.4rem' }}>
+          <h1
+            className=" fs-normal"
+            style={{ fontSize: '1.2rem' }}
+          >
             Learn the skills you need to succeed
           </h1>
           <section className=" border rounded-2 px-3 position-relative py-3">
-            <h1
-              className=" position-absolute opacity-75"
-              style={{ fontSize: '1rem' }}
+            <div
+              className=" position-absolute opacity-75 d-flex justify-content-between"
+              style={{ width: '320px' }}
             >
-              Choose a topic learn about
-            </h1>
+              <h1
+                className=""
+                style={{ fontSize: '1rem' }}
+              >
+                Choose a topic learn about
+              </h1>
+              <i className=" bi bi-arrow-bar-down text-primary "></i>
+            </div>
             <select
               name=""
               id=""
@@ -156,8 +169,8 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className=" row py-3">
-        <div className=" container gr-light-bg  py-5  col-lg-6 h-100">
+      <div className=" row py-3 ps-3">
+        <div className=" container  gr-light-bg  py-5  col-lg-6 h-100">
           <h1
             className="rd-header fw-normal"
             style={{ fontSize: '1.4rem' }}
@@ -209,21 +222,20 @@ export const Home = () => {
             className=" rounded-3"
             src={'https://youtu.be/IlYUUN8rL_Y'}
             title="YouTube video player"
-            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             style={{ width: '400px', height: '240px' }}
           ></iframe>
 
           <h1
-            className=" m-0 fw-medium mt-4"
+            className=" m-0 fw-normal mt-4"
             style={{ fontSize: '1.3rem' }}
           >
             In it to chase my dream
           </h1>
           <p
-            className=" fw-light py-2"
-            style={{ fontSize: '1rem' }}
+            className=" fw-normal py-2"
+            style={{ fontSize: '0.9rem' }}
           >
             Check out Gayatri’s story of finding a new job on LinkedIn{' '}
           </p>
@@ -232,7 +244,10 @@ export const Home = () => {
 
       <div className=" d-flex flex-column justify-content-center card border-0 position-relative">
         <div className=" container card-title pt-4">
-          <h1 className=" fw-light">
+          <h1
+            className=" fw-normal"
+            style={{ fontSize: '1.2rem' }}
+          >
             Join your colleagues, classmates, and friends on LinkedIn.
           </h1>
           <button

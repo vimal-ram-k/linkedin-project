@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div
-      className="main m-auto bg-white "
+      className="main m-auto bg-white"
       aria-labelledby="main"
     >
       <NavigationBar />

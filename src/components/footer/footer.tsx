@@ -32,7 +32,7 @@ export const Footer = () => {
                 className="footer-link"
               >
                 <li
-                  className=" fw-medium  py-1"
+                  className=" fw-light  py-1"
                   key={item + index}
                   style={{ fontSize: '0.8rem' }}
                 >
@@ -60,7 +60,7 @@ export const Footer = () => {
               >
                 <li
                   key={item + index}
-                  className=" fw-medium  py-1"
+                  className=" fw-light  py-1"
                   style={{ fontSize: '0.8rem' }}
                 >
                   {item}
@@ -87,7 +87,7 @@ export const Footer = () => {
               >
                 <li
                   key={item + index}
-                  className=" fw-medium  py-1"
+                  className=" fw-light  py-1"
                   style={{ fontSize: '0.8rem' }}
                 >
                   {item}
@@ -114,7 +114,7 @@ export const Footer = () => {
               >
                 <li
                   key={item + index}
-                  className=" fw-medium  py-1"
+                  className=" fw-light  py-1"
                   style={{ fontSize: '0.8rem' }}
                 >
                   {item}

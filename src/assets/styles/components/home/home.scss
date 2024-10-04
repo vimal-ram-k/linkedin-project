@@ -30,7 +30,7 @@
   color: variables.$primary-red;
 }
 .mainbanner-img {
-  width: 350px;
+  width: 300px;
   border-radius: 1%;
 }
 
@@ -91,7 +91,7 @@
 .home-sub-banner:not([id~='bg-light-red']):not([id~='bn-height-large']):not(
     [id~='bn-height-small']
   ) {
-  height: clamp(200px, 100vh, 500px);
+  height: clamp(200px, 100vh, 450px);
 }
 
 .home-sub-banner[id~='bg-light-red'] {
