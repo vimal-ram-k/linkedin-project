@@ -15,7 +15,7 @@ import footer_bg from '../../assets/images/4ezbw852t2wrgf27zl1o1qtu7.png';
 
 export const Home = () => {
   return (
-    <div className=" container-fluid">
+    <div className="">
       <HomeNavigationBar />
       <div className=" container d-flex flex-column flex-lg-row row-gap-1 align-items-center justify-content-around py-3">
         <div className="home-banner row">
