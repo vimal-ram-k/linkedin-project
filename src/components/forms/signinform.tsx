@@ -25,11 +25,15 @@ export const SigninForm = () => {
     formdata.append('useremail', userDetails.username);
     formdata.append('userpassword', userDetails.userpassword);
     try {
-      const data = await axios.post('/api/v1/users/user', formdata, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      });
+      const data = await axios.post(
+        'https://linkedin-server-production.up.railway.app/api/v1/users/user',
+        formdata,
+        {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+        }
+      );
 
       console.log(data);
       if (data.status === 200) {
