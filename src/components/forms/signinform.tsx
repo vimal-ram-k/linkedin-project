@@ -1,14 +1,16 @@
 import { Link, useNavigate } from 'react-router-dom';
 import linkedinlogo from '/linkedin-logo-3801732491.png';
 import { TermsAndConditions } from '../termsandcondition/termsandconditions';
-import { GoogleSignButton } from '../buttons/googlesignbtn';
-import { AppleSignInBtn } from '../buttons/applesigninbtn';
-import { JoinNow } from '../buttons/joinnowbtn';
 import { AppDispatch } from '../../store';
 import { useDispatch } from 'react-redux';
 import { createAsync } from '../../features/auth/authSlice';
 import React, { useState } from 'react';
 import axios from 'axios';
+import {
+  EmailSigninButton,
+  GoogleSignButton,
+  JoinNowButton,
+} from '../buttons/Buttons';
 export const SigninForm = () => {
   const [error, setError] = useState<boolean>(false);
   const navigate = useNavigate();
@@ -143,9 +145,9 @@ export const SigninForm = () => {
         <div className="  d-flex flex-column row-gap-2">
           <TermsAndConditions />
           <GoogleSignButton />
-          <AppleSignInBtn />
+          <EmailSigninButton />
           <div className=" mt-4">
-            <JoinNow />
+            <JoinNowButton />
           </div>
         </div>
       </form>

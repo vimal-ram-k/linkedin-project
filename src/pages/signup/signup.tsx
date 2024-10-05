@@ -1,11 +1,13 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { GoogleSignButton } from '../../components/buttons/googlesignbtn';
-import { JoinNow } from '../../components/buttons/joinnowbtn';
 import { TermsAndConditions } from '../../components/termsandcondition/termsandconditions';
 import linkedin_logo from '/linkedin-logo-3801732491.png';
 import { CommonFooter } from '../../components/footer/commonfooter';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import {
+  GoogleSignButton,
+  JoinNowButton,
+} from '../../components/buttons/Buttons';
 
 export const Signup = () => {
   const Navigator = useNavigate();
@@ -153,7 +155,7 @@ export const Signup = () => {
             ></span>
           </div>
           <GoogleSignButton />
-          <JoinNow />
+          <JoinNowButton />
           <h1 className=" fs-6  text-center opacity-75">
             Looking to create a page for bussiness?{' '}
             <Link

@@ -4,7 +4,7 @@ export const TermsAndConditions = () => {
   return (
     <div className="">
       <p
-        className=" text-center text-wrap text-lg-start"
+        className=" text-center"
         style={{ fontSize: '0.8rem', fontWeight: '200' }}
       >
         By clicking Continue to join or sign in, you agree to LinkedIn’s
